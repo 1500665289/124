@@ -1,0 +1,35 @@
+<Magics><List>
+	<Magic Name="Tunshifa" Type="Class">
+		<DisplayName>迷囚术</DisplayName>
+		<Desc>施展合欢宗的秘术，将一个正在劳改的角色转化成自身的奴隶</Desc>
+		<Icon>Spr\Object\qiufan.png</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<Param1>3</Param1> <!-- 读条时间 -->
+		<SelectTarget>Npc</SelectTarget><!--选择模式，npc-->
+		<ClassName>Magic_Tunshi</ClassName>
+		<MaxArea>64</MaxArea>
+		<TargetDesc>请选择一个对象</TargetDesc>
+		<CostLing>0</CostLing>
+	</Magic>
+	<Magic Name="Zhazhiji" Type="Class">
+		<DisplayName>榨汁姬</DisplayName>
+		<Desc>合欢宗独门秘法，以跳蛋为引，化身女魔将地图上所有失去行动力的敌人，吃干抹净。</Desc>
+		<Icon>Spr\Object\zzj.png</Icon>
+		<Param1>10</Param1><!--所需时间-->
+		<SelectMode>None</SelectMode><!--选择模式，无-->
+		<Ani>LJjineng10</Ani>
+		<CostLing>0</CostLing>
+		<ClassName>Magic_Zhazhiji</ClassName>
+	</Magic>
+	<Magic Name="Shenyou" Type="Class">
+		<DisplayName>神游</DisplayName>
+		<Desc>在神国中分化化身，于神国中游历。</Desc>
+		<Icon>Spr\Tubiao\Shenyou.png</Icon>
+		<Param1>50</Param1><!--所需时间-->
+		<SelectMode>None</SelectMode><!--选择模式，无-->
+		<Ani>xinzhai</Ani>
+		<CostLing>0</CostLing>
+		<ClassName>Magic_Shenyou</ClassName>
+	</Magic>
+</List></Magics>

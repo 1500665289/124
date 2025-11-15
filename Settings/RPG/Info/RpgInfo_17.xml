@@ -1,0 +1,19 @@
+<Defs><List>
+	<Def Name="Tianyuancun">
+		<Title>天元村</Title>
+		<Desc>天元村。</Desc>
+		<MinEnterNpc>1</MinEnterNpc>
+		<MaxEnterNpc>1</MaxEnterNpc>
+		<NeedUnlock>0</NeedUnlock>
+		<Places>
+			<li>Place_Tianyuancun</li>
+		</Places>
+	</Def>
+	<Def Name="Siheyuan">
+		<Title>四合院</Title>
+		<Desc>门派的秘密花园……</Desc>
+		<MinEnterNpc>1</MinEnterNpc>
+		<MaxEnterNpc>1</MaxEnterNpc>
+		<NeedUnlock>0</NeedUnlock>
+	</Def>
+</List></Defs>

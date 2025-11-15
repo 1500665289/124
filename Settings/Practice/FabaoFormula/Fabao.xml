@@ -1,0 +1,45 @@
+<FabaoFormulas><List>
+	<Fabao Name="MiBaoFormula_Dinvshenou">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_Dinvshenou</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+	<!-- 帝女偶 -->
+	<Fabao Name="MiBaoFormula_Dinvshenou1">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_Dinvshenou1</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+
+	<!-- 子吸天梭 -->
+	<Fabao Name="MiBaoFormula_SonSuckShip">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_SonSuckShip</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+
+	<!-- 母吸天梭 -->
+	<Fabao Name="MiBaoFormula_MumSuckShip">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_MumSuckShip</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+
+	<!-- 浴精珠 -->
+	<Fabao Name="MiBaoFormula_BathEssenceBead">
+		<Normal>0</Normal>
+		<ItemName>Item_MiBao_BathEssenceBead</ItemName>
+		<Level>20</Level>
+		<SuccessRate>-1</SuccessRate>
+		<Count>1</Count>
+	</Fabao>
+
+</List></FabaoFormulas>

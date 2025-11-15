@@ -1,0 +1,13 @@
+<PhysicalLables><List>
+	
+	<Lable Name="Wanlingjindan"> <!--万灵金丹-->
+		<Effects>
+			<li Kind="AttackPower" Addp="10"/>
+			<li Kind="MaxLing" Addp="99"/>
+			<li Kind="Scale" Addp="0.5"/>
+			<li Kind="KnockBackResistance" Addp="10"/>
+			<li Kind="KnockBackAddition" Addp="10"/>
+		</Effects>
+	</Lable>
+	
+</List></PhysicalLables> 

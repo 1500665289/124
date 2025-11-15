@@ -1,0 +1,75 @@
+<Defs><List>
+	<Def Name="Policy_Give" Parent="Policy_Base">
+		<Base>0</Base>
+		<LevelStories>
+			<Stories>
+				<li Story="PolicyStory_Give2" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give3" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give4" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give5" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give6" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give7" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give8" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give9" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give10" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give11" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give12" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give13" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give14" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give15" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give16" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give17" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give18" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give1701" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give1702" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give1703" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give1704" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give1705" WaitSec="120" Weight="10"/>
+			</Stories>
+		</LevelStories>
+		<CostPerDay>
+			<Mats>
+				<li ItemName="Item_Wheat" Count="20"/>
+			</Mats>
+		</CostPerDay>
+		<DisplayName>布施</DisplayName>
+		<Desc>以我们所有送给有需要的人，过程中需要应对各种问题。能收获少量信众，吸引力，或是影响值。</Desc>
+	</Def>
+	
+	<Def Name="Policy_Missionary" Parent="Policy_Base">
+		<Base>0</Base>
+		<LevelStories>
+			<Stories>
+				<li Story="PolicyStory_Give2" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give3" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give4" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give5" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give6" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give7" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give8" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give9" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give10" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give11" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give12" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give13" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give14" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give15" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give16" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give17" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give18" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give1701" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give1702" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give1703" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give1704" WaitSec="120" Weight="10"/>
+				<li Story="PolicyStory_Give1705" WaitSec="120" Weight="10"/>
+			</Stories>
+		</LevelStories>
+		<CostPerDay>
+			<Mats>
+				<li ItemName="Item_Wheat" Count="20"/>
+			</Mats>
+		</CostPerDay>
+		<DisplayName>布施</DisplayName>
+		<Desc>以我们所有送给有需要的人，过程中需要应对各种问题。能收获少量信众，吸引力，或是影响值。</Desc>
+	</Def>
+</List></Defs>

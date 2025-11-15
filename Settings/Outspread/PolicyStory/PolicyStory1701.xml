@@ -1,0 +1,27 @@
+<Defs><List>
+	<Def Name="PolicyStory_Give1701">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人带领众弟子走上街头，开始布施。有一姿色不错的女子在行乞。</Desc>
+		<Story>OutSpread_Give1701</Story>
+	</Def>
+	<Def Name="PolicyStory_Give1702">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人带领众弟子走上街头，开始布施。看见两个女子正在为一条狗而争执不休。</Desc>
+		<Story>OutSpread_Give1702</Story>
+	</Def>
+	<Def Name="PolicyStory_Give1703">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人带领众弟子走上街头，开始布施。看见两位公子哥居然为了争夺一个女人而大打出手。</Desc>
+		<Story>OutSpread_Give1703</Story>
+	</Def>
+	<Def Name="PolicyStory_Give1704">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人正准备去布施，突然有一名身着华丽的女子哭着走到了代理人的住处，说她孩子丢了。</Desc>
+		<Story>OutSpread_Give1704</Story>
+	</Def>
+	<Def Name="PolicyStory_Give1705">
+		<DisplayName>布施事件</DisplayName>
+		<Desc>代理人正准备去布施，突然有一名男子冲到了殿内，求代理人救救她快要病死的妻子。</Desc>
+		<Story>OutSpread_Give1705</Story>
+	</Def>
+</List></Defs>

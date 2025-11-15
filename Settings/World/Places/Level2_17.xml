@@ -1,0 +1,33 @@
+<Places><List>
+	<Place Name="Place_Tianyuancun" Parent="Place_Level1Base">
+		<Location X="1359" Y="701"/>
+		<Icon>res/Sprs/map/map_cunluo01</Icon>
+		<DisplayName>天元村</DisplayName>
+		<Desc>一座小型村落，村中居民多为女性，以外出打拳卖艺和在村中养狗贩肉为生。</Desc>
+		<School>170</School>
+		<Events>
+			<li Name="Visit" Rate="5"/>
+			<li Name="Story" Rate="0.5"/>
+			<li Name="Treasure" Rate="0.5"/>
+			<li Name="Find" Rate="2.5"/>
+			<li Name="Secret" Rate="1"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_Nvxiuluohong</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_DogMeat</ThingDef>
+				<Count>30</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Human_Milk</ThingDef>
+				<Count>30</Count>
+				<Rate>1</Rate>
+			</li>
+		</Produce>
+	</Place>
+</List></Places>

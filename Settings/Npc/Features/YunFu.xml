@@ -1,0 +1,26 @@
+﻿<FeatureDefs><List>
+
+	<Feature Name="YunFu" Type="Backstory">
+		<DisplayName>孕妇</DisplayName>
+		<Desc>这位将要成为母亲的人，现在内心非常的激动，等待着肚子里的小生命诞生！她暂时不能从事重工作！</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+		<Close>
+			<li>YunFu</li>
+		</Close>
+			<Properties>
+				<li Name="MoveSpeed" AddV="-1"/>
+				<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-1"/>
+				<li Name="MindStateBaseValue" AddV="-25"/>
+			</Properties>
+			<BanJobs>
+				<li>Handwork</li>
+				<li>Mine</li>
+				<li>Build</li>
+				<li>OutFire</li>
+			</BanJobs>
+		</ModifierDef>
+	</Feature>
+
+
+</List></FeatureDefs>

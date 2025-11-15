@@ -1,0 +1,133 @@
+<MoodDefs><List>
+	<Mood Name="CaibuoGood">
+		<DisplayName>采补成功</DisplayName>
+		<Desc>刚采补成功，全身灵气无比和谐。</Desc>
+		<StoryDesc>正因刚才的双修而感到舒畅</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.6</StackRatio>
+		<Value>100</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	<Mood Name="CaibuoBad">
+		<DisplayName>被人采补</DisplayName>
+		<Desc>被人采取了浑身精气。</Desc>
+		<StoryDesc>正因精气溃散而感到痛苦</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-100</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	<Mood Name="XingjiaoGood">
+		<DisplayName>愉快的双修</DisplayName>
+		<Desc>一次愉快的双修。</Desc>
+		<StoryDesc>这次我干的特别爽！</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>50</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	<Mood Name="XingjiaoBad">
+		<DisplayName>不愉快的双修</DisplayName>
+		<Desc>一次不愉快的双修。</Desc>
+		<StoryDesc>我被弄疼拉！</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-50</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	<Mood Name="ShuangtoulongGood">
+		<DisplayName>下体塞的满满的</DisplayName>
+		<Desc>双头龙塞进身体里的感觉太爽了。</Desc>
+		<StoryDesc>超级喜欢双头龙进入身体的感觉！</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>25</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	<Mood Name="GangzhuGood">
+		<DisplayName>菊花中无比充实的感觉</DisplayName>
+		<Desc>肛珠塞入身体里的感觉太爽了。</Desc>
+		<StoryDesc>超级喜欢肛珠在菊花里的感觉了！</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>25</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	<Mood Name="NvxiuluohongGood">
+		<DisplayName>女修落红</DisplayName>
+		<Desc>女修初次破瓜的落红，散发着好闻的香气。</Desc>
+		<StoryDesc>真是太好闻了！</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>15</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	<Mood Name="NvrenouGood">
+		<DisplayName>女偶</DisplayName>
+		<Desc>这是一个十分漂亮的女偶。</Desc>
+		<StoryDesc>真想时不时的把玩一番！</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>30</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	<Mood Name="TiaodanGood">
+		<DisplayName>跳蛋</DisplayName>
+		<Desc>戴上跳蛋，还把档位调到了最高。感受着那恶魔一样的物什在身体里不断颤动着，还要强掩面容，不能让他人看出了端倪。她已不记得泄了几次身子了，无法专心入定！</Desc>
+		<StoryDesc>戴上跳蛋，还把档位调到了最高。感受着那恶魔一样的物什在身体里不断颤动着，还要强掩面容，不能让他人看出了端倪。她已不记得泄了几次身子了，无法专心入定！</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>50</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	<Mood Name="Yingjingzhe1">
+		<DisplayName>美味的精液</DisplayName>
+		<Desc>世间最美味的东西莫过于异性的精液了……</Desc>
+		<StoryDesc>正高兴的舔着嘴唇</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>40</Value>
+		<Duration>1.5</Duration>
+	</Mood>
+	
+	<Mood Name="Yingjingzhe2">
+		<DisplayName>令人作呕的精液</DisplayName>
+		<Desc>正常人怎么可能喜欢喝精……</Desc>
+		<StoryDesc>犯恶心中……</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-40</Value>
+		<Duration>1.5</Duration>
+	</Mood>
+	
+	<Mood Name="Chirenrou">
+		<DisplayName>香甜的人肉</DisplayName>
+		<Desc>作为智慧种族的人类，他们的肉一直是妖怪与异食癖者的最爱。</Desc>
+		<StoryDesc>人肉也太好吃了吧</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>100</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	<Mood Name="Chirenrou2">
+		<DisplayName>我吃了什么？？？</DisplayName>
+		<Desc>我为什么会去吃人类的肉？？？呕！呕……</Desc>
+		<StoryDesc>正因吃了人肉感到无比恶心</StoryDesc>
+		<MaxStack>999</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>-200</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+	
+	<Mood Name="Human_Milk">
+		<DisplayName>甘甜的乳汁</DisplayName>
+		<Desc>世界上有什么比乳汁更加美味且富有营养的食物呢？</Desc>
+		<StoryDesc>正因喝了乳汁感到无比幸福</StoryDesc>
+		<MaxStack>999</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>50</Value>
+		<Duration>0.5</Duration>
+	</Mood>
+</List></MoodDefs>

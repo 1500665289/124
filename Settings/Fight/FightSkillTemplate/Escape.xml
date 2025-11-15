@@ -1,0 +1,22 @@
+﻿<FightSkills><List>
+
+
+	<Skill Name="MOD_Escape">
+		<DisplayName>逍遥</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Health</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.5</SingTime>
+		<CD>20</CD>
+		<LingCost>0</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>25</Value>
+		<TargetCamp>Friendly</TargetCamp>
+		<Shape>Single</Shape>
+		<ClassName>MOD_Escape</ClassName>
+		<SelectType>Self</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+
+</List></FightSkills>

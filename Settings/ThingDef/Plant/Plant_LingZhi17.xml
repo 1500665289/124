@@ -1,0 +1,107 @@
+<ThingDefs><List>
+<ThingDef Type="Plant" Name="LingZhi_Ren" Parent="LingZhiBase">
+	<ThingName>人灵根-六欲树母</ThingName>
+	<TonglingHair>hairzhuguo</TonglingHair>
+	<Desc>传说中的神木-六欲树母，由大量纯阳精华与生灵血肉浇灌长成，成体之后，树母汁液不在如前那般的摄人心神惑人意志，反而成为了最佳催情助兴之秘药，而枝丫上的人形之果，据说食者即可得长生，故又被称之为“人参果树”……</Desc>
+	<TexPath>Spr\scene_TemperateForest_plant\rensg_01.png</TexPath>
+	<ElementKind>Mu</ElementKind>
+	<Light>
+		<Value>50</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>80FF56C6</Color>
+	</Light>
+	<BlockLight>0</BlockLight>
+	<Plant> 
+		<TexLing>
+			<GrowTex1>Spr\scene_TemperateForest_plant\rensg_02.png</GrowTex1>
+			<HarvestTex0>Spr\scene_TemperateForest_plant\rensg_03.png</HarvestTex0>
+			<HarvestTex1>Spr\scene_TemperateForest_plant\rensg_04.png</HarvestTex1>
+			<HarvestTex2>Spr\scene_TemperateForest_plant\rensg_05.png</HarvestTex2>
+		</TexLing>
+		<SnowRenderData>
+			<x>3.1</x>
+			<y>4.0</y>
+			<z>1.5</z>
+		</SnowRenderData>
+		
+		
+		<HarvestDays>10</HarvestDays>
+		
+		<TempMin>-50</TempMin>
+		<TempMax>50</TempMax>
+		<FertilityMin>0.1</FertilityMin>
+		<FertilityMax>3</FertilityMax>
+		<LingMin>0</LingMin>
+		<LingMax>9999</LingMax>
+		<GrowGlowMin>0</GrowGlowMin>
+		<GrowGlowMax>140</GrowGlowMax>	
+		<ElementRange>
+			<ElementKind>Mu</ElementKind>
+			<Min>1</Min>
+			<Max>2</Max>
+		</ElementRange>	
+
+        <PlantSeed>Item_Liuyumiaoguo5</PlantSeed>
+		<LingShaSpeed>-0.002</LingShaSpeed>
+		<LingZhiR>5</LingZhiR>
+		<JiaoGanModifierGT0>Modifier_LingZhi_GT0_Mu</JiaoGanModifierGT0>
+		<JiaoGanModifierLT0>Modifier_LingZhi_LT0_Mu</JiaoGanModifierLT0> 
+	</Plant>
+	
+	<Harvest>
+		<HarvestTag>
+			<li>Cut</li>
+			<li>StandCollection</li>
+		</HarvestTag>
+
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_Liuyumiaoguo1</ThingDef>
+				<Count>10</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Liuyumiaoguo2</ThingDef>
+				<Count>5</Count>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Liuyumiaoguo3</ThingDef>
+				<Count>1</Count>
+				<Rate>0.25</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Liuyumiaoguo4</ThingDef>
+				<Count>1</Count>
+				<Rate>0.13</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Liuyumiaoguo5</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li>
+		</HarvestItems>
+		
+		<DropItems>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>1</Count>
+			</li>
+		</DropItems>  
+	</Harvest>
+	
+	<Ling>
+		<AddionLing>100</AddionLing>
+		<AddionRadius>9</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		<SkipSelf>2</SkipSelf>
+		
+		<Attenuation>0.5</Attenuation>
+		<Absorption>0.5</Absorption>
+		<Accommodate>400</Accommodate>
+	</Ling>
+</ThingDef>
+</List></ThingDefs>

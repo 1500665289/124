@@ -1,0 +1,4 @@
+ID	Race	Grades	Sex	Name	Desc	Hide	BeginYear	Perception	Physique	Charisma	Intelligence	Luck	Fight	Qi	SocialContact	Medicine	Cooking	Building	Farming	Mining	Art	Manual	DouFa	DanQi	Fabao	FightSkill	Barrier	F1	F2	F3	F4	F5	F6
+ID	种族	阶段 0童年 1成年 2重大事件 	性别 0均可 1男 2女	名字	描述	在自定义中隐藏	触发开始年份	感知	体质	魅力	悟性	运气	战斗	气感	"社交 （所有技能等级后面可以附加,X。X为热爱程度 1为热爱 2为痴迷）"	医术	厨艺	建筑	农事	采掘	艺术	制造	斗法	丹器	御物	术法	护体	特性1	特性2	特性3	特性4	特性5	特性6
+1701	Human	1	2	倾世帝姬	[NAME]是凡俗之中一个大帝国的公主，她有着让整个天下都为之倾倒的绝世容貌。		0			5		3		1	2						2							BeautifulFace3	SonOfDestiny				
+1702	Human	0	1	女仙遗泽	[NAME]在少年之时于一个洞窟内发现了个一个女神仙的玉偶，[NAME]日日与之活塞百次，因此他的阳物由于后天练习和玉偶的滋泽比常人粗大了不少。				3			2		2														Tiancilonggen	SonOfDestiny				

@@ -1,0 +1,337 @@
+﻿<Stories><List>	
+	<Story Name="Story_Hujiao"  Parent="BaseFillingStory">
+		<DisplayName>交流</DisplayName>
+		<Desc>尝试和这位道友进行交流！</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>继续</Display> 
+				<DisplayCondition>
+				GameMain:GetMod("Lua_hudong"):ShuijiaonoPD()
+				</DisplayCondition>
+				<OKResult>
+				GameMain:GetMod("Lua_hudong"):LiaoTian()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>卖身</Display> 
+				<DisplayCondition>
+				GameMain:GetMod("Lua_hudong"):MaiyinPD()
+				</DisplayCondition>
+				<OKResult>
+				GameMain:GetMod("Lua_hudong"):Maiyin()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>夜袭</Display> 
+				<DisplayCondition>
+				GameMain:GetMod("Lua_hudong"):ShuijiaoPD()
+				</DisplayCondition>
+				<OKResult>
+				GameMain:GetMod("Lua_hudong"):Yexi()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>求教</Display> 
+				<DisplayCondition>
+				GameMain:GetMod("Lua_hudong"):ShituPD()
+				</DisplayCondition>
+				<OKResult>
+				GameMain:GetMod("Lua_hudong"):Shitu()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>榨干</Display> 
+				<DisplayCondition>
+				GameMain:GetMod("Lua_hudong"):ZaganPD()
+				</DisplayCondition>
+				<OKResult>
+				GameMain:GetMod("Lua_hudong"):Zagan()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>观察</Display> 
+				<OKResult>
+				GameMain:GetMod("Lua_hudong"):Guancha()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>关系赋予（测试用）</Display>
+				<DisplayCondition>
+				CS.XiaWorld.GlobleDataMgr.Instance:GetUserKey() == "76561197980368013" or CS.XiaWorld.GlobleDataMgr.Instance:GetUserKey() == "76561198279882461"
+				</DisplayCondition>
+				<OKResult>
+				npc1 = ThingMgr:FindThingByID(me.npcObj.ID)
+				npc2 = ThingMgr:FindThingByID(story:GetBindThing().ID)
+				npc1.PropertyMgr.Practice.BodyPracticeData:UnLockSuperPart("SuperPart_Nvquan_4")
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Hujiaowuzhongzi"  Parent="BaseFillingStory">
+		<DisplayName>交流</DisplayName>
+		<Desc>尝试和这位道友进行交流！</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>双修</Display> 
+				<DisplayCondition>
+				GameMain:GetMod("Lua_hudong"):ShuangxiuPD()
+				</DisplayCondition>
+				<OKResult>
+				GameMain:GetMod("Lua_hudong"):Shuangxiu()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>采补</Display> 
+				<DisplayCondition>
+				GameMain:GetMod("Lua_hudong"):CaibuPD()
+				</DisplayCondition>
+				<OKResult>
+				GameMain:GetMod("Lua_hudong"):Caibu()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>求婚</Display> 
+				<DisplayCondition>
+				GameMain:GetMod("Lua_hudong"):QiouhunPD()
+				</DisplayCondition>
+				<OKResult>
+				GameMain:GetMod("Lua_hudong"):Qiouhun()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>SEX</Display> 
+				<DisplayCondition>
+				GameMain:GetMod("Lua_hudong"):NTRPD()
+				</DisplayCondition>
+				<OKResult>
+				GameMain:GetMod("Lua_hudong"):NTR()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>离开</Display> 
+				<OKResult>
+				me:AddMsg("[NAME]取消了互动。");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Item_fengyuebaojian">
+		<DisplayName>合欢宝鉴</DisplayName>
+		<Desc>[NAME]来到女偶面前，想要使用合欢宝鉴，只听闻女偶说到：“宝鉴直播，营运收费，十两一次，童叟无欺，小本经营概不赊欠”。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>男性表演</Display>
+				<DisplayCondition>
+				GameMain:GetMod("Lua_hudong"):HehuanNanxingPD()
+				</DisplayCondition>
+				<OKResult>
+				Panding = me:RandomInt(1,30);
+				if me:GetModifierStack("Qian") > 10 then
+				me.npcObj.PropertyMgr:FindModifier("Qian"):UpdateStack(-10);
+				me:AddMsg("[NAME]支付了十两银子，启动了合欢宝鉴。");
+					if Panding == 1 then
+					me:TriggerStory("Item_Nanbiaoyan1");
+					elseif Panding == 2 then
+					me:TriggerStory("Item_Nanbiaoyan2");
+					elseif Panding == 3 then
+					me:TriggerStory("Item_Nanbiaoyan3");
+					elseif Panding == 4 then
+					me:TriggerStory("Item_Nanbiaoyan4");
+					else
+					me:TriggerStory("Item_Nanbiaoyan5");
+					end
+				else
+				me:AddMsg("[NAME]身上的银钱不够使用合欢宝鉴。");
+				end
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>女性表演</Display> 
+				<DisplayCondition>
+				GameMain:GetMod("Lua_hudong"):HehuanNvnxingPD()
+				</DisplayCondition>
+				<OKResult>
+				Panding = me:RandomInt(1,30);
+				if me:GetModifierStack("Qian") > 10 then
+				me.npcObj.PropertyMgr:FindModifier("Qian"):UpdateStack(-10);
+				me:AddMsg("[NAME]支付了十两银子，启动了合欢宝鉴。");
+					if Panding == 1 then
+					me:TriggerStory("Item_Nvnbiaoyan1");
+					elseif Panding == 2 then
+					me:TriggerStory("Item_Nvnbiaoyan2");
+					elseif Panding >= 25 and me:CheckItemEquptCount("Item_HuoEssence") == 1 then
+					me:TriggerStory("Item_Nvnbiaoyan3");
+					else
+					me:TriggerStory("Item_Nanbiaoyan5");
+					end
+				else
+				me:AddMsg("[NAME]身上的银钱不够使用合欢宝鉴。");
+				end
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>离开</Display> 
+				<OKResult>
+				me:AddMsg("[NAME]取消了互动。");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Item_YYHHGguzhong">
+		<DisplayName>蛊种</DisplayName>
+		<Desc>[NAME]这是阴阳合欢蛊的蛊种</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>喂养</Display> 
+				<OKResult>
+				me:AddMsg("[NAME]挤了一滴精血喂养蛊虫，蛊贪婪的喝下了[NAME]的精血，显得很高兴，并将排泄出来的废物向[NAME]的手中拱去。");
+				me:ModifierProperty("MaxAge",-1);
+				me:AddModifier("YYHHGFL");
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>育蛊</Display> 
+				<OKResult>
+				GameMain:GetMod("Lua_shijian"):shiqi30()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>离开</Display> 
+				<OKResult>
+				me:AddMsg("[NAME]取消了互动。");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Item_Nvoubox">
+		<DisplayName>女偶</DisplayName>
+		<Desc>[NAME]来到女偶面前，想使用自己的储物箱。\n女偶从储物箱上滑落，跪坐在地机械的道：“请插入钥匙并输入个人密码”，后张开了嘴一动不动。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>开锁</Display> 
+				<OKResult>
+				GameMain:GetMod("Lua_shijian"):shiqi31()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>离开</Display> 
+				<OKResult>
+				me:AddMsg("[NAME]取消了互动。");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+		
+	<Story Name="Item_Shuangxiu">
+		<DisplayName>玩女偶</DisplayName>
+		<Desc>[NAME]抱起了身前的女偶！</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>作弊</Display>
+				<DisplayCondition>
+				(CS.XiaWorld.GlobleDataMgr.Instance:GetUserKey() == "76561197980368013" or CS.XiaWorld.GlobleDataMgr.Instance:GetUserKey() == "76561198279882461") and me.npcObj.GongKind == g_emGongKind.God
+				</DisplayCondition>
+				<OKResult>
+				me.npcObj.LuaHelper:AddFaith(10000000);
+				me.npcObj.LuaHelper:AddGodPopulation(100000);
+				me.npcObj.PropertyMgr.Practice.GodPracticeData.MindStateMaxLevel = 5
+				me.npcObj.PropertyMgr.Practice.GodPracticeData:MindStateLevelLevelUp()
+				me.npcObj.Needs:AddNeedValue(CS.XiaWorld.g_emNeedType.MindState,700)
+				</OKResult>
+			</li>
+			<li>
+				<Display>继续</Display> 
+				<OKResult>
+				GameMain:GetMod("Lua_shijian"):shiqi32()
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Item_wanshuangtoul">
+		<DisplayName>玩双头龙</DisplayName>
+		<Desc>[NAME]拿起了身前的双头龙！</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>继续</Display> 
+				<OKResult>
+				GameMain:GetMod("Lua_shijian"):shiqi33()
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Item_Yutong">
+		<DisplayName>浴桶</DisplayName>
+		<Desc>[NAME]来到了浴桶前。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>精浴</Display> 
+				<DisplayCondition>
+				GameMain:GetMod("Lua_hudong"):JingyuPD()
+				</DisplayCondition>
+				<OKResult>
+				GameMain:GetMod("Lua_hudong"):Jingyu()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>屠宰人类尸体</Display> 
+				<DisplayCondition>
+				GameMain:GetMod("Lua_hudong"):TuzaiPD()
+				</DisplayCondition>
+				<OKResult>
+				GameMain:GetMod("Lua_hudong"):Tuzai()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>沐浴</Display> 
+				<OKResult>
+				me:AddMsg("[NAME]洗了个澡。");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Item_Tiechunv">
+		<DisplayName>铁处女</DisplayName>
+		<Desc>[NAME]来到了铁处女前。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>邪恶炼成</Display> 
+				<OKResult>
+				GameMain:GetMod("Lua_hudong"):Xieeliancheng()
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

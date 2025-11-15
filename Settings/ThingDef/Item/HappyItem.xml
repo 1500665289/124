@@ -1,0 +1,207 @@
+﻿<ThingDefs><List>
+	<ThingDef Type="Item" Name="Item_GetYinJingTool" Parent="ToolBase">
+	<ThingName>收阴器</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>Spr\Object\shiqidaoju1.png</TexPath>
+	<TexScale>1</TexScale>
+	<Desc>一个收集阴精的装置，合欢女修喜爱的物品，对于排解无聊和社交有很大的帮助。</Desc>
+	<Flammability><!--可燃性-->
+		<Flammability>0</Flammability>
+	</Flammability>
+	
+	<Item Kind="Equipment">
+		<FabaoSuffix>收阴器</FabaoSuffix><!--法宝后缀-->
+		<PhysicalLables>
+			<li>SmallThing</li>
+			<li>GreatThing_Ling</li>
+			<li>Hard2</li>
+		</PhysicalLables>
+		
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories><!--制造材料-->
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>4</CostStuffCount><!--需要数量-->
+			<CostItems>
+				<Item name = "Item_Water" count = "10"/>
+			</CostItems>
+		</BeMade> 
+	</Item>
+	</ThingDef>
+	
+
+	
+	<ThingDef Type="Item" Name="Item_MiBao_Dinvshenou1" Parent="MiBaoBase">
+	<ThingName>阴阳帝女偶</ThingName>
+	<TexPath>Spr\Object\shiqidaoju4.png</TexPath>	
+	<FabaoTexPath>Spr\Object\shiqidaoju7.png</FabaoTexPath>	
+	<Desc>合欢宗秘宝，以九十九个处子之血配合真仙强者的精元，与大量阴精与阳精所炼而成。</Desc>
+	<ElementKind>Shui</ElementKind>
+	<Item Kind="Equipment">
+		<PhysicalLables>
+			<li>Sharp</li>
+			<li>GreatThing_Knock</li>
+			<li>Light2</li>
+			<li>GreatThing_Ling</li>
+			<li>GreatThing_Attack</li>
+			<li>HighDensity2</li>
+		</PhysicalLables>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_Nvrenou" count = "1"/>
+				<Item name = "Item_Nvxiuluohong" count = "99"/>
+				<Item name = "Item_yinjin3" count = "40"/>
+				<Item name = "Item_yangjin3" count = "40"/>
+				<Item name = "Item_yinjin4" count = "20"/>
+				<Item name = "Item_yangjin4" count = "20"/>
+				<Item name = "Item_yinjin5" count = "10"/>
+				<Item name = "Item_yangjin5" count = "10"/>
+				<Item name = "Item_yinjin6" count = "1"/>
+				<Item name = "Item_yangjin6" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<Fabao>
+		    <ActiveCondition>
+			    <Condition eventid = "KillCount" des = "携带宝物胚胎击杀99男性生灵" needcount = "99" sex = "1"/>
+			</ActiveCondition>
+			<SpecialAbility>
+			     <Ability Kind="FlyDamageAddP" fParam1="0.01" Desc="帝女偶每飞行1秒，基础威力就提高1%，返回后清空。"/>
+				 <Ability Kind="HitAddRecovery" fParam1="0.5"  Desc="造成伤害的50%会补充为法宝自身的灵气。"/>
+			</SpecialAbility>
+		</Fabao>
+	</Item>
+	<Element>
+		<Kind>None</Kind>
+	</Element>
+	<StoryBnts>
+	<li Name="玩弄" Desc="玩弄玩偶" Story="Item_Shuangxiu" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
+	<li Name="觉醒" Desc="觉醒玩偶" Story="Story_PowerUp" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_MiBao_SonSuckShip" Parent="MiBaoBase">
+	<ThingName>子吸天梭</ThingName>
+	<TexPath>Spr\Object\shiqidaoju4.png</TexPath>	
+	<FabaoTexPath>Spr\Object\shiqidaoju7.png</FabaoTexPath>	
+	<Desc>合欢宗秘宝：子吸天梭。佩戴者成为炉鼎，消耗所有灵气  寿命增加（灵气）^0.1 年，每恢复1000灵气扣除这些灵气并且寿命增加1年。开启：增加精元增长，巨幅增加食物消耗，增加灵气恢复，每天生产1份粪便。</Desc>
+	<ElementKind>Shui</ElementKind>
+	<Item Kind="Equipment">
+		<PhysicalLables>
+			<li>Sharp</li>
+			<li>GreatThing_Knock</li>
+			<li>Light2</li>
+			<li>GreatThing_Ling</li>
+			<li>GreatThing_Attack</li>
+			<li>HighDensity2</li>
+		</PhysicalLables>
+		<Equip>
+			<ToolModifier>VesselOfHuman</ToolModifier>
+		</Equip>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_Zhencaonan" count = "1"/>
+				<Item name = "Item_Human_Milk" count = "1"/>
+				<Item name = "Item_MonsterBlood" count = "3"/>
+			</CostItems>
+		</BeMade> 
+		<Fabao>
+		    <ActiveCondition>
+			<Condition eventid = "Other" des = "无法激活" needcount = "9999"/>
+		   </ActiveCondition>
+			<SpecialAbility>
+			</SpecialAbility>
+		</Fabao>
+	</Item>
+	<Element>
+		<Kind>None</Kind>
+	</Element>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_MiBao_MumSuckShip" Parent="MiBaoBase">
+	<ThingName>母吸天梭</ThingName>
+	<TexPath>Spr\Object\shiqidaoju4.png</TexPath>	
+	<FabaoTexPath>Spr\Object\shiqidaoju7.png</FabaoTexPath>	
+	<Desc>合欢宗秘宝：母吸天梭</Desc>
+	<ElementKind>Shui</ElementKind>
+	<Item Kind="Equipment">
+		<PhysicalLables>
+			<li>Sharp</li>
+			<li>GreatThing_Knock</li>
+			<li>Light2</li>
+			<li>GreatThing_Ling</li>
+			<li>GreatThing_Attack</li>
+			<li>HighDensity2</li>
+		</PhysicalLables>
+		<Equip>
+			<ToolModifier>MumSuckShip</ToolModifier>
+		</Equip>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_Zhencaonv" count = "1"/>
+				<Item name = "Item_MuEssence" count = "1"/>
+				<Item name = "Item_JinEssence" count = "1"/>
+				<Item name = "Item_ShuiEssence" count = "1"/>
+				<Item name = "Item_HuoEssence" count = "1"/>
+				<Item name = "Item_TuEssence" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<Fabao>
+		    <ActiveCondition>
+			<Condition eventid = "Other" des = "不满18岁的处女佩戴满1年" needcount = "114"/>
+		   </ActiveCondition>
+		<SpecialAbility>
+			 <Ability Kind="HitAddRecovery" fParam1="0.5"  Desc="造成伤害的50%会补充为法宝自身的灵气。"/>
+		</SpecialAbility>
+		</Fabao>
+	</Item>
+	<Element>
+		<Kind>None</Kind>
+	</Element>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_MiBao_BathEssenceBead" Parent="MiBaoBase">
+	<ThingName>浴精珠</ThingName>
+	<TexPath>Spr\Object\shiqidaoju4.png</TexPath>	
+	<FabaoTexPath>Spr\Object\shiqidaoju7.png</FabaoTexPath>	
+	<Desc>合欢宗秘宝：浴精珠。当精元大于1000时，逐渐吸收额外精元，当精元小于1000时，开启浴精，反哺储存的精元。</Desc>
+	<ElementKind>Shui</ElementKind>
+	<Item Kind="Equipment">
+		<PhysicalLables>
+			<li>Sharp</li>
+			<li>GreatThing_Knock</li>
+			<li>Light2</li>
+			<li>GreatThing_Ling</li>
+			<li>GreatThing_Attack</li>
+			<li>HighDensity2</li>
+		</PhysicalLables>
+		<Equip>
+			<ToolModifier>BathEssenceBead</ToolModifier>
+		</Equip>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_Yao_CatSoul" count = "1"/>
+				<Item name = "Item_EarthEssence" count = "1"/>
+				<Item name = "Item_LingWater" count = "1"/>
+				<Item name = "Item_Human_Milk" count = "10"/>
+			</CostItems>
+		</BeMade> 
+		<Fabao>
+		    <ActiveCondition>	
+				<Condition eventid = "Other" des = "无法激活" needcount = "9999"/>
+		   </ActiveCondition>
+		<SpecialAbility>
+		</SpecialAbility>
+		</Fabao>
+	</Item>
+	<Element>
+		<Kind>None</Kind>
+	</Element>
+	</ThingDef>
+
+</List></ThingDefs>

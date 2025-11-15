@@ -1,0 +1,157 @@
+﻿<Esotericas><List>
+	<Esoterica Name="Gong1701_Esoterica_1">
+		<DisplayName>炼精化气</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>1</Difficulty>
+		<Desc>六欲心经的修行基础</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]合欢宗采补法门\n通过交合采补他人精气，炼化他人精气充实自我真元。[/color][/size]</EffectDesc>
+		<Modifier>Gong1701_Esoterica_1</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong1701_Esoterica_2">
+		<DisplayName>驻颜法</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>0</Difficulty>
+		<Desc>炼化精元，美化自身</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]合欢宗驻颜秘术\n通过将他人精元涂抹于脸部并加以炼化，来达到美化自身面容的术法。[/color][/size]</EffectDesc>
+		<Modifier>Gong1701_Esoterica_2</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong1701_Esoterica_3">
+		<DisplayName>九进一退法</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>脱胎于双修秘法的御器之术</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]合欢宗御器技巧\n御器时，先令器平安于身前，屈膝抚器，器强者进半寸，弱者归一寸，勿摇动之，徐出更入，九进一退，以一式破百式。[/color][/size]</EffectDesc>
+		<Modifier>Gong1701_Esoterica_3</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong1701_Esoterica_4">
+		<DisplayName>止泄固源</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>3</Difficulty>
+		<Desc>合欢宗结丹期锻体秘法</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]合欢宗结丹期锻期修士体秘法\n双修时，以求交而不泄，以阴精固本，以阳精培源，提升自身寿元以及各项回复力。[/color][/size]</EffectDesc>
+		<Modifier>Gong1701_Esoterica_4</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong1701_Esoterica_5">
+		<DisplayName>养命法</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>炼化精元，铸就命躯</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]合欢宗养命一脉法门\n以天地灵气与自身精元，铸练身躯以达到万法不侵其身的境界（就是加护盾而已）。[/color][/size]</EffectDesc>
+		<Modifier>Gong1701_Esoterica_5</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong1701_Esoterica_6">
+		<DisplayName>修性法</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>炼化精元，铸就性魂</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]合欢宗修性一脉法门\n以天地灵气与自身精元，铸炼神魂以达到万法不扰的境界（法宝加一）。[/color][/size]</EffectDesc>
+		<Modifier>Gong1701_Esoterica_6</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong1701_Esoterica_7">
+		<DisplayName>炼神法</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>淬炼性魂，一术破万法</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]合欢宗修性一脉法门\n已自身性魂为基，集术法之大成于身，海量提升法术伤害。[/color][/size]</EffectDesc>
+		<Modifier>Gong1701_Esoterica_7</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong1701_Esoterica_8">
+		<DisplayName>还虚法</DisplayName>
+		<Icon>res/Sprs/ui/icon_jichu</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>5</Difficulty>
+		<Desc>命躯幻化，分而化之</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Tu</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]合欢宗养命一脉法门\n已自身命躯为基，引虚空之力继续淬体，提升灵气护盾。[/color][/size]</EffectDesc>
+		<Modifier>Gong1701_Esoterica_8</Modifier>	
+	</Esoterica>
+	
+	<Esoterica Name="Gong1701_Esoterica_17">
+		<DisplayName>秘宝：未完成</DisplayName>
+		<Hide>2</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>2</StarLevel>
+		<Difficulty>0</Difficulty>
+		<Desc>记录秘宝：未完成。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得 秘宝：\n帝女偶[/color][/size]</EffectDesc>	
+		<Fabaos>
+			<li>MiBaoFormula_Dinvshenou</li>
+		</Fabaos>
+	</Esoterica>
+	
+	<Esoterica Name="Gong1701_Esoterica_997">
+		<DisplayName>榨汁姬</DisplayName>
+		<Icon>Spr\Object\zzj.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>0</Difficulty>
+		<GLevel>None</GLevel>
+		<EffectDesc>[size=10][color=#D06508]习得能力：榨汁姬\n  以跳蛋为引，化身女魔将地图上所有失去行动力的敌人，吃干抹净。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Zhazhiji</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Gong1701_Esoterica_998">
+		<DisplayName>迷囚术</DisplayName>
+		<Icon>Spr\Object\qiufan.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>0</Difficulty>
+		<GLevel>None</GLevel>
+		<EffectDesc>[size=10][color=#D06508]习得能力：迷囚术\n  施展合欢宗的秘术，将一个正在劳改的角色转化成自身的奴隶。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Tunshifa</li>
+		</Magics>
+	</Esoterica>
+	
+	<Esoterica Name="Gong1701_Esoterica_999">
+		<DisplayName>秘法：瑙璨纷献身法</DisplayName>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>0</Difficulty>
+		<Desc>来源于《饭圈道》的秘法，习得此功法，可以为了自己所仰慕之人，奉献自己的一切。</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>Gong</Type>
+		<EffectDesc>[size=10][color=#D06508]习得 秘法：\n瑙璨纷献身法[/color][/size]</EffectDesc>	
+	</Esoterica>
+</List></Esotericas>

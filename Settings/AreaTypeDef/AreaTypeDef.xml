@@ -1,0 +1,6 @@
+<AreaTypeDefs><List>
+	
+	<AreaType Name="Prison" Class="AreaRoom" parent="Room">
+	</AreaType>
+	
+</List></AreaTypeDefs>

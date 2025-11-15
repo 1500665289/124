@@ -1,0 +1,373 @@
+<Stories><List>
+	<Story Name="Suiji_yule"  Parent="BaseFillingStory">
+		<DisplayName>突发事件</DisplayName>
+		<Desc>[NAME]……。</Desc>
+		<Selections>
+			<li>
+				<Display>继续</Display>
+				<DisplayCondition>
+				me:GetSex() == 1
+				</DisplayCondition>
+				<OKResult>
+				GameMain:GetMod("Lua_shijian"):shiqi998()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>继续</Display>
+				<DisplayCondition>
+				me:GetSex() == 2
+				</DisplayCondition>
+				<OKResult>
+				GameMain:GetMod("Lua_shijian"):shiqi999()
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Suiji01">
+		<DisplayName>色欲熏心的散修们</DisplayName>
+		<Desc>是否要答应散修的条件？</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>是</Display> 
+				<OKResult>
+				GameMain:GetMod("Lua_shijian"):shiqi1000()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>否</Display> 
+				<OKResult>
+				GameMain:GetMod("Lua_shijian"):shiqi1001()
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Suiji02">
+		<DisplayName>天元女拳宗修士</DisplayName>
+		<Desc>是否要答应女拳宗修士的要求，把压迫在女修头上作威作福的男掌门[NAME]送去死一死？</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>是</Display> 
+				<OKResult>
+				GameMain:GetMod("Lua_shijian"):shiqi1000()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>否</Display> 
+				<OKResult>
+				GameMain:GetMod("Lua_shijian"):shiqi1002()
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Suiji03">
+		<DisplayName>美貌女子</DisplayName>
+		<Desc>一名路过山门的美貌凡女？</Desc>
+		<Kind>None</Kind>
+		<Selections Extension="true" Functions="Input">
+			<li>
+				<Display>要做什么？</Display>
+				<Tip>可输入行动：“离开”或……</Tip> 
+				<OKResult>GameMain:GetMod("Lua_shijian"):shiqi1003()</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Suiji04">
+		<DisplayName>蛇妖报恩</DisplayName>
+		<Desc>[NAME]是否要跟蛇妖离去……</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>是</Display> 
+				<OKResult>
+				GameMain:GetMod("Lua_shijian"):shiqi1005()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>否</Display> 
+				<OKResult>
+				GameMain:GetMod("Lua_shijian"):shiqi1004()
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Suiji05">
+		<DisplayName>路过的灾民们</DisplayName>
+		<Desc>一群路过本宗的灾民们。</Desc>
+		<Kind>None</Kind>
+		<Selections Extension="true" Functions="Input">
+			<li>
+				<Display>要做什么？</Display>
+				<Tip>可输入行动：“离开”或……</Tip> 
+				<OKResult>GameMain:GetMod("Lua_shijian"):shiqi1006()</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Suiji06">
+		<DisplayName>被老道追索的母女</DisplayName>
+		<Desc>一对相貌倾世的母女正在被一老道追索，[NAME]决定……</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>帮助这对母女</Display> 
+				<OKResult>
+				GameMain:GetMod("Lua_shijian"):shiqi1007()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>帮助老道</Display> 
+				<OKResult>
+				GameMain:GetMod("Lua_shijian"):shiqi1008()
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Suiji07">
+		<DisplayName>好色的半妖修士</DisplayName>
+		<Desc>一头好色的半妖修士路过本地，见[NAME]秀色端方且本地防务空虚，没有什么修行之人，不禁心中起了一些歪念……\n只见其来到众人面前道：“尔等若是愿与将[NAME]献于本座，并向本座俯首称臣，本座便不将尔等打杀于当场！”</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>臣服</Display> 
+				<OKResult>
+				GameMain:GetMod("Lua_shijian"):shiqi1009()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>反抗</Display> 
+				<OKResult>
+				GameMain:GetMod("Lua_shijian"):shiqi1010()
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Suiji08">
+		<DisplayName>逃难的夫妇</DisplayName>
+		<Desc>一对夫妇逃难至此，听说是因为山下南坪村大地主安家少爷见色起意，勾结官府欲将这小妇人强纳为妾，南坪村的安家可是四里八乡排的上号的大家族，据说他们家里还有儿女在那合欢仙宗修行……</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>收留对方</Display> 
+				<OKResult>
+				GameMain:GetMod("Lua_shijian"):shiqi1011()
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>给对方喝口水让对方赶紧滚</Display> 
+				<OKResult>
+				GameMain:GetMod("Lua_shijian"):shiqi1012()
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Suiji09">
+		<DisplayName>武林人士</DisplayName>
+		<Desc>[NAME]闻言招来弟子询问，发现好像确有其事，这凡俗政权的小王爷确实是本门记名弟子，也得传了本门的采补之法……</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>下山惩戒</Display> 
+				<OKResult>
+				me:AddMsg("[NAME]顺手打死了这些上门哔哔赖赖的脑瘫武林人士，毕竟仙门之事哪里容得这些凡夫俗子乱嚼舌根，掌毙了这些武者之后，[NAME]便只身前往大都打算略施薄惩一下我"..SchoolMgr.Name.."的记名弟子扎牙笃……\n王府地牢\n扎牙笃褪下了赵敏的衣裙将其铺在地上，被剥成白羊的赵敏被扎牙笃一把拉入怀中亵玩，而不远处那被缚于木架上的张无忌瞋目切齿怒不可遏，却因四肢被废而只能无能狂怒的撕喊着什么“恶贼”、“吾必杀你”、“放开敏敏”之类毫无意义的屁话，这些话语除了能让扎牙笃更加兴奋一些外，自然不会有什么其他作用了。\n扎牙笃褪下裤子，露出下身阳物示意赵敏，赵敏自是不从。\n扎牙笃也不对其用强，打了个指响便对赵敏说道：“敏敏，你知道的，我不会逼你的！”言未毕却见一相貌端方的男子被人如同狗一样，被栓着链子牵了进来，此人正是武当叛徒宋青书……\n扎牙笃把玩着赵敏的身子，戏言道：“宋兄弟，你看，你的张师弟，不光抢了你仰慕的女子并且大婚之时抛弃了她，还拐了我的未婚妻，我们俩着实同病相怜啊，万幸我得了仙门传承，灭了他中原祆教，也夺回了我的未婚妻，更为大元在续了五百年，可你啧啧……”\n宋青书闻言悲愤填膺，对扎牙笃怒目而视，却被其的迷魂之法乱了心智，一股怒气由心底升起，既然褪下了裤子来到张无忌身后，将自身阳物顶入张无忌谷道。\n张无忌怕是从未曾想自己的后庭有一天要为了宋师兄花开，只觉一阵剧痛谷道一紧，颈部连连传来宋师兄那燥热的吐息，随着被一次次抽插面容越来越扭曲的张无忌，以及口中喊着“芷若，芷若……”的宋青书，赵敏的心智终于崩溃了，伏下身子捧起了扎牙笃的阳物舔舐了起来，扎牙笃大觉满意，享受着赵敏的侍奉，看着胯下尤物屈辱的吞吐着自己的阳物，扎牙笃心中实在有说不出来的痛快“敏敏，敏敏，啊……”修习采补之道的扎牙笃本夜御十数女而不泻，或是因那所谓的心理作用，竟一时阳关失守，浓厚白浊的精液满满的注入了赵敏的口中，许是射出的量太大而赵敏又不愿吞下，呛咳之下尽有些许精液从赵敏的鼻腔中流出。\n扎牙笃见状自是大敢不满，随意的鼓了几下掌，数名蒙元壮汉应声走向张无忌，赵敏见状大惊失色赶忙吞下口中剩余的精液，并跪伏与地如同母狗一般，舔舐着刚刚因呛咳而溅落在地上的精液。\n扎牙笃见赵敏顺从，轻轻的便挥了挥手，蒙元壮汉们见势便停下步子。\n扎牙笃一把拉过赵敏，将其抱起架与自己身上，再次雄起的阳根直入赵敏的桃花源一路无阻……原来赵敏的处子之身早在屠狮大会之前，便交于了那中原祆教教主张无忌，扎牙笃大恼挥拳锤向了赵敏的肚子，遭受重击的赵敏弓起身子像一只虾子一样的跪倒在地上，扎牙笃毫无怜惜的抓紧了赵敏的身子，将阳具再次捅入了对方蜜穴，一杆到底之顶宫口，赵敏本能的抬头，却看见情郎张无忌扭曲惨绝的脸庞，以及他身后那陷入疯狂只知抽插的宋青书，赵敏死意萌生绝望的闭上了双眼……\n却不曾想一声“扎牙笃？首尾不全坏我"..SchoolMgr.Name.."名声，该死！”却又使其脱离苦海……\n来者飘然若仙，挥手之间便击杀了扎牙笃，而后便自顾自的转身离去了……");
+				world:SetWorldFlag(1714,6)
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>不管不顾</Display> 
+				<OKResult>
+				me:AddMsg("[NAME]觉得这群习武之人脑子可能有点问题，飞龙骑脸找我辈修真者仙门的麻烦，于是唤来弟子把他们全杀光了。");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Suiji10">
+		<DisplayName>郭紫黎</DisplayName>
+		<Desc>[NAME]于门中修行，忽的天降风云变色骤降暴雨，一女子于这瓢泼大雨之中向[NAME]走来，对着[NAME]说道：“天元女拳好！气抖冷哭好！”……</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>滚你吗的，天元女拳给爷爬</Display> 
+				<OKResult>
+				WorldLua:BeginWeather("Rainstorm", true, 0, true, nil);
+				me:AddMsg("[NAME]看到天元宗的脑瘫就觉得头疼，开口就是一句：“尼玛被挂树上了，天元女拳给爷爬！”，对方闻言泪如涌泉，当泪水与暴雨合流，竟然幻化出一个女子，向[NAME]杀来！");
+				npcc = CS.XiaWorld.NpcRandomMechine.RandomNpc("Human",g_emNpcSex.Female);
+				npcc:SetName("郭紫黎")
+				npcc.LuaHelper:AddTitle("哭神将的念人")
+				npcc.PropertyMgr:AddFeature("Kushenjiang");
+				npcc.PropertyMgr.Practice:ChangeGong("Body_Gong_nvquan");
+				GameMain:GetMod("Lua_shijian"):zuzhuangnvquanmiti()
+				npcc.PropertyMgr.Practice.BodyPracticeData:AddZhenQi(999999)
+				CS.XiaWorld.NpcMgr.Instance:AddNpc(npcc,280,Map,CS.XiaWorld.Fight.g_emFightCamp.Enemy);
+				npcc.PropertyMgr.Practice:Up2Disciple("Body_Gong_nvquan", 12)
+				npcc.FightBody.AttackWait = 1;
+				npcc.FightBody.AttackTime = 10000;
+				npcc.FightBody.AutoNext = true;
+				npcc.FightBody.IsAttacker = true;
+				world:SetWorldFlag(1715,1)
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>天元女拳好！气抖冷哭好！</Display> 
+				<OKResult>
+				WorldLua:BeginWeather("Rainstorm", true, 0, true, nil);
+				me:AddMsg("[NAME]刚想开喷，突想起传闻中天元女拳宗的四大将，传说中的哭将-郭紫黎的传闻……赶忙唯唯诺诺的跟着说了一句：“天元女拳好！气抖冷哭好！”。\n对方好像很满意，便转身离开了。");
+				me:AddSchoolRelation(170,1000);
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Suiji11">
+		<DisplayName>猪妖求子</DisplayName>
+		<Desc>[NAME]散心之时，忽觉身旁草木异动，便大喊：滚出来！没想到还有个半猪半人的生物，连滚带爬的出现在[NAME]跟前，它趴在地上不住的磕头，一边求饶道仙女饶命，仙女饶命！小妖只是迷了路，误入了仙女的地界，望仙女您能饶小妖一命。\n[NAME]眼见对方是一名妖修，便将他搀扶起来，对它说到：作为拥有天元信仰的我待妖族如家人，快快起来以后你的事就是姐姐我的事了。\n那猪精大喜过望，一口一个好姐姐，叫的比亲人还亲。\n忽然间猪精眉头紧锁向[NAME]说到：哎，现在天道不公，人族垂涎我妖族秘体，魔门屡屡来犯，那所谓正道也假意邀请，实则暗中杀害，本我妖族化形不易，香火不旺，现在更是雪上加霜。\n族中传闻，天元村交好妖修，便令我前去求子，延我族香火，不曾想我却迷了路，这可如何是好。\n说到这里，那猪精泪如雨下止都止不住。\n[NAME]顿时心软了，说到：就算这修仙界虚情假意，但姐姐我永远是你的家人，我这就请求长老同意，让门中姐妹帮你把妖族香火续上。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>好心答应</Display> 
+				<OKResult>
+				me:AddMsg("门派答应了[NAME]的请求，谁知道那猪精一招手，不知道从那冒出数十名精壮妖修大汉，与门内女子大战三百回合，良久[NAME]和众女们筋疲力尽的倒在白浆之中。");
+				local targets = Map.Things:GetNpcsLua(
+				function(n)
+					return n.IsPlayerThing and n.Sex == CS.XiaWorld.g_emNpcSex.Female and n.IsAlive and n:HasSpecialFlag(g_emNpcSpecailFlag.MapExploring) == false and n:HasSpecialFlag(g_emNpcSpecailFlag.AuctionPunish) == false and n.IsSmartRace and n.PropertyMgr:CheckFeature("Pogua") ;
+				end);
+				for i = 0, targets.Count-1, 1 do
+				local target = targets[i];
+					if target ~= nil then
+						target.PropertyMgr:AddFeature("Tianyuannvquan");
+						target.PropertyMgr:AddFeature("Huaitai_zhu");
+						target:AddModifier("Shouyun")
+						me:AddMsg(target.Name.."已经受孕");
+					end
+				end
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>狠心拒绝</Display> 
+				<OKResult>
+				me:AddMsg("门派拒绝了[NAME]的请求，但告诉了猪精去天元村的方向，[NAME]追上那猪精说到：门派冷血可姐姐我并不无情，他们不帮，我帮！说罢便褪去衣裳，就要替妖族延续香火，谁知道那猪精一招手，不知道从那冒出数十名精壮妖修大汉，与[NAME]玩起了多人运动，良久[NAME]筋疲力尽的倒在白浆之中。");
+				me.npcObj.PropertyMgr:AddFeature("Tianyuannvquan");
+				me.npcObj.PropertyMgr:AddFeature("Huaitai_zhu");
+				me.npcObj:AddModifier("Shouyun")
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Suiji12">
+		<DisplayName>惩处</DisplayName>
+		<Desc>[NAME]被押送至祖师殿，跪伏于道祖像前接受门规惩处。\n只见[NAME]爽快承认了自己的行为，并且发出：“自己确实意图奸淫本门人族女弟子，但是众所周知人类都是从非洲黑土地……呸，人类都是由上古妖族圣人女娲娘娘捏土而造的。身为女娲远亲的妖族自古以来都是享受着一定特权的，只是意图强奸门内人族女性莫说是没成功，就算成功了也不应该受到太过的苛责”之类的自辩。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>大感赞同并且分配修伴给对方</Display> 
+				<OKResult>
+				xueban = 0
+				local targets = Map.Things:GetNpcsLua(
+				function(n)
+					return n.IsPlayerThing and n.Sex == CS.XiaWorld.g_emNpcSex.Female and n.IsAlive and n:HasSpecialFlag(g_emNpcSpecailFlag.MapExploring) == false and n:HasSpecialFlag(g_emNpcSpecailFlag.AuctionPunish) == false and n.RaceDefName == "Human" and n.PropertyMgr.RelationData.m_mapRelationShips:ContainsKey("Spouse") == false ;
+				end);
+				for i = 0, targets.Count-1, 1 do
+				local target = targets[i];
+					if target ~= nil then
+						if xueban > 2 then
+						else
+						me.npcObj.PropertyMgr.RelationData:AddRelationShip(target,"Spouse");
+						me:AddMsg("身为人族未婚女子的"..target.Name.."被"..SchoolMgr.Name.."以不同意就开革出宗门的胁迫，强行分配给[NAME]成为它的修炼伙伴。");
+						xueban = xueban + 1
+						end
+					end
+				end
+				me:AddMsg("经过了研究和探讨，"..SchoolMgr.Name.."觉得[NAME]的说法确实有理有据，且出于种族差异，决定在本门中挑选了"..xueban.."名未婚人族女弟子成为[NAME]的修炼伙伴。");
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>废其修为，赶出山门</Display> 
+				<OKResult>
+				me:AddMsg("经过了研究和探讨，"..SchoolMgr.Name.."打断了[NAME]的五肢，将其赶出了"..SchoolMgr.Name.."自生自灭，却不曾想[NAME]一被赶出宗门，便去了本地最大的同族阿訇庙中哭诉，而本地阿訇也带着一大票族人打着“"..SchoolMgr.Name.."欺辱少数妖族”的名义，杀上了"..SchoolMgr.Name.."。");
+				ThingMgr:RemoveThing(me.npcObj,false,true)
+				renshu = me:RandomInt(15,25);
+				while renshu > 0 do
+					local npc = CS.XiaWorld.NpcRandomMechine.RandomNpc(me.npcObj.RaceDefName,g_emNpcSex.Male);
+					CS.XiaWorld.NpcMgr.Instance:AddNpc(npc,npc.LuaHelper:RandomInt(240,280),Map,CS.XiaWorld.Fight.g_emFightCamp.Enemy);
+					CS.XiaWorld.ThingMgr.Instance:EquptNpc(npc,npc.LuaHelper:RandomInt(1,10),CS.XiaWorld.g_emNpcRichLable.Richest);
+					npc.FightBody.AttackWait = 1;
+					npc.FightBody.AttackTime = 10000;
+					npc.FightBody.AutoNext = true;
+					npc.FightBody.IsAttacker = true;
+					renshu = renshu - 1
+				end
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Suiji13">
+		<DisplayName>路过的女修</DisplayName>
+		<Desc>是否要答应眼前这肥婆女修与其共度春宵？</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>与对方共度春宵</Display> 
+				<OKResult>
+				if me.npcObj.PropertyMgr:CheckFeature("YangBody") then
+				me:AddMsg("[NAME]心想对方丑陋又如何，只要肯给钱陪她一晚又何妨，但[NAME]没想到这一晚几乎去了他半条命，要不是自己体质好，可能就再也醒不过来，不过能拿到钱还是好的。\n[NAME]：获得白银50万两");
+				me.npcObj:AddModifier("Qian");
+				me.npcObj.PropertyMgr:FindModifier("Qian"):UpdateStack(499999);
+				else
+				me:AddMsg("[NAME]心想对方丑陋又如何，只要肯给钱陪她一晚又何妨，但[NAME]没想到这一晚过后他再也没有醒过来。");
+				me.npcObj.PropertyMgr:AddMaxAge(-99999999);
+				end
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>富婆我不想努力了！</Display> 
+				<OKResult>
+				me:AddMsg("[NAME]觉得此人出手如此阔绰，又这般强大，自己还在这垃圾门派混个什么劲阿，随即提出追随那富婆，从此再也没有人看见过[NAME]了。");
+				ThingMgr:RemoveThing(me.npcObj,false,true)
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>拒绝</Display> 
+				<OKResult>
+				me:AddMsg("[NAME]就是再穷也不能违背自己的内心，他提出了拒绝，那女修大呼一声，不知好歹，小的们给我拆了这垃圾门派省的我心烦，语毕消失在金粉之中。");
+				renshu = me:RandomInt(5,10);
+				while renshu > 0 do
+					local npc = CS.XiaWorld.NpcRandomMechine.RandomNpc(me.npcObj.RaceDefName,g_emNpcSex.Male);
+					CS.XiaWorld.NpcMgr.Instance:AddNpc(npc,npc.LuaHelper:RandomInt(240,280),Map,CS.XiaWorld.Fight.g_emFightCamp.Enemy);
+					CS.XiaWorld.ThingMgr.Instance:EquptNpc(npc,npc.LuaHelper:RandomInt(7,13),CS.XiaWorld.g_emNpcRichLable.Richest);
+					npc:AddTitle("富婆的小奶狗");
+					npc.FightBody.AttackWait = 1;
+					npc.FightBody.AttackTime = 10000;
+					npc.FightBody.AutoNext = true;
+					npc.FightBody.IsAttacker = true;
+					renshu = renshu - 1
+				end
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

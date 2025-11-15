@@ -1,0 +1,454 @@
+<ModifierDefs><List>
+	
+	<Modifier Name="Gong1701_Esoterica_1" Type="Normal">
+		<DisplayName>Gong1701_Esoterica_1</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+		<li Name="NpcLingMaxValue" BAddP="0.5"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong1701_Esoterica_2" Type="Normal">
+		<DisplayName>Gong1701_Esoterica_2</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,2,0,0</BaseFive>
+	</Modifier>
+	
+	<Modifier Name="Gong1701_Esoterica_3" Type="Normal">
+		<DisplayName>Gong1701_Esoterica_3</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+		<li Name="NpcFight_FabaoPowerAddP" AddP="5"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong1701_Esoterica_4" Type="Normal">
+		<DisplayName>Gong1701_Esoterica_4</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+		<li Name="MaxAge" AddV="60"/>
+		<li Name="RecoveryPower" AddP="2"/>
+		<li Name="MagicDamageRecoveryPowerAddV" AddV="1"/>
+		<li Name="LingAbsorbSpeed" AddP="0.5"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong1701_Esoterica_5" Type="Normal">
+		<DisplayName>Gong1701_Esoterica_5</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+		<li Name="NpcFight_SpellCoolDownAddP" AddP="2"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong1701_Esoterica_6" Type="Normal">
+		<DisplayName>Gong1701_Esoterica_6</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+		<li Name="NpcFight_FabaoNum" AddV="1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong1701_Esoterica_7" Type="Normal">
+		<DisplayName>Gong1701_Esoterica_7</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+		<li Name="NpcFight_SpellPowerAddP" AddP="10"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Gong1701_Esoterica_8" Type="Normal">
+		<DisplayName>Gong1701_Esoterica_8</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+		<li Name="NpcFight_SpellCoolDownAddP" AddP="4"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_QuenchingLabel_luohong" Type="Normal">
+		<DisplayName>红丸炼体</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="1"/>
+			<li Name="BodyPratice_BodyStrong" AddV="0.1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Yiyuanzhongshui" Type="Normal">
+		<DisplayName>一元重水</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" BAddP="10"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Ouxianglianxishen1" Type="Normal">
+		<DisplayName></DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>600</Duration>
+		<Sync>1</Sync>
+		<LuaClassName>Ouxianglianxishen1</LuaClassName>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Yunvxinjing" Type="Normal">
+		<DisplayName>玉女心经</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="10"/>
+			<li Name="PainTolerance" AddV="0.5"/>
+			<li Name="ToleranceTMin" AddV="-5"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Guard_fo_1" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="100"/>
+			<li Name="NpcLingMaxValue" AddV="5000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="15"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="1.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="1.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.1"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="1"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="1"/>
+		</Properties>
+		<Skills>
+			<li Name="Fabao" LevelOver="2"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_fo_2" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="100"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="0.5"/>
+			<li Name="GodPractice_GodPowerAddV" AddV="-10"/>
+		</Properties>
+		<Skills>
+			<li Name="SocialContact" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_fo_3" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddV="1"/>
+			<li Name="NpcLingMaxValue" AddV="100"/>
+		</Properties>
+		<Skills>
+			<li Name="Barrier" Level="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Guard_fo_4" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="3000"/>
+			<li Name="LingAbsorbSpeed" AddP="1"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="1"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="3"/>
+		</Properties>
+		<Skills>
+			<li Name="FightSkill" LevelOver="0.2"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Guard_fo_5" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="10"/>
+			<li Name="NpcLingMaxValue" AddV="3000"/>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.3"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.3"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.3"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.3"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.3"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.3"/>
+		</Properties>
+		<Skills>
+			<li Name="Fabao" LevelOver="0.5"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Guard_shenming1" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>-1,-1,-1,-1,0.5</BaseFive>
+		<Properties>
+			<li Name="MaxAge" AddV="1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_shenming2" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="1"/>
+		</Properties>
+		<Skills>
+			<li Name="Fabao" LevelOver="0.5"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Guard_shenming3" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0.1,0,0.2,0,0</BaseFive><!--神根悟魅机-->
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="1500"/>
+		</Properties>
+		<Skills>
+			<li Name="Qi" LevelOver="0.2"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Guard_shenming4" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,0.1,0</BaseFive><!--神根悟魅机-->
+		<Properties>
+			<li Name="LingAbsorbSpeed" AddP="1"/>
+			<li Name="GodPractice_GodPowerAddV" AddV="-10"/>
+		</Properties>
+		<Skills>
+			<li Name="SocialContact" Level="0.2"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Guard_shenming5" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,1,0</BaseFive><!--神根悟魅机-->
+		<Properties>
+			<li Name="SocialContactBaseSuccess" AddV="1"/>
+			<li Name="RecoveryPower" AddP="1"/>
+		</Properties>
+		<Skills>
+			<li Name="SocialContact" LevelOver="0.5"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Guard_shenming1001" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="50"/>
+			<li Name="NpcLingMaxValue" AddV="35000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="11"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="-0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+		</Properties>
+		<Skills>
+			<li Name="Fabao" LevelOver="1"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_shenming1002" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="40"/>
+			<li Name="NpcLingMaxValue" AddV="30000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="-0.5"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.3"/>
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="0.5"/>
+		</Properties>
+		<Skills>
+			<li Name="Barrier" LevelOver="0.5"/>
+		</Skills>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Guard_shenming1003" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="1"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="GodPractice_Fo_Qi_1" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0.1,0,0</BaseFive>
+		<Properties>  
+			<li Name="MaxAge" AddV="5"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="0.5"/>
+			<li Name="GodPractice_GodPowerAddV" AddV="1"/>
+		</Properties>
+		<Skills>
+			<li Name="SocialContact" Level="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="GodPractice_Fo_Qi_2" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0.2,0,0</BaseFive>
+		<Properties>  
+			<li Name="MaxAge" AddV="10"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="1"/>
+			<li Name="GodPractice_GodPowerAddV" AddV="1"/>
+		</Properties>
+		<Skills>
+			<li Name="SocialContact" Level="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="GodPractice_Fo_Qi_3" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0.5,0,0</BaseFive>
+		<Hair>-1</Hair>
+		<Properties>  
+			<li Name="MaxAge" AddV="50"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="1"/>
+			
+			<li Name="ToleranceTMin" AddV="-20"/>
+			<li Name="ToleranceTMax" AddV="80"/>
+			
+			<li Name="GodPractice_GodPowerAddV" AddV="1"/>
+			
+		</Properties>
+		<Skills>
+			<li Name="SocialContact" Level="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="GodPractice_Fo_Qi_4" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0.4,0,0</BaseFive>
+		<Hair>-1</Hair>
+		<Properties>  
+			<li Name="MaxAge" AddV="10"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="1"/>
+			<li Name="GodPractice_GodPowerAddV" AddV="1"/>
+		</Properties>
+		<Skills>
+			<li Name="SocialContact" Level="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="GodPractice_Fo_Qi_5" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0.8,0,0</BaseFive>
+		<Hair>-1</Hair>
+		<Properties>  
+			<li Name="MaxAge" AddV="10"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="1"/>
+			<li Name="GodPractice_GodPowerAddV" AddV="1"/>
+		</Properties>
+		<Skills>
+			<li Name="SocialContact" Level="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="GodPractice_Fo_Qi_6" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,1,0,0</BaseFive>
+		<Hair>-1</Hair>
+		<Properties>  
+			<li Name="MaxAge" AddV="15"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="1"/>
+			<li Name="GodPractice_GodPowerAddV" AddV="1"/>
+		</Properties>
+		<Skills>
+			<li Name="SocialContact" Level="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="GodPractice_Fo_Qi_7" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,1,0,0</BaseFive>
+		<Hair>-1</Hair>
+		<Properties>  
+			<li Name="MaxAge" AddV="20"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="1"/>
+			<li Name="GodPractice_GodPowerAddV" AddV="1"/>
+		</Properties>
+		<Skills>
+			<li Name="SocialContact" Level="1"/>
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="GodPractice_Fo_Shouhu1" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<UnLockGodGuards>  
+			<li>Guard_fo_3</li>
+			<li>Guard_fo_4</li>
+		</UnLockGodGuards>
+	</Modifier>
+	
+	<Modifier Name="GodPractice_Fo_Shouhu2" Type="Normal">
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<UnLockGodGuards>
+			<li>Guard_fo_5</li>
+		</UnLockGodGuards>
+	</Modifier>
+	
+</List></ModifierDefs>

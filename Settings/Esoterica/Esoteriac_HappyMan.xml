@@ -1,0 +1,309 @@
+﻿<Esotericas><List>
+
+	<Esoterica Name="Gong_HappyMan_1">
+		<DisplayName>采补术</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan6.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>采补术</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：采补[/color][/size]</EffectDesc>
+		<Magics>
+			<li>MOD_HappyGet</li>
+		</Magics>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_2">
+		<DisplayName>本源灵气</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan1.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>本源灵气</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]减少双修的cd时间 75s\n 减少采补心境buff持续时间 40s\n减少道行 5\n每采补1人增加500修为[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyMan_2</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_3">
+		<DisplayName>驻颜法</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan15.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>定颜效果</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]定颜效果[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyMan_3</Modifier>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_3_2">
+		<DisplayName>驻颜法</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan15.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>获得惊世外貌特性。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]获得惊世外貌特性。[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyMan_3_2</Modifier>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_4">
+		<DisplayName>炼精化气</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan12.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>炼精化气</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加10%精元消耗速度 \n增加10%精元补充速度[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyMan_4</Modifier>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_5">
+		<DisplayName>炼精化气 (同性)</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan14.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>炼精化气(同性)</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]可以对同性采补/双修[/color][/size]</EffectDesc>
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_6">
+		<DisplayName>人本灵气</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan2.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>人本灵气</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]减少双修的cd时间 150s\n 减少采补心境buff持续时间 80s\n减少道行 10\n每采补1人增加5000修为[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyMan_6</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_7">
+		<DisplayName>真精神龙</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan5.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>使场景内所有外门/红名凡人陷入昏迷，并同时采补《法宝数量》个人。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：真精神龙[/color][/size]</EffectDesc>
+		<Magics>
+			<li>MOD_TrueDragon</li>
+		</Magics>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_8">
+		<DisplayName>止泻固元</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan19.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>止泻固元</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]可以进行双修\n法宝数量+1[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyMan_8</Modifier>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_9">
+		<DisplayName>九进一退</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>九进一退</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加法宝击退抵抗\n增加法宝击退强度\n增加御器等级[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyMan_9</Modifier>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_10">
+		<DisplayName>精元凝丹</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan17.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>精元凝丹</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：精元凝丹[/color][/size]</EffectDesc>
+		<Magics>
+			<li>MOD_HappyMakeGold</li>
+		</Magics>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_11">
+		<DisplayName>众生灵气</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan3.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>众生灵气</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]减少双修的cd时间 200s\n 减少采补心境buff持续时间 160s\n减少道行 20\n每采补1人增加20000修为[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyMan_11</Modifier>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_12">
+		<DisplayName>苟命法</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan13.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>苟命法</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：苟命法[/color][/size]</EffectDesc>
+		<Magics>
+			<li>MOD_AddAgeWay</li>
+		</Magics>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_13">
+		<DisplayName>养命法</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan18.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>养命法</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加护盾[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyMan_13</Modifier>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_14">
+		<DisplayName>修性法</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan16.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>修性法</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]法宝数量+1[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyMan_14</Modifier>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_15">
+		<DisplayName>炼神法</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan11.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>炼神法</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]法宝数量+1\n真精神龙可使炼气期外门/红名陷入昏迷。[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyMan_15</Modifier>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_16">
+		<DisplayName>凝神法</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan10.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>凝神法</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]法宝数量+1[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyMan_16</Modifier>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_17">
+		<DisplayName>天地灵气</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan4.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>天地灵气</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]减少双修的cd时间 300s\n 减少采补心境buff持续时间 320s\n减少道行 30\n每采补1人增加50000修为[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyMan_17</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_18">
+		<DisplayName>邪欲凤凰</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan8.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>邪欲凤凰</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：邪欲凤凰[/color][/size]</EffectDesc>
+		<Magics>
+			<li>MOD_BadFeng</li>
+		</Magics>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_19">
+		<DisplayName>鼎阳功</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan9.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>鼎阳功</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]法宝数量+1\n增加法宝飞行速度\n增加法宝转弯速度\n增加法宝击退抵抗\n增加法宝击退强度\n增加法宝拖尾长度\n巨幅减少法宝攻击间隔[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyMan_19</Modifier>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyMan_20">
+		<DisplayName>帝女偶</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>帝女偶</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得秘宝：帝女偶[/color][/size]</EffectDesc>
+		<Fabaos>
+			<li>MiBaoFormula_Dinvshenou1</li>
+		</Fabaos>
+	</Esoterica>
+
+
+</List></Esotericas>

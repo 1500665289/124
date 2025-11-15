@@ -1,0 +1,17 @@
+﻿<Experiences><List>
+	<Experience Name="Experiences_HappyGong" >
+		<DisplayName>合欢仙修</DisplayName>
+		<Desc>你是合欢宗派入太一门的奸细，这些年你一直在心里默记着你们合欢宗的无上功法。\n\n\n[size=10]解锁功法：[color=#D06508]《合欢男女仙修功法》[/color]\n此功法开局艰难，不建议初始选择。[/size]</Desc>
+		<Point>1</Point>
+		<Gongs>
+			<li>Gong_HappyMan</li>
+			<li>Gong_HappyWoman</li>
+		</Gongs>
+		<Items>
+			<li Name= "Item_GetYinJingTool" Count="1"/>
+			<li Name= "Item_Shuangtoulong" Count="1"/>
+		</Items>
+	</Experience>
+
+	
+</List></Experiences>

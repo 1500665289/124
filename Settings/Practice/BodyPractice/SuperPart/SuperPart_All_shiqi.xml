@@ -1,0 +1,648 @@
+<BPSuperPartDefs><List>
+	<Def Name="SuperPart_Base_shiqi_1"><!--测试秘体-->
+		<EquptAdvise>Attack</EquptAdvise>
+		<Prefix>定海神</Prefix>
+		<Suffix>针</Suffix>
+		<Desc>传闻上古阴阳宗强者大禹治水时所悟到的秘体，修炼本秘体使得阳根大小随心无坚不摧。</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_zhouji01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYpimao01</DefEffect>
+		<Parts>
+			<li Name="Genitals">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Genitals" Levels="1,2,3,6,12,25,50,100"/>
+					<li Name="QuenchingLabel_Lv4_S17_Yinyuanduanzhu" Levels="0,0,0,1,5,10,20,40"/>
+					<li Name="QuenchingLabel_Lv4_S17_Yangyuanduanzhu" Levels="0,0,0,0,5,10,20,40"/>
+					<li Name="QuenchingLabel_Lv4_S17_Luohong" Levels="0,0,0,0,0,1,2,4"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>硬石</Title>
+				<Desc>淬炼自身阳根，使其坚若磐石</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="50"/>
+					<li Name="DefPower" BAddV="25"/>
+					<li Name="AtkRate" AddV="0.75"/>
+					<li Name="DefRate" AddV="0.75"/>
+					<li Name="ArmorPenetration" AddV="0.13"/>
+					<li Name="CatchFabao" AddV="0.02"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>如铁</Title>
+				<Desc>淬炼自身阳根，使其如铜铁无异</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="100"/>
+					<li Name="DefPower" BAddV="50"/>
+					<li Name="AtkRate" AddV="1.5"/>
+					<li Name="DefRate" AddV="1.5"/>
+					<li Name="ArmorPenetration" AddV="0.25"/>
+					<li Name="CatchFabao" AddV="0.05"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>金刚</Title>
+				<Desc>淬炼自身阳根，使其如金刚般不侵不坏</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="200"/>
+					<li Name="DefPower" BAddV="100"/>
+					<li Name="AtkRate" AddV="3"/>
+					<li Name="DefRate" AddV="3"/>
+					<li Name="ArmorPenetration" AddV="0.5"/>
+					<li Name="CatchFabao" AddV="0.1"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>融阴</Title>
+				<Desc>阳根吸收大量女性阴精后，使“枪”如使臂</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="1"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>铸阳</Title>
+				<Desc>以大量男性精浇筑阳根，使阳根无坚不摧</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="250"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>定海</Title>
+				<Desc>据悉，将阳根修炼到此等境界的人物少之又少，传闻只有上古时期治水大能大禹有将自身阳根修炼至此等境界……</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="CatchFabao" AddV="0.5"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>如意</Title>
+				<Desc>练至此境，真真是小时盈盈一握如意神针，大时顷满天地灵阳金棒，可谓如意神兵随心变，荡净妖魔成仙身……</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="500"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>擎天</Title>
+				<Desc>从未有人练成的境界，即使是哪位上古孙姓妖王也未达到过此境……</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="1000"/>
+					<li Name="CatchFabao" AddV="0.5"/>
+					<li Name="ArmorPenetration" AddV="0.5"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	
+	<Def Name="SuperPart_Base_shiqi_2"><!--测试秘体-->
+		<Prefix>一元重</Prefix>
+		<Suffix>水</Suffix>
+		<Desc>太古时期水妖帝主的本门秘体，以纯粹的压力压缩体液，使自己的每一滴体液都重若万钧。</Desc>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/A/Prefabs/Projectiles/Water/WaterProjectileNormal</AtkEffect>
+		<DefEffect>Effect/A/Prefabs/Projectiles/Water/WaterProjectileNormal</DefEffect>
+		<Parts>	
+			<li Name="Kidney">
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_A01_Shui" Levels="1,2,4,6,8,10,12,14,16"/>
+					<li Name="QuenchingLabel_Lv3_O01_EXShui" Levels="0,0,0,0,0,1,2,3,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>少量提高秘体真炁恢复和真气</Desc>
+				<Modifier>Modifier_Yiyuanzhongshui</Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="5"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>少量提高秘体真炁恢复和真气</Desc>
+				<Modifier>Modifier_Yiyuanzhongshui</Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="10"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>中量提高秘体真炁恢复和真气</Desc>
+				<Modifier>Modifier_Yiyuanzhongshui</Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="15"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第四重</Title>
+				<Desc>中量提高秘体真炁恢复和真气</Desc>
+				<Modifier>Modifier_Yiyuanzhongshui</Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="20"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第五重</Title>
+				<Desc>大量提高秘体真炁恢复和真气</Desc>
+				<Modifier>Modifier_Yiyuanzhongshui</Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="25"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第六重</Title>
+				<Desc>大量提高秘体真炁恢复和真气</Desc>
+				<Modifier>Modifier_Yiyuanzhongshui</Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="30"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第七重</Title>
+				<Desc>巨量提高秘体真炁恢复和真气</Desc>
+				<Modifier>Modifier_Yiyuanzhongshui</Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="35"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第八重</Title>
+				<Desc>巨量提高秘体真炁恢复和真气</Desc>
+				<Modifier>Modifier_Yiyuanzhongshui</Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="40"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第九重</Title>
+				<Desc>海量提高秘体真炁恢复和真气</Desc>
+				<Modifier>Modifier_Yiyuanzhongshui</Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="45"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>
+	
+	<Def Name="SuperPart_Nvquan_1">
+		<Prefix>天罗地网</Prefix>
+		<Suffix>势</Suffix>
+		<Desc>原出自古墓派天罗地网式，后被天元女拳宗弟子收录进天元女拳法中。</Desc>
+		<EquptAdvise>Attack</EquptAdvise>
+		<AtkAni>TXtuizhangfa</AtkAni>
+		<DefAni>TXshoubufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_tuizhang01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYshou01</DefEffect>
+		<Parts>	
+			<li Name="LeftHand">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="1,3,9,27,81,243"/>
+				</Labels>
+			</li>
+			<li Name="RightHand">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="1,3,9,27,81,243"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>捕蜂</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="25"/>
+					<li Name="AtkRate" AddV="0.05"/>
+					<li Name="CatchFabao" AddV="0.01"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>网雀</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="50"/>
+					<li Name="AtkRate" AddV="0.1"/>
+					<li Name="CatchFabao" AddV="0.02"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>追风</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="100"/>
+					<li Name="AtkRate" AddV="0.2"/>
+					<li Name="CatchFabao" AddV="0.04"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>逐影</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="200"/>
+					<li Name="AtkRate" AddV="0.4"/>
+					<li Name="CatchFabao" AddV="0.08"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>地网</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="400"/>
+					<li Name="CatchFabao" AddV="0.16"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>天罗</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="800"/>
+					<li Name="CatchFabao" AddV="0.32"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>
+	
+	<Def Name="SuperPart_Nvquan_2">
+		<Prefix>美女</Prefix>
+		<Suffix>拳</Suffix>
+		<Desc>原出自古墓派美女拳法，后被天元女拳宗弟子收录进天元女拳法中。</Desc>
+		<EquptAdvise>Attack</EquptAdvise>
+		<AtkAni>TXzuochongquan</AtkAni>
+		<DefAni>TXshoubufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_zhiquan01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYshou01</DefEffect>
+		<Parts>	
+			<li Name="LeftHand">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="4,8,16,32,64,128,256,512,999"/>
+				</Labels>
+			</li>
+			<li Name="RightHand">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="4,8,16,32,64,128,256,512,999"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>红玉击鼓</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="50"/>
+					<li Name="AtkRate" AddV="0.1"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>西子捧心</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="100"/>
+					<li Name="AtkRate" AddV="0.2"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>红拂夜奔</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="200"/>
+					<li Name="AtkRate" AddV="0.4"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>绿珠坠楼</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="400"/>
+					<li Name="AtkRate" AddV="0.8"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>文姬归汉</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.01"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>红线盗盒</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.02"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>木兰弯弓</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="800"/>
+					<li Name="ArmorPenetration" AddV="0.04"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>洛神微步</Title>
+				<Desc></Desc>
+				<Modifier>Modifier_SuperPart_Rabbit_2</Modifier>
+			</li>
+			<li>
+				<Title>嫦娥窃药</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="1600"/>
+					<li Name="ArmorPenetration" AddV="0.08"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>
+	
+	<Def Name="SuperPart_Nvquan_3">
+		<Prefix>玉女心</Prefix>
+		<Suffix>经</Suffix>
+		<Desc>是古墓派至高绝学，由古墓派祖师林朝英创，《玉女心经》须得二人同练，互为臂助，以寒玉水精为引，通彻任脉。</Desc>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		<Parts>	
+			<li Name="Hips">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="1,3,9,27,81,243,486"/>
+					<li Name="QuenchingLabel_Lv1_A01_Shui" Levels="0,0,1,2,4,8,16"/>
+					<li Name="QuenchingLabel_Lv3_F01_EXShui" Levels="0,0,0,0,0,1,2"/>
+				</Labels>
+			</li>
+			<li Name="Loin">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="1,3,9,27,81,243,486"/>
+					<li Name="QuenchingLabel_Lv1_A01_Shui" Levels="0,0,1,2,4,8,16"/>
+					<li Name="QuenchingLabel_Lv3_F01_EXShui" Levels="0,0,0,0,0,1,2"/>
+				</Labels>
+			</li>
+			<li Name="Pelvis">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,0,27,81,243,486"/>
+					<li Name="QuenchingLabel_Lv1_A01_Shui" Levels="0,0,0,2,4,8,16"/>
+					<li Name="QuenchingLabel_Lv3_B01_EXShui" Levels="0,0,0,0,0,1,2"/>
+				</Labels>
+			</li>
+			<li Name="Kidney">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Kidney" Levels="0,0,0,12,25,50,100"/>
+					<li Name="QuenchingLabel_Lv1_A01_Shui" Levels="0,0,0,0,0,8,16"/>
+					<li Name="QuenchingLabel_Lv3_O01_EXShui" Levels="0,0,0,0,0,1,2"/>
+				</Labels>
+			</li>
+			<li Name="RenChannel">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Meridian" Levels="1,3,6,12,25,50,100"/>
+					<li Name="QuenchingLabel_Lv1_A01_Shui" Levels="0,0,1,2,4,8,16"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>少语</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="1"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>少事</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="2"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>少好</Title>
+				<Desc></Desc>
+				<Modifier>Modifier_Yunvxinjing</Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="4"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>少恶</Title>
+				<Desc></Desc>
+				<Modifier>Modifier_Yunvxinjing</Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="8"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>少思</Title>
+				<Desc></Desc>
+				<Modifier>Modifier_Yunvxinjing</Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="16"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>少念</Title>
+				<Desc></Desc>
+				<Modifier>Modifier_Yunvxinjing</Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="32"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>心若冰清 天塌不惊</Title>
+				<Desc></Desc>
+				<Modifier>Modifier_Yunvxinjing</Modifier>
+				<SuperPartProperties>
+					<li Name="RecoverQi" AddV="64"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>
+	
+	<Def Name="SuperPart_Nvquan_4">
+		<Prefix>九阴白骨</Prefix>
+		<Suffix>爪</Suffix>
+		<Desc>《九阴真经》的下卷武功，使用时：五指发劲，无坚不破，摧敌首脑，如穿腐土。</Desc>
+		<EquptAdvise>Attack</EquptAdvise>
+		<AtkAni>TXxiajiquan</AtkAni>
+		<DefAni>TXshoubufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_shouzhua01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYshouzhua01</DefEffect>
+		<Parts>	
+			<li Name="RightHand">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="1,3,9,27,81,243,486"/>
+					<li Name="QuenchingLabel_Lv2_F01_SiHunZhiXi" Levels="0,0,1,2,3,6,9"/>
+					<li Name="QuenchingLabel_Lv3_F01_SiHunZhiXi" Levels="0,0,0,0,1,2,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftHand">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="1,3,9,27,81,243,486"/>
+					<li Name="QuenchingLabel_Lv2_F01_SiHunZhiXi" Levels="0,0,1,2,3,6,9"/>
+					<li Name="QuenchingLabel_Lv3_F01_SiHunZhiXi" Levels="0,0,0,0,1,2,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftThumb">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,0,27,81,243,486"/>
+					<li Name="QuenchingLabel_Lv2_B01_SiHunZhiXi" Levels="0,0,0,2,3,6,9"/>
+					<li Name="QuenchingLabel_Lv3_B01_SiHunZhiXi" Levels="0,0,0,0,1,2,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftForeFinger">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,0,27,81,243,486"/>
+					<li Name="QuenchingLabel_Lv2_B01_SiHunZhiXi" Levels="0,0,0,2,3,6,9"/>
+					<li Name="QuenchingLabel_Lv3_B01_SiHunZhiXi" Levels="0,0,0,0,1,2,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftMiddleFinger">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,0,27,81,243,486"/>
+					<li Name="QuenchingLabel_Lv2_B01_SiHunZhiXi" Levels="0,0,0,2,3,6,9"/>
+					<li Name="QuenchingLabel_Lv3_B01_SiHunZhiXi" Levels="0,0,0,0,1,2,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftRingFinger">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,0,27,81,243,486"/>
+					<li Name="QuenchingLabel_Lv2_B01_SiHunZhiXi" Levels="0,0,0,2,3,6,9"/>
+					<li Name="QuenchingLabel_Lv3_B01_SiHunZhiXi" Levels="0,0,0,0,1,2,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftLittleFinger">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,0,27,81,243,486"/>
+					<li Name="QuenchingLabel_Lv2_B01_SiHunZhiXi" Levels="0,0,0,2,3,6,9"/>
+					<li Name="QuenchingLabel_Lv3_B01_SiHunZhiXi" Levels="0,0,0,0,1,2,4"/>
+				</Labels>
+			</li>
+			<li Name="RightThumb">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,0,27,81,243,486"/>
+					<li Name="QuenchingLabel_Lv2_B01_SiHunZhiXi" Levels="0,0,0,2,3,6,9"/>
+					<li Name="QuenchingLabel_Lv3_B01_SiHunZhiXi" Levels="0,0,0,0,1,2,4"/>
+				</Labels>
+			</li>
+			<li Name="RightForeFinger">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,0,27,81,243,486"/>
+					<li Name="QuenchingLabel_Lv2_B01_SiHunZhiXi" Levels="0,0,0,2,3,6,9"/>
+					<li Name="QuenchingLabel_Lv3_B01_SiHunZhiXi" Levels="0,0,0,0,1,2,4"/>
+				</Labels>
+			</li>
+			<li Name="RightMiddleFinger">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,0,27,81,243,486"/>
+					<li Name="QuenchingLabel_Lv2_B01_SiHunZhiXi" Levels="0,0,0,2,3,6,9"/>
+					<li Name="QuenchingLabel_Lv3_B01_SiHunZhiXi" Levels="0,0,0,0,1,2,4"/>
+				</Labels>
+			</li>
+			<li Name="RightRingFinger">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,0,27,81,243,486"/>
+					<li Name="QuenchingLabel_Lv2_B01_SiHunZhiXi" Levels="0,0,0,2,3,6,9"/>
+					<li Name="QuenchingLabel_Lv3_B01_SiHunZhiXi" Levels="0,0,0,0,1,2,4"/>
+				</Labels>
+			</li>
+			<li Name="RightLittleFinger">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,0,27,81,243,486"/>
+					<li Name="QuenchingLabel_Lv2_B01_SiHunZhiXi" Levels="0,0,0,2,3,6,9"/>
+					<li Name="QuenchingLabel_Lv3_B01_SiHunZhiXi" Levels="0,0,0,0,1,2,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="200"/>
+					<li Name="AtkRate" AddV="0.2"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="300"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="400"/>
+					<li Name="AtkRate" AddV="0.1"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第四重</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="500"/>
+					<li Name="AtkRate" AddV="0.2"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第五重</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="600"/>
+					<li Name="AtkRate" AddV="0.4"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第六重</Title>
+				<Desc></Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="800"/>
+					<li Name="ArmorPenetration" AddV="0.2"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第七重</Title>
+				<Desc></Desc>
+				<Modifier>Modifier_SuperPart_Rabbit_2</Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="1600"/>
+					<li Name="ArmorPenetration" AddV="0.3"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>
+</List></BPSuperPartDefs>

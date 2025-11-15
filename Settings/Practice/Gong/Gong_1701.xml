@@ -1,0 +1,176 @@
+﻿<Gongs><List>
+	<Gong Name="Gong_1701_Tu">
+		<DisplayName>采花经</DisplayName>
+		<Desc>历代下九流的散修们靠着博众家所长所研发出的采补修行之法。</Desc>
+		<SelectDesc>此功法极擅采补术，且若无炉鼎加成修炼极慢，且因均需要大量处子帮助修行，是否要选择修习此功法？</SelectDesc>
+		<FiveBaseNeed>-1,-1,-1,-1,-1</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>Tu</ElementKind>
+		<Skill> <!--chumo jiangdao guanding ciqi kaiguang cuiti bihu-->
+			<li>chumo</li>
+			<li>ciqi</li>
+			<li>jiangdao</li>
+		</Skill>
+		<Hide>1</Hide>
+		<Stages>
+			<Stage Name="Stage1" Level="3">
+				<DisplayName>取精</DisplayName>
+				<Desc></Desc>
+				<Value>8000</Value>
+				<Necks>
+					<Neck Location="0.3" Kind="Chance">
+						<DisplayName>修性</DisplayName>
+						<Desc></Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ItemCost>
+							<Item name="Item_yinjin1"/>
+							<Item name="Item_Nvxiuluohong"/>
+						</ItemCost>
+					</Neck>
+					<Neck Location="0.6" Kind="Chance">
+						<DisplayName>养命</DisplayName>
+						<Desc></Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ItemCost>
+							<Item name="Item_yangjin1"/>
+							<Item name="Item_Nvxiuluohong"/>
+						</ItemCost>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>阴阳和合</DisplayName>
+						<Desc></Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ItemCost>
+							<Item name="Item_yangjin1"/>
+							<Item name="Item_yinjin1"/>
+							<Item name="Item_Nvxiuluohong"/>
+						</ItemCost>
+						<AddModifier>Gong_Qi</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage2" Level="6">
+				<DisplayName>还精</DisplayName>
+				<Desc></Desc>
+				<Value>36000</Value>
+				<Necks>
+					<Neck Location="0.3" Kind="Chance">
+						<DisplayName>修性</DisplayName>
+						<Desc></Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ItemCost>
+							<Item name="Item_yinjin2"/>
+							<Item name="Item_Nvxiuluohong"/>
+						</ItemCost>
+					</Neck>
+					<Neck Location="0.6" Kind="Chance">
+						<DisplayName>养命</DisplayName>
+						<Desc></Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ItemCost>
+							<Item name="Item_yangjin2"/>
+							<Item name="Item_Nvxiuluohong"/>
+						</ItemCost>
+					</Neck>
+					<Neck Location="1" Kind="Gold">
+						<DisplayName>性命双修</DisplayName>
+						<Desc></Desc>
+						<AddModifier>Gong_Gold</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>	
+			
+			<Stage Name="Stage3" Level="9">
+				<DisplayName>成真</DisplayName>
+				<Desc></Desc>
+				<Value>1500000</Value>
+				<Necks>
+					<Neck Location="0.3" Kind="Chance">
+						<DisplayName>修性</DisplayName>
+						<Desc></Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ItemCost>
+							<Item name="Item_yinjin3"/>
+							<Item name="Item_Nvxiuluohong"/>
+						</ItemCost>
+					</Neck>
+					<Neck Location="0.6" Kind="Chance">
+						<DisplayName>养命</DisplayName>
+						<Desc></Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ItemCost>
+							<Item name="Item_yangjin3"/>
+							<Item name="Item_Nvxiuluohong"/>
+						</ItemCost>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>新生</DisplayName>
+						<Desc></Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ItemCost>
+							<Item name="Item_yangjin3"/>
+							<Item name="Item_yinjin3"/>
+							<Item name="Item_Nvxiuluohong"/>
+						</ItemCost>
+						<AddModifier>Gong_Chance1</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage4" Level="10">
+				<DisplayName>化神</DisplayName>
+				<Desc></Desc>
+				<Value>25500000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>无色</DisplayName>
+						<Desc></Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ItemCost>
+							<Item name="Item_yangjin4"/>
+							<Item name="Item_yinjin4"/>
+							<Item name="Item_Nvxiuluohong"/>
+						</ItemCost>
+						<AddModifier>Gong_Chance2</AddModifier>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>无色</DisplayName>
+						<Desc></Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<ItemCost>
+							<Item name="Item_yangjin5"/>
+							<Item name="Item_yinjin5"/>
+							<Item name="Item_Nvxiuluohong"/>
+						</ItemCost>
+						<AddModifier>Gong_Chance2</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage5" Level="12">
+				<DisplayName>谪仙</DisplayName>
+				<Desc></Desc>
+				<Value>45000000</Value>
+				<Necks>
+					<Neck Location="1" Kind="God">
+						<DisplayName>超脱</DisplayName>
+						<Desc></Desc>
+						<ThunderValue>600000</ThunderValue>
+						<NeckCountdown>3000</NeckCountdown>
+						<AddModifier>Gong_Chance3</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+		</Stages>
+	</Gong>
+</List></Gongs>

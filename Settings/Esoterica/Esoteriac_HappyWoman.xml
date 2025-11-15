@@ -1,0 +1,253 @@
+﻿<Esotericas><List>
+
+	<Esoterica Name="Gong_HappyWoman_1">
+		<DisplayName>采补术</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan6.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>采补术</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：采补[/color][/size]</EffectDesc>
+		<Magics>
+			<li>MOD_HappyGet1</li>
+		</Magics>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyWoman_2">
+		<DisplayName>氤氲之气</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>氤氲之气</Desc>
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加精元消耗\n每采补1人增加100修为[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyWoman_2</Modifier>
+	</Esoterica>
+
+
+	<Esoterica Name="Gong_HappyWoman_3">
+		<DisplayName>涓涓细流</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>涓涓细流</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]增加12门派人口\n每采补1人增加500修为[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyWoman_3</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyWoman_4">
+		<DisplayName>榨汁机</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>采补当前地图所有精元100以上的炉鼎，以及无法行动之人。对无法行动之人，消耗其所有寿命，所有精元，自身恢复等量精元。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：榨汁机[/color][/size]</EffectDesc>
+		<Magics>
+			<li>MOD_SexMachine</li>
+		</Magics>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyWoman_5">
+		<DisplayName>水乳交融</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>解锁秘宝子母吸天梭.
+		\n子吸天梭：佩戴者成为炉鼎，消耗所有灵气  寿命增加（灵气）^0.1 年，每恢复1000灵气扣除这些灵气并且寿命增加1年，禁止食用丹药。
+		\n开启：增加精元增长，巨幅增加食物消耗，增加灵气恢复，每天生产1份粪便。
+                                \n母吸天梭：不满18岁的处女佩戴满1年觉醒。攻击时可将造成伤害的一部分转为法宝的灵气。
+		\n佩戴时佩戴者及法宝本身之间的灵气会从多的一方流向低的一方 趋于平均，此法宝威力由当前灵气值决定。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得秘宝：母吸天梭\n习得秘宝：子吸天梭[/color][/size]</EffectDesc>
+		<Fabaos>
+			<li>MiBaoFormula_SonSuckShip</li>
+			<li>MiBaoFormula_MumSuckShip</li>
+		</Fabaos>
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyWoman_6">
+		<DisplayName>引精吸魂法</DisplayName>
+		<Hide>1</Hide>
+		<Icon>Spr\Tubiao\Gong_HappyMan7.png</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>再次采补一名刚被采补的炼气期及以上的角色，将其变为凡人，为女修略微增加五维。（附加被过度采补buff）。再次采补一名刚被过度采补的凡人，炼化一定数量灵石及宁魄。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：引精吸魂法[/color][/size]</EffectDesc>
+		<Magics>
+			<li>MOD_HookSex</li>
+		</Magics>	
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyWoman_7">
+		<DisplayName>迷囚术</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>迷囚术</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：迷囚术[/color][/size]</EffectDesc>
+		<Magics>
+			<li>Tunshifa</li>
+		</Magics>
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyWoman_8">
+		<DisplayName>银河飞瀑</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>银河飞瀑</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]巨幅增加灵气回复（固定值）\n每采补1人增加1000修为[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyWoman_8</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyWoman_9">
+		<DisplayName>浴精化血</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>每次受伤时先消耗精元。无精元时消耗血量。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]每次受伤时先消耗精元。无精元时消耗血量。[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyWoman_9</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyWoman_10">
+		<DisplayName>夺灵术</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>女修每次被攻击吸取敌方灵气，吸取量等同于自身（灵气最大值-当前灵气）10%</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]女修每次被攻击吸取敌方灵气，吸取量等同于自身（灵气最大值-当前灵气）10%[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyWoman_10</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyWoman_11">
+		<DisplayName>天地同眠</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>与多名修士双修，所有男性减少30%当前精元，所有女修均分；所有女修士生产1份母乳；所有人恢复所有人灵气总和的20%*自身心境/所有人之和；本人随机修习每人一项参悟技能。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：天地同眠[/color][/size]</EffectDesc>
+		<Magics>
+			<li>MOD_SleepTogether</li>
+		</Magics>
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyWoman_12">
+		<DisplayName>逍遥</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>消耗所有精元，强制逃离当前地图。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得法术：逍遥[/color][/size]</EffectDesc>
+		<Skills>
+			<li>MOD_Escape</li>
+		</Skills>
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyWoman_13">
+		<DisplayName>海纳百川</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>海纳百川</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]巨幅增加灵气回复（固定值）\n每采补1人增加2000修为[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyWoman_13</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyWoman_14">
+		<DisplayName>水乳补身</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>水乳补身</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]精元不足200时，消耗10%最大灵气值的灵气，恢复1000精元。[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyWoman_14</Modifier>
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyWoman_15">
+		<DisplayName>九命天狐</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>九命天狐</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得神通：九命天狐：消耗100精元，提高丹药、符咒、法宝品质1级\n被动：濒死时自动消耗100寿元，恢复满血量，灵气。[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyWoman_15</Modifier>
+		<Magics>
+			<li>MOD_UpdateItem</li>
+		</Magics>
+	</Esoterica>
+
+	<Esoterica Name="Gong_HappyWoman_16">
+		<DisplayName>养命法</DisplayName>
+		<Hide>1</Hide>
+		<Icon>res/Sprs/ui/icon_yujian</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<Desc>解锁秘宝，浴精珠：当精元大于1000时，逐渐吸收额外精元，当精元小于1000时，开启浴精，反哺储存的精元。</Desc>
+		<GLevel>Dan1</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得秘宝：浴精珠\n增加护盾\n增加1法宝栏。[/color][/size]</EffectDesc>
+		<Modifier>Gong_HappyWoman_16</Modifier>
+		<Fabaos>
+			<li>MiBaoFormula_BathEssenceBead</li>
+		</Fabaos>
+	</Esoterica>
+
+</List></Esotericas>

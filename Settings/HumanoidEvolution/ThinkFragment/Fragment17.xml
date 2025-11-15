@@ -1,0 +1,52 @@
+<Defs><List>
+	<Def Name="Yuhuo">
+		<Type>Emotion</Type><!-- Target, Scene, Emotion -->
+		<Tag>Exotic</Tag>
+		<Level>3</Level>
+		<DisplayName>欲火</DisplayName>
+		<SingleFormat>
+			<li>看到门中弟子交配的行为，突然感觉{0}燃了起来！</li>
+			<li>想起和门中弟子交配的事，突然感觉{0}燃了起来！</li>
+			<li>感觉{0}蹭蹭的冒了出来，想要去和异性交配！！！</li>
+		</SingleFormat>
+		<BaseFive>1,1,1,1,1</BaseFive>
+		<FeatureTag>Cognition</FeatureTag>
+		<FeatureValue>4</FeatureValue>
+	</Def>
+	
+	<Def Name="Xingchouwei">
+		<Type>Scene</Type>
+		<Tag>Exotic</Tag>
+		<Level>3</Level>
+		<DisplayName>腥臭味</DisplayName>
+		<Properties>
+			<li>
+				<PName>InspirationCoefficient</PName>
+				<Addv>1</Addv>
+				<Addp>0</Addp>
+			</li>
+			<li>
+				<PName>BodyPratice_QuenchingSpeed</PName>
+				<Addv>0.5</Addv>
+				<Addp>0</Addp>
+			</li>
+			<li>
+				<PName>SpeedOfMindStateCoefficient</PName>
+				<Addv>0.5</Addv>
+				<Addp>0</Addp>
+			</li>
+		</Properties>
+		<Skills>
+			<li Name="Fight" Level="3"/>
+		</Skills>
+		<SingleFormat>
+			<li>身边有修士在采补，{0}好重啊</li>
+			<li>{0}好重，刚刚路过的那个娘们下身一股死鲨鱼味</li>
+			<li>那个看上去很好看的女人，不知道为什么，身上总要一股{0}</li>
+			<li>每次路过掌门的房间，总能闻到{0}</li>
+			<li>门中有个变态的弟子，总{0}十足的下体蹭我</li>
+		</SingleFormat>
+		<FeatureTag>Rationality</FeatureTag>
+		<FeatureValue>4</FeatureValue>
+	</Def>
+</List></Defs>

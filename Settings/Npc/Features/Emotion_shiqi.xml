@@ -1,0 +1,340 @@
+﻿<FeatureDefs><List>
+	<Feature Name="Chinvguchong" Type="Normal">
+		<DisplayName>阴阳合欢蛊宿主</DisplayName>
+		<Desc>[IT]被阴阳合欢蛊的蛊种作为苗床所寄生着，仿佛满脑子只有性欲的存在了……</Desc>
+		<SexNeed>Female</SexNeed>
+	</Feature>
+	
+	<Feature Name="Yishipi" Type="Normal">
+		<DisplayName>异食癖</DisplayName>
+		<Desc>[IT]喜欢……吃一些……奇怪的东西……</Desc>
+	</Feature>
+	
+	<Feature Name="Tianyuannvquan" Type="Backstory">
+		<DisplayName>天元女拳</DisplayName>
+		<Desc>[IT]是坚定的天元女拳师，认为这个世界就应该回到蛮荒时期的母系社会，作为一个拳师，她极度厌恶人族男性，对但是对于洋大人，呸，妖大人却没有人任何抵抗力……</Desc>
+		<SexNeed>Female</SexNeed>
+	</Feature>
+	
+	<Feature Name="Huaitai_zhu" Type="Backstory">
+		<DisplayName>受孕（猪精）</DisplayName>
+		<Desc>[IT]的肚子里，有着一个小生命……</Desc>
+		<SexNeed>Female</SexNeed>
+	</Feature>
+	
+	<Feature Name="Kushenjiang" Type="Backstory">
+		<DisplayName>哭神将的念人</DisplayName>
+		<Desc>[IT]是天元女拳宗哭神将的念人，哭神将因为一次历练去到了猎人次元，学会了具现化系的念力，这是[IT]通过将元神化身与现化系的念力结合，得到的特殊念人……</Desc>
+		<SexNeed>Female</SexNeed>
+	</Feature>
+	
+	<Feature Name="WHLjinv" Type="Normal">
+		<DisplayName>万花楼妓女</DisplayName>
+		<Desc>[IT]曾经在万花楼中当过妓女……</Desc>
+		<SexNeed>Female</SexNeed>
+		<ModifierDef>
+			<Properties>
+				<li Name="SocialContactLevelAddValue" AddV="15"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="ZZRdezhuren" Type="Backstory">
+		<DisplayName>周芷若的主人</DisplayName>
+		<Desc>[IT]于一次游历中看到了被逃婚的周芷若，看到她张牙舞爪的样子，想起了那幼时陪伴自己的灵猫，便将其抓回了山门当做宠物养着……</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+	
+	<Feature Name="JLEdexianghao" Type="Backstory">
+		<DisplayName>金铃儿的相好</DisplayName>
+		<Desc>[IT]是金铃儿的相好……</Desc>
+		<HideInUI>-1</HideInUI>
+	</Feature>
+	
+	<Feature Name="Yingjingzhe" Type="Normal">
+		<DisplayName>饮精者</DisplayName>
+		<Desc>[IT]的口味略显独特，对异性的精华有着独特的兴趣……</Desc>
+	</Feature>
+	
+	<Feature Name="HHZneimendizi" Type="Normal">
+		<DisplayName>合欢宗内门弟子</DisplayName>
+		<Desc>[IT]是合欢宗内门弟子，作为一个人渣，你更擅长观察和跑路了，毕竟合欢弟子这份工作挺危险嗒</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<Properties>
+				<li Name="VisionRadius" AddP="0.5"/>
+				<li Name="MoveSpeed" AddP="0.5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Pogua" Type="Normal">
+		<DisplayName>破瓜</DisplayName>
+		<Desc>[IT]已经不是个处女了……</Desc>
+		<SexNeed>Female</SexNeed>
+	</Feature>
+	
+	<Feature Name="Rouruandeshetyou" Type="Normal">
+		<DisplayName>口技娴熟</DisplayName>
+		<Desc>[IT]在过去的人生中……充分的锻炼了自己的舌头……</Desc>
+		<SexNeed>Female</SexNeed>
+		<ModifierDef>
+			<Properties>
+				<li Name="SocialContactLevelAddValue" AddV="5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Mugou" Type="Normal">
+		<DisplayName>母狗</DisplayName>
+		<Desc>[IT]在他人的悉心调教之下，她的抖m之魂渐渐觉醒，耽溺于这场真实而虚幻的游戏之中，自愿成为一只日日发情的贱畜母狗。（无条件接受任何人的SEX要求）……</Desc>
+		<SexNeed>Female</SexNeed>
+		<ModifierDef>
+			<Properties>
+				<li Name="SocialContactLevelAddValue" AddV="3"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Baihehuakai" Type="Normal">
+		<DisplayName>百合</DisplayName>
+		<Desc>[IT]的性取向可能不太符合主流……</Desc>
+		<SexNeed>Female</SexNeed>
+		<ModifierDef>
+			<Properties>
+				<li Name="SocialContactLevelAddValue" AddV="1"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Qianguize" Type="Normal">
+		<DisplayName>潜规则</DisplayName>
+		<Desc>[IT]在一次偶然的机会下经历了世事光鲜背后不为人所知的一面，这潜藏在光明之下的黑暗与污秽令其万分着迷而沉堕其中，并视之为通天之路的捷径……</Desc>
+		<SexNeed>Female</SexNeed>
+		<ModifierDef>
+			<Properties>
+				<li Name="SocialContactLevelAddValue" AddV="15"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Tiancilonggen" Type="Normal">
+		<DisplayName>天赐龙根</DisplayName>
+		<Desc>[IT]的肉棒竟有25CM之长，无比巨大，[IT]比任何人都擅长驾驭……器，[IT]的精力也比普通人更旺盛。</Desc>
+		<SexNeed>Male</SexNeed>
+		<ModifierDef>
+			<Properties>
+				<li Name="NpcFight_FabaoPowerAddP" AddP="0.5"/>
+				<li Name="PracticeFoodRecoveryConstant" AddP="0.5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Renouhuaxing" Type="Backstory">
+		<DisplayName>人偶化形</DisplayName>
+		<Desc>[IT]原本只是一个普普通通用与泄欲的女偶，因为……[IT]化形成人。</Desc>
+		<SexNeed>Female</SexNeed>
+		<ModifierDef>
+			<Properties>
+				<li Name="NpcFight_FabaoPowerAddP" AddP="3"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Runiu" Type="Normal">
+		<DisplayName>乳牛</DisplayName>
+		<Desc>[IT]有着一对如同乳牛一般的惊人巨乳。</Desc>
+		<SexNeed>Female</SexNeed>
+		<ModifierDef>
+			<Properties>
+				<li Name="SocialContactLevelAddValue" AddV="20"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Chastity" Type="Normal">
+		<DisplayName>贞洁</DisplayName>
+		<Desc>[IT]对婚姻，无比的忠贞，这是中华民族的一个传统美德，世代相传</Desc>
+		<SexNeed>Female</SexNeed>
+		<Mutex>
+			<li>YinDang</li>
+		</Mutex>
+		<ModifierDef>
+			<Properties>
+				<li Name="SocialContactBaseSuccess" AddV="10"/>
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="UglyFace1" Type="Normal">
+		<DisplayName>面相丑陋</DisplayName>
+		<Desc>此人长的很丑，让人厌恶。</Desc>
+		<Mutex>
+			<li>BeautifulFace1</li>
+			<li>BeautifulFace2</li>
+			<li>BeautifulFace3</li>
+			<li>UglyFace2</li>
+		</Mutex>
+		<Close>
+			<li>UglyFace1</li>
+			<li>UglyFace2</li>
+		</Close>
+		<ModifierDef>
+			<BaseFive>0,0,-1,0,0</BaseFive>
+			<GiveFavours>
+				<li>Evilfaced</li>
+			</GiveFavours>
+		</ModifierDef>
+		<AppearanceLevel>1</AppearanceLevel>
+	</Feature> 
+	<Feature Name="UglyFace2" Type="Normal">
+		<DisplayName>丑陋至极</DisplayName>
+		<Desc>此人长的不成人形，让人望而生畏。</Desc>
+		<Mutex>
+			<li>BeautifulFace1</li>
+			<li>BeautifulFace2</li>
+			<li>BeautifulFace3</li>
+			<li>UglyFace1</li>
+		</Mutex>
+		<Close>
+			<li>UglyFace1</li>
+			<li>UglyFace2</li>
+		</Close>
+		<ModifierDef>
+			<BaseFive>0,0,-2,0,0</BaseFive>
+			<GiveFavours>
+				<li>Evilfaced</li>
+			</GiveFavours>
+		</ModifierDef>
+		<AppearanceLevel>1</AppearanceLevel>
+	</Feature> 
+	
+	<Feature Name="BeautifulFace1" Type="Normal">
+		<DisplayName>容貌俊美</DisplayName>
+		<Desc>此人的面孔异常俊美。</Desc>
+		<Mutex>
+			<li>UglyFace1</li>
+			<li>UglyFace2</li>
+			<li>BeautifulFace2</li>
+			<li>BeautifulFace3</li>
+		</Mutex>
+		<Close>
+			<li>BeautifulFace1</li>
+			<li>BeautifulFace2</li>
+		</Close>
+		<ModifierDef>
+			<BaseFive>0,0,1,0,0</BaseFive>
+			<GiveFavours>
+				<li>BeautifulFace</li>
+			</GiveFavours>
+		</ModifierDef>
+	</Feature> 
+	<Feature Name="BeautifulFace2" Type="Normal">
+		<DisplayName>惊世美貌</DisplayName>
+		<Desc>此人的面孔异常俊美。</Desc>
+		<Mutex>
+			<li>UglyFace1</li>
+			<li>UglyFace2</li>
+			<li>BeautifulFace3</li>
+		</Mutex>
+		<Close>
+			<li>UglyFace1</li>
+			<li>UglyFace2</li>
+			<li>BeautifulFace1</li>
+		</Close>
+		<ModifierDef>
+			<BaseFive>0,0,2,0,0</BaseFive>
+			<GiveFavours>
+				<li>BeautifulFace</li>
+			</GiveFavours>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="BeautifulFace3" Type="Normal">
+		<DisplayName>倾世之貌</DisplayName>
+		<Desc>[IT]的美，已经超脱了一切纷争与信仰，理论上不会有人能拒绝她的要求。</Desc>
+		<SexNeed>Female</SexNeed>
+		<Mutex>
+			<li>UglyFace1</li>
+			<li>UglyFace2</li>
+			<li>BeautifulFace1</li>
+			<li>BeautifulFace2</li>
+		</Mutex>
+		<ModifierDef>
+			<BaseFive>0,0,10,0,0</BaseFive>
+			<Properties>
+				<li Name="SocialContactBaseSuccess" AddV="50"/>
+			</Properties>
+			<Skills>
+				<li Name="SocialContact" LevelOver="10"/>
+			</Skills>
+			<GiveFavours>
+				<li>BeautifulFace</li>
+			</GiveFavours>
+		</ModifierDef>
+	</Feature> 
+	
+	<Feature Name="Tongling_linghu" Type="Backstory">
+		<DisplayName>狐灵魂侍</DisplayName>
+		<Desc>[IT]已与狐灵兽魂合一，神魂被狐心滋养，对术法的理解能力大幅上升。</Desc>
+		<SexNeed>Female</SexNeed>
+		<Mutex>
+			<li>Tongling_gou</li>
+			<li>Tongling_feng</li>
+			<li>Tongling_long</li>
+		</Mutex>
+		<ModifierDef>
+			<Skills>
+				<li Name="FightSkill" LevelOver="10"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Tongling_feng" Type="Backstory">
+		<DisplayName>凤灵魂侍</DisplayName>
+		<Desc>[IT]已与凤灵兽魂合一，神魂被凤魄滋养，对驭器的理解能力大幅上升。</Desc>
+		<SexNeed>Female</SexNeed>
+		<Mutex>
+			<li>Tongling_gou</li>
+			<li>Tongling_linghu</li>
+			<li>Tongling_long</li>
+		</Mutex>
+		<ModifierDef>
+			<Skills>
+				<li Name="Fabao" LevelOver="10"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Tongling_long" Type="Backstory">
+		<DisplayName>龙灵魂侍</DisplayName>
+		<Desc>[IT]已与龙灵兽魂合一，神魂被龙魂滋养，对护体的理解能力大幅上升。</Desc>
+		<SexNeed>Female</SexNeed>
+		<Mutex>
+			<li>Tongling_gou</li>
+			<li>Tongling_feng</li>
+			<li>Tongling_linghu</li>
+		</Mutex>
+		<ModifierDef>
+			<Skills>
+				<li Name="Barrier" LevelOver="10"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="Tongling_gou" Type="Backstory">
+		<DisplayName>犬灵魂侍</DisplayName>
+		<Desc>[IT]已与犬灵兽魂合一，神魂被兽欲滋养，对战斗的理解能力大幅上升。</Desc>
+		<SexNeed>Female</SexNeed>
+		<Mutex>
+			<li>Tongling_linghu</li>
+			<li>Tongling_feng</li>
+			<li>Tongling_long</li>
+		</Mutex>
+		<ModifierDef>
+			<Skills>
+				<li Name="Fight" LevelOver="10"/>
+			</Skills>
+		</ModifierDef>
+	</Feature>
+</List></FeatureDefs>

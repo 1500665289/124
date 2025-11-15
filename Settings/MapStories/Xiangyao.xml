@@ -1,0 +1,161 @@
+﻿<Stories><List>	
+	<Story Name="Zhuyao_17003">
+		<DisplayName>青丘灵狐</DisplayName>
+		<Desc>[NAME]来到[PLACE]搜索了一番后，找到了那只通灵狐女\n涂山狐女 Lv.4~Lv.40</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>示好</Display>
+				<DisplayCondition>
+				me:GetSex() == 1 and me.npcObj.PropertyMgr.BodyData:PartIsBroken("Genitals") == false and me.npcObj.PropertyMgr:CheckFeature("BeautifulFace2")
+				</DisplayCondition>
+				<OKResult>
+				me:AddMsg("[NAME]来到狐妖面前，向其示好，狐女初初化形，灵智未全见得如此俊俏的美男子不由迷上了[NAME]。");
+				if me.npcObj.GongKind == g_emGongKind.God then
+				yaoguai = 3
+				GameMain:GetMod("Lua_shijian"):shiqi74()
+					if buzhuoGod ~= 1 then
+					me:AddMsg("[NAME]将这狐女全身上下都亵玩了一番后，将其纳入自己的神国留着慢慢赏玩。");
+					npc.PropertyMgr.Practice.GodPracticeData:UnLockGodGuard("Guard_shenming_"..yaoguai);
+					else
+					me:AddMsg("[NAME]将这狐女三通彻底玩腻后，将其卖给了路过的百蛮山修士。");
+					me:DropAwardItem("Item_LingStone",world:RandomInt(50,200));
+					end
+				else
+				me:AddMsg("[NAME]将这狐女三通彻底玩腻后，将其卖给了路过的百蛮山修士。");
+				me:DropAwardItem("Item_LingStone",world:RandomInt(50,200));
+				end
+				story:FinishSecret();
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>诛妖</Display>
+				<OKResult>
+				Yaozanli = WorldLua:RandomInt(4,40)
+				if me.npcObj.GongKind == g_emGongKind.Dao and me:GetDaoHang() > 40 + Yaozanli then
+				me:AddMsg("[NAME]连连施展法诀，攻杀向那灵狐，将那狐女诛杀当场……。");
+				me:AddPenalty(1);story:FinishSecret();
+				elseif me.npcObj.GongKind == g_emGongKind.Body then
+				me:AddMsg("[NAME]身为体修，一身气血之力便是的妖鬼的天敌，[NAME]还未现身，那狐女仿佛就闻到了些什么，转身逃离了……。");
+				story:FinishSecret();
+				elseif me.npcObj.GongKind == g_emGongKind.God then
+				yaoguai = 3
+				GameMain:GetMod("Lua_shijian"):shiqi73()
+				else
+				me:AddMsg("[NAME]上前除妖，然而实力不济，被狐女击杀。");
+				ThingMgr:RemoveThing(me.npcObj,false,true);story:FinishSecret();
+				end
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>离开</Display> 
+				<OKResult>
+				me:AddMsg("[NAME]仔细的想了一下，此等大妖有一说一是不太容易打赢的，于是便转身逃离了此地。");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Zhuyao_17004">
+		<DisplayName>青行灯</DisplayName>
+		<Desc>[NAME]来到[PLACE]搜索那作恶的大妖，于[PLACE]附近的一间破庙之中，看到了十数个男男女女正在依次讲一个自己经历过的诡异而且恐怖的事情，每每有人说完，便吹熄身前的一支白蜡烛，当最后一只蜡烛被吹熄的时候，上百只闪着青幽妖芒的蝴蝶凭空而现聚化为一个手提青灯的女子……\n大妖青行灯 Lv.7~Lv.69</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>诛妖</Display>
+				<OKResult>
+				Yaozanli = WorldLua:RandomInt(7,70)
+				if me.npcObj.GongKind == g_emGongKind.Dao and me:GetDaoHang() > 70 + Yaozanli then
+				me:AddMsg("[NAME]连连施展法诀，攻杀向那大妖青行灯，那大妖青行灯见势不妙，便化散为青蝶四散而去了……。");
+				me:AddSchoolScore(2,100);me:AddPenalty(-1);story:FinishSecret();
+				elseif me.npcObj.GongKind == g_emGongKind.Body then
+				me:AddMsg("[NAME]身为体修，一身气血之力便是的妖鬼的天敌，[NAME]刚刚现身，那大妖青行灯便化散为青蝶四散而去了……。");
+				me:AddSchoolScore(2,100);me:AddPenalty(-1);story:FinishSecret();
+				elseif me.npcObj.GongKind == g_emGongKind.God then
+				yaoguai = 4
+				GameMain:GetMod("Lua_shijian"):shiqi73()
+				else
+				me:AddMsg("[NAME]上前除妖，然而实力不济，被大妖青行灯吸去了魂魄，成为灯中芯……。");
+				ThingMgr:RemoveThing(me.npcObj,false,true)
+				end
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>离开</Display> 
+				<OKResult>
+				me:AddMsg("[NAME]仔细的想了一下，此等大妖有一说一是不太容易打赢的，于是便转身逃离了此地。");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Zhuyao_17005">
+		<DisplayName>古墓</DisplayName>
+		<Desc>[NAME]于[PLACE]西方的一处山崖之下寻到那神秘的古墓，古墓大门被神秘莫测的法阵所守护着，非有缘人不得进入。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>破阵</Display>
+				<OKResult>
+				NanName = NpcMgr:GetRandomFullName("Human",CS.XiaWorld.g_emNpcSex.Male)
+				local npc2 = CS.XiaWorld.NpcRandomMechine.RandomNpc("Human",g_emNpcSex.Female);
+				if me.npcObj.PropertyMgr.SkillData:GetSkillLevel(CS.XiaWorld.g_emNpcSkillType.Zhen) > 19 then
+					me:AddMsg("[NAME]指花翻飞，连连结出诸般法印，成功破解了古墓的封印，进入墓室。\n墓室虽然昏暗，可[NAME]毕是修行之人目力过人，墓中事物在[NAME]眼中一览无余，只见墓室之中立着一张石桌，桌前有凳，桌上竖着一面灵鉴，灵鉴旁则是散落着诸多女子的日常物品，[NAME]不由暗道：“难道竟有女子居于此处？”\n[NAME]推开墓室右侧的石门踏入侧室，得见一尊绝美女子的玉像立于室中，这玉像与生人一般大小，身上一件雪白无瑕的轻纱微微飘动，更奇妙的是玉像的那对眸子竟莹然有光。\n[NAME]伸手触之，玉像脸上白玉的纹理中隐隐透出晕红之色，温度更是与常人无异。");
+					if me:GetSex() == 1 and me.npcObj.PropertyMgr.BodyData:PartIsBroken("Genitals") == false and me.npcObj.PropertyMgr:CheckFeature("Tiancilonggen") then
+					me:AddMsg("[NAME]掏出自己胯下巨炮便往玉偶下体插去，突刺了千余次后，一股灼热的阳元由[NAME]的马眼中喷射而出，灌满了玉偶的下身，顿时[NAME]感觉怀中的玉偶变的更软更暖了……\n天！！！\n[NAME]怀中的玉偶竟化身为一个绝色女子……\n[NAME]见状更是淫心大起，将这玉偶化作的女子拢入身下准备来上第二三四五发，一番酣畅淋漓之后，[NAME]搂着这玉偶所化的女子，闻其倾诉……\n原来，这名女子是万年前修真界以貌惊天下的女修士，因拒绝大魔头"..NanName.."的觊觎，故被"..NanName.."以无上邪法化作玉偶强占把玩，而今这邪法为[NAME]所破。");
+						if me:CheckFeature("BeautifulFace2") or me:CheckFeature("BeautifulFace1") then
+							if me.npcObj.GongKind == g_emGongKind.God then
+							yaoguai = 5
+							GameMain:GetMod("Lua_shijian"):shiqi74()
+								if buzhuoGod ~= 1 then
+								me:AddMsg("故，香姬决定以身相许报答[NAME]，香姬自愿进入了[NAME]的神国，成为了[NAME]的守护。");
+								npc.PropertyMgr.Practice.GodPracticeData:UnLockGodGuard("Guard_shenming_"..yaoguai);
+								else
+								me:AddMsg("故，"..npc2.Name.."决定以身相许报答[NAME]，"..npc2.Name.."以身相许嫁给了[NAME]作妻子。");
+								CS.XiaWorld.NpcMgr.Instance:AddNpc(npc2,npc2.LuaHelper:RandomInt(240,280),Map,CS.XiaWorld.Fight.g_emFightCamp.Player);
+								CS.XiaWorld.ThingMgr.Instance:EquptNpc(npc2,12,CS.XiaWorld.g_emNpcRichLable.Richest);
+								npc2.PropertyMgr:AddAge(-npc2.Age + 18);
+								npc2.PropertyMgr:AddFeature("Pogua");
+								CitiaonpcID = npc2.ID
+								GameMain:GetMod("Lua_shijian"):citiao1()
+								me.npcObj.PropertyMgr.RelationData:AddRelationShip(npc2,"Spouse");
+								end
+							else
+							me:AddMsg("故，"..npc2.Name.."决定以身相许报答[NAME]，"..npc2.Name.."以身相许嫁给了[NAME]作妻子。");
+								CS.XiaWorld.NpcMgr.Instance:AddNpc(npc2,npc2.LuaHelper:RandomInt(240,280),Map,CS.XiaWorld.Fight.g_emFightCamp.Player);
+								CS.XiaWorld.ThingMgr.Instance:EquptNpc(npc2,12,CS.XiaWorld.g_emNpcRichLable.Richest);
+								npc2.PropertyMgr:AddAge(-npc2.Age + 18);
+								npc2.PropertyMgr:AddFeature("Pogua");
+								CitiaonpcID = npc2.ID
+								GameMain:GetMod("Lua_shijian"):citiao1()
+								me.npcObj.PropertyMgr.RelationData:AddRelationShip(npc2,"Spouse");
+							end
+						else
+							me:AddMsg("故"..npc2.Name.."对[NAME]道了一声：“大恩大德小女子愿下辈子为恩公当牛做马……”便转身飞遁而去了。");
+						end
+					elseif me:GetSex() == 1 and me.npcObj.PropertyMgr.BodyData:PartIsBroken("Genitals") == false then
+					me:AddMsg("[NAME]暗道一声，此等极品玉偶遇到就是赚到，于是褪下衣裤提枪上阵，在玉偶的下身抽插了百余下后在其体内释放了自己的阳精。\n事毕[NAME]想将这绝美玉偶带回山门，却不曾想刚携其出古墓大门，玉偶便从怀中消失，而古墓也同时消失的无影无踪了。");
+					elseif me:GetSex() == 1 and me.npcObj.PropertyMgr.BodyData:PartIsBroken("Genitals") then
+					me:AddMsg("[NAME]暗道一声，此等极品玉偶遇到就是赚到，于是褪下衣裤准备提枪上阵，奈何自己的阳根以去，只能决定将这玉偶把玩一番后带回山门。\n然而[NAME]想将这绝美玉偶带回山门，却不曾想刚携其出古墓大门，玉偶便从怀中消失，而古墓也同时消失的无影无踪了");
+					else
+					me:AddMsg("[NAME]暗道一声，此等极品玉偶遇到就是赚到，于是打算将玉偶把玩一番后就带回山门。\n然而[NAME]想将这绝美玉偶带回山门，却不曾想刚携其出古墓大门，玉偶便从怀中消失，而古墓也同时消失的无影无踪了");
+					end
+				story:FinishSecret();
+				else
+				me:AddMsg("[NAME]指花翻飞，连连结出诸般法印，但是由于自身不精阵法之道，并没有成功破解门上封印。\n[NAME]无奈的离开了");
+				end
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>离开</Display> 
+				<OKResult>
+				me:AddMsg("[NAME]对挖坟掘墓没啥兴趣，于是转身离开了。");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>
