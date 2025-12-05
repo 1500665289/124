@@ -1,6 +1,6 @@
 <ThingDefs>
 <List>
-	<ThingDef Type="Building" Name="SEXzhuo" Parent="ProductionBase">	
+	<ThingDef Type="Building" Name="SEXzhuo" Parent="Build_VirtualDoor">	
 	<ThingName>性爱道具手工桌</ThingName>	
 	<Desc>进行性爱道具手工用品制造的工作台。</Desc>
 	<TexScale>1.1</TexScale>
@@ -85,7 +85,7 @@
 	</Building>
 	</ThingDef>
 	
-	<ThingDef Type="Building" Name="Nvoubaoxiang" Parent="FurnitureBase">
+	<ThingDef Type="Building" Name="Nvoubaoxiang" Parent="Build_VirtualDoor">
 	<TexPath>Spr\Shiqi\sexxiangzi.png</TexPath>
 	<TexScale>1</TexScale>
 	<ThingName>女偶之箱</ThingName>	
@@ -138,7 +138,7 @@
 	</StoryBnts>
 	</ThingDef>	
 	
-	<ThingDef Type="Building" Name="fengyuebaojian" Parent="FurnitureBase">
+	<ThingDef Type="Building" Name="fengyuebaojian" Parent="Build_VirtualDoor">
 	<ThingName>合欢宝鉴</ThingName>	
 	<Desc>合欢宗所经营的欢喜直播平台专用直播转播道具，可以用于娱乐，也可以成为欢喜直播平台主播，给全修真界直播，赚取钱财。</Desc>
 	<TexPath>Spr\Shiqi\fengyuebaojian.png</TexPath>
@@ -189,7 +189,7 @@
 	</StoryBnts>
 	</ThingDef>	
 	
-	<ThingDef Type="Building" Name="Nvoubaoxiang" Parent="OrnamentBase">
+	<ThingDef Type="Building" Name="Nvoubaoxiang" Parent="Build_VirtualDoor">
 	<TexPath>Spr\Shiqi\sexxiangzi.png</TexPath>
 	<TexScale>1</TexScale>
 	<ThingName>女偶之箱</ThingName>	
@@ -240,7 +240,7 @@
 	</StoryBnts>
 	</ThingDef>	
 	
-	<ThingDef Type="Building" Name="siheyuan" Parent="FurnitureBase">
+	<ThingDef Type="Building" Name="siheyuan" Parent="Build_VirtualDoor">
 	<ThingName>四合院</ThingName>	
 	<Desc>用于给非本门弟子居住的地方……当然也可以用来关押囚禁……</Desc>
 	<TexPath>Spr\Shiqi\siheyuan.png</TexPath>
@@ -290,7 +290,7 @@
 	</StoryBnts>
 	</ThingDef>	
 	
-	<ThingDef Type="Building" Name="Yutong" Parent="OrnamentBase">
+	<ThingDef Type="Building" Name="Yutong" Parent="Build_VirtualDoor">
 	<TexPath>Spr\Shiqi\yutong.png</TexPath>
 	<TexScale>1</TexScale>
 	<ThingName>浴桶</ThingName>	
@@ -337,7 +337,7 @@
 	</StoryBnts>
 	</ThingDef>	
 	
-	<ThingDef Type="Building" Name="Tiechunv" Parent="OrnamentBase">
+	<ThingDef Type="Building" Name="Tiechunv" Parent="Build_VirtualDoor">
 	<TexPath>Spr\Shiqi\tiechunv.png</TexPath>
 	<TexScale>1</TexScale>
 	<ThingName>铁处女</ThingName>	
