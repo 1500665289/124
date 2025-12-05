@@ -1,387 +1,509 @@
-<ThingDefs>
-<List>
+<ThingDefs><List>
 	<ThingDef Type="Building" Name="SEXzhuo" Parent="Build_VirtualDoor">	
-	<ThingName>性爱道具手工桌</ThingName>	
-	<Desc>进行性爱道具手工用品制造的工作台。</Desc>
-	<TexScale>1.1</TexScale>
-	<TexPath>Spr\Shiqi\sexzhuo1b.png</TexPath>
-	<BlockLight>1</BlockLight>
-	<SelectAble>1</SelectAble>	
-	<CastShadow>1</CastShadow>
-	<Beauty>5</Beauty>
-	<Collider>
-		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
-		<Data>
-			[3,1],
-			[4,0],
-		</Data>
-		<OffsetGroup>
-			<li><x>0.5</x><y>0.1</y></li><!--建筑贴图位置调整-->
-		</OffsetGroup>
-		<WorkOffset>
-			<li Index="0" X="0.55" Y="0.25" Ang="1"/><!--使用建筑角色位置调整-->
-		</WorkOffset>
-	</Collider>
-	<Building>
-		<BePackage>1</BePackage>
-		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
-		<CanMakeRoom>0</CanMakeRoom>
-		<WorkAnimation>produce</WorkAnimation>
-		<WorkTexPath>Spr\Shiqi\sexzhuo1b.png</WorkTexPath>
-		<BeMade>
-			<WorkToMake>150</WorkToMake>
-			<Quality>0</Quality>
-			<StuffCategories>
-				<Stuff name = "MetalBlock"/>
-				<Stuff name = "WoodBlock"/>
-				<Stuff name = "RockBlock"/>
-			</StuffCategories>
-			<CostStuffCount>8</CostStuffCount>
-		</BeMade>
-		<SnowRenderData>
-			<x>3.13</x>
-			<y>1</y>
-			<z>1</z>
-		</SnowRenderData>
-		<ProducePriority>1</ProducePriority>
-		<ProduceKind>Handwork</ProduceKind>
-		<Produces>
-			<Produce>
-				<ThingDef>Item_Shuangtoulong</ThingDef>
-				<Display>双头龙</Display>
-				<Count>1</Count>
-			</Produce>
-			<Produce>
-				<ThingDef>Item_Lazhu</ThingDef>
-				<Display>肛珠</Display>
-				<Count>1</Count>
-			</Produce>
-			<Produce>
-				<ThingDef>Item_Tiaodan</ThingDef>
-				<Display>跳蛋</Display>
-				<Count>1</Count>
-			</Produce>
-			<Produce>
-				<ThingDef>Item_Nvrenou</ThingDef>
-				<Display>女偶</Display>
-				<Count>1</Count>
-			</Produce>
-			<Produce>
-				<ThingDef>Item_Zhencaonan</ThingDef>
-				<Display>阳锁</Display>
-				<Count>1</Count>
-			</Produce>
-			<Produce>
-				<ThingDef>Item_Zhencaonv</ThingDef>
-				<Display>阴锁</Display>
-				<Count>1</Count>
-			</Produce>
-			<Produce>
-				<ThingDef>Item_YYHHGguzhong</ThingDef>
-				<Display>蛊苗</Display>
-				<Count>1</Count>
-			</Produce>
-		</Produces>
-	</Building>
+		<ThingName>性爱道具手工桌</ThingName>	
+		<Desc>进行性爱道具手工用品制造的工作台。</Desc>
+		<IllustratedHandLabel>Crafting</IllustratedHandLabel>
+		<ClassName>SEXzhuo</ClassName>
+		<TexPath>Spr\Shiqi\sexzhuo1b.png</TexPath>
+		<TexScale>1.1</TexScale>
+		<ElementKind>None</ElementKind>
+		<BlockLight>1</BlockLight>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>0</CastShadow>
+		<Beauty>5</Beauty>
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[1,1,1],
+			[1,3,1],
+			[1,5,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0.55</x><y>0.25</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<RoomKind>WorkRoom</RoomKind>
+			<BePackage>1</BePackage>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<CanMakeRoom>0</CanMakeRoom>
+			<WorkAnimation>produce</WorkAnimation>
+			<WorkTexPath>Spr\Shiqi\sexzhuo1b.png</WorkTexPath>
+			<BeMade>
+				<WorkToMake>10000</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "WoodBlock"/>
+					<Stuff name = "RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>8</CostStuffCount>
+			</BeMade>
+			<SnowRenderData>
+				<x>2.8</x>
+				<y>2.8</y>
+				<z>1</z>
+			</SnowRenderData>
+			<ProducePriority>1</ProducePriority>
+			<ProduceKind>Handwork</ProduceKind>
+			<Produces>
+				<Produce>
+					<ThingDef>Item_Shuangtoulong</ThingDef>
+					<Display>双头龙</Display>
+					<Count>1</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>Item_Lazhu</ThingDef>
+					<Display>肛珠</Display>
+					<Count>1</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>Item_Tiaodan</ThingDef>
+					<Display>跳蛋</Display>
+					<Count>1</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>Item_Nvrenou</ThingDef>
+					<Display>女偶</Display>
+					<Count>1</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>Item_Zhencaonan</ThingDef>
+					<Display>阳锁</Display>
+					<Count>1</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>Item_Zhencaonv</ThingDef>
+					<Display>阴锁</Display>
+					<Count>1</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>Item_YYHHGguzhong</ThingDef>
+					<Display>蛊苗</Display>
+					<Count>1</Count>
+				</Produce>
+			</Produces>
+		</Building>
+		<Ling>
+			<AddionLing>10</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.5</Absorption>
+			<Accommodate>20</Accommodate>
+		</Ling>
 	</ThingDef>
 	
 	<ThingDef Type="Building" Name="Nvoubaoxiang" Parent="Build_VirtualDoor">
-	<TexPath>Spr\Shiqi\sexxiangzi.png</TexPath>
-	<TexScale>1</TexScale>
-	<ThingName>女偶之箱</ThingName>	
-	<Desc>合欢宗秘宝之一，由强大的女偶守护者本宗弟子们的私人财物，女偶身下坐着的箱子连接着异空间，其中存放着每个人的私人通货，当然想要使用必须先搞定女偶。</Desc>
-	<Tags>
-		<Tag Name="DiaoXiang_FSZW" Level="1"/>
-	</Tags>
-	<Frags>		
-		<li Frag="Yuhuo" />
-	</Frags>
-	<ShadowSize>
-		<x>1</x>
-		<y>1.2</y>
-	</ShadowSize>
-	<ColliderKind>NoPass</ColliderKind>
-	<Collider>
-		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
-		<Data>
-		[3],
-		</Data>
-		<OffsetGroup>
-			<li><x>0</x><y>0.4</y></li>
-		</OffsetGroup>
-	</Collider>
-	<Building>
-		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
-		<BePackage>1</BePackage>
-		<WorkTexPath>Spr\Shiqi\sexxiangzi.png</WorkTexPath>
-		<BeMade>
-			<WorkToMake>400</WorkToMake>
-			<Quality>0</Quality>
-			<StuffCategories>
-				<Stuff name = "MetalBlock"/>
-				<Stuff name = "RockBlock"/>
-			</StuffCategories>
-			<CostStuffCount>12</CostStuffCount>
-			<CostItems>
-				<Item name = "Item_Nvrenou" count = "1"/>
-			</CostItems>
-		</BeMade>
-		<SnowRenderData>
-			<x>2.90</x>
-			<y>3.60</y>
-			<z>1</z>
-		</SnowRenderData>		
-	</Building>
-	<StoryBnts>
-	<li Name="查询" Desc="使用女偶之箱，查询个人资产。" Story="Item_Nvoubox" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
-	<li Name="玩弄" Desc="玩弄玩偶" Story="Item_Shuangxiu" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
-	</StoryBnts>
+		<ThingName>女偶之箱</ThingName>	
+		<Desc>合欢宗秘宝之一，由强大的女偶守护者本宗弟子们的私人财物，女偶身下坐着的箱子连接着异空间，其中存放着每个人的私人通货，当然想要使用必须先搞定女偶。</Desc>
+		<IllustratedHandLabel>Storage</IllustratedHandLabel>
+		<ClassName>Nvoubaoxiang</ClassName>
+		<TexPath>Spr\Shiqi\sexxiangzi.png</TexPath>
+		<TexScale>1</TexScale>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="DiaoXiang_FSZW" Level="1"/>
+		</Tags>
+		<Frags>		
+			<li Frag="Yuhuo" />
+		</Frags>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>0</CastShadow>
+		<BlockLight>1</BlockLight>
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[1,1,1],
+			[1,3,1],
+			[1,5,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0.4</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<RoomKind>StorageRoom</RoomKind>
+			<BePackage>1</BePackage>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<WorkTexPath>Spr\Shiqi\sexxiangzi.png</WorkTexPath>
+			<BeMade>
+				<WorkToMake>10000</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>12</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_Nvrenou" count = "1"/>
+				</CostItems>
+			</BeMade>
+			<SnowRenderData>
+				<x>2.7</x>
+				<y>2.7</y>
+				<z>1</z>
+			</SnowRenderData>		
+		</Building>
+		<Ling>
+			<AddionLing>15</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.5</Absorption>
+			<Accommodate>25</Accommodate>
+		</Ling>
+		<StoryBnts>
+			<li Name="查询" Desc="使用女偶之箱，查询个人资产。" Story="Item_Nvoubox" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
+			<li Name="玩弄" Desc="玩弄玩偶" Story="Item_Shuangxiu" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
 	</ThingDef>	
 	
 	<ThingDef Type="Building" Name="fengyuebaojian" Parent="Build_VirtualDoor">
-	<ThingName>合欢宝鉴</ThingName>	
-	<Desc>合欢宗所经营的欢喜直播平台专用直播转播道具，可以用于娱乐，也可以成为欢喜直播平台主播，给全修真界直播，赚取钱财。</Desc>
-	<TexPath>Spr\Shiqi\fengyuebaojian.png</TexPath>
-	<TexScale>1</TexScale>
-	<Tags>
-		<Tag Name="DiaoXiang_FSZW" Level="1"/>
-	</Tags>
-	<ShadowSize>
-		<x>1</x>
-		<y>1.2</y>
-	</ShadowSize>
-	<ColliderKind>NoPass</ColliderKind>
-	<Collider>
-		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
-		<Data>
-		[3],
-		</Data>
-		<OffsetGroup>
-			<li><x>0</x><y>0.4</y></li>
-		</OffsetGroup>
-	</Collider>
-	
-	<Flammability>
-		<Flammability>0</Flammability>
-	</Flammability>
-	<Building>
-		<BeMade>
-			<WorkToMake>400</WorkToMake>
-			<Quality>0</Quality>
-			<StuffCategories>
-				<Stuff name = "MetalBlock"/>
-				<Stuff name = "RockBlock"/>
-			</StuffCategories>
-			<CostStuffCount>12</CostStuffCount>
-			<CostItems>
-				<Item name = "Item_Nvrenou" count = "1"/>
-			</CostItems>
-		</BeMade>
-		<SnowRenderData>
-			<x>2.90</x>
-			<y>3.60</y>
-			<z>1</z>
-		</SnowRenderData>		
-	</Building>
-	<StoryBnts>
-	<li Name="使用" Desc="使用合欢宝鉴。" Story="Item_fengyuebaojian" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
-	<li Name="玩弄" Desc="玩弄玩偶" Story="Item_Shuangxiu" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
-	</StoryBnts>
-	</ThingDef>	
-	
-	<ThingDef Type="Building" Name="Nvoubaoxiang" Parent="Build_VirtualDoor">
-	<TexPath>Spr\Shiqi\sexxiangzi.png</TexPath>
-	<TexScale>1</TexScale>
-	<ThingName>女偶之箱</ThingName>	
-	<Desc>合欢宗秘宝之一，由强大的女偶守护者本宗弟子们的私人财物，女偶身下坐着的箱子连接着异空间，其中存放着每个人的私人通货，当然想要使用必须先搞定女偶。</Desc>
-	<Tags>
-		<Tag Name="DiaoXiang_FSZW" Level="1"/>
-	</Tags>
-	<ShadowSize>
-		<x>1</x>
-		<y>1.2</y>
-	</ShadowSize>
-	<ColliderKind>NoPass</ColliderKind>
-	<Collider>
-		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
-		<Data>
-		[3],
-		</Data>
-		<OffsetGroup>
-			<li><x>0</x><y>0.4</y></li>
-		</OffsetGroup>
-	</Collider>
-	
-	<Flammability>
-		<Flammability>0</Flammability>
-	</Flammability>
-	<Building>
-		<BeMade>
-			<WorkToMake>400</WorkToMake>
-			<Quality>0</Quality>
-			<StuffCategories>
-				<Stuff name = "MetalBlock"/>
-				<Stuff name = "RockBlock"/>
-			</StuffCategories>
-			<CostStuffCount>12</CostStuffCount>
-			<CostItems>
-				<Item name = "Item_Nvrenou" count = "1"/>
-			</CostItems>
-		</BeMade>
-		<SnowRenderData>
-			<x>2.90</x>
-			<y>3.60</y>
-			<z>1</z>
-		</SnowRenderData>		
-	</Building>
-	<StoryBnts>
-	<li Name="查询" Desc="使用女偶之箱，查询个人资产。" Story="Item_Nvoubox" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
-	<li Name="玩弄" Desc="玩弄玩偶" Story="Item_Shuangxiu" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
-	</StoryBnts>
-	</ThingDef>	
+		<ThingName>合欢宝鉴</ThingName>	
+		<Desc>合欢宗所经营的欢喜直播平台专用直播转播道具，可以用于娱乐，也可以成为欢喜直播平台主播，给全修真界直播，赚取钱财。</Desc>
+		<IllustratedHandLabel>Entertainment</IllustratedHandLabel>
+		<ClassName>fengyuebaojian</ClassName>
+		<TexPath>Spr\Shiqi\fengyuebaojian.png</TexPath>
+		<TexScale>1</TexScale>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="DiaoXiang_FSZW" Level="1"/>
+		</Tags>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>0</CastShadow>
+		<BlockLight>1</BlockLight>
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[1,1,1],
+			[1,3,1],
+			[1,5,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0.4</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<RoomKind>EntertainmentRoom</RoomKind>
+			<BePackage>1</BePackage>
+			<BeMade>
+				<WorkToMake>10000</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>12</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_Nvrenou" count = "1"/>
+				</CostItems>
+			</BeMade>
+			<SnowRenderData>
+				<x>2.7</x>
+				<y>2.7</y>
+				<z>1</z>
+			</SnowRenderData>		
+		</Building>
+		<Ling>
+			<AddionLing>20</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.5</Absorption>
+			<Accommodate>30</Accommodate>
+		</Ling>
+		<StoryBnts>
+			<li Name="使用" Desc="使用合欢宝鉴。" Story="Item_fengyuebaojian" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
+			<li Name="玩弄" Desc="玩弄玩偶" Story="Item_Shuangxiu" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
 	
 	<ThingDef Type="Building" Name="siheyuan" Parent="Build_VirtualDoor">
-	<ThingName>四合院</ThingName>	
-	<Desc>用于给非本门弟子居住的地方……当然也可以用来关押囚禁……</Desc>
-	<TexPath>Spr\Shiqi\siheyuan.png</TexPath>
-	<TexScale>1</TexScale>
-	<Tags>
-		<Tag Name="DiaoXiang_FSZW" Level="1"/>
-	</Tags>
-	<ShadowSize>
-		<x>1</x>
-		<y>1.2</y>
-	</ShadowSize>
-	<ColliderKind>NoPass</ColliderKind>
-	<Collider>
-		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
-		<Data>
-		[1,1,1,1,1,1,1,1,1],
-		[1,1,1,1,1,1,1,1,1],
-		[1,1,1,1,1,1,1,1,1],
-		[1,1,1,1,1,1,1,1,1],
-		[1,1,1,1,3,1,1,1,1],
-		[1,1,1,1,1,1,1,1,1],
-		[1,1,1,1,1,1,1,1,1],
-		[1,1,1,1,1,1,1,1,1],
-		[1,1,1,1,1,1,1,1,1],
-		</Data>
-		<OffsetGroup>
-			<li><x>0</x><y>0.4</y></li>
-		</OffsetGroup>
-	</Collider>
-	
-	<Flammability>
-		<Flammability>0</Flammability>
-	</Flammability>
-	<Building>
-		<BeMade>
-			<WorkToMake>400</WorkToMake>
-			<Quality>0</Quality>
-			<StuffCategories>
-				<Stuff name = "MetalBlock"/>
-				<Stuff name = "RockBlock"/>
-			</StuffCategories>
-			<CostStuffCount>120</CostStuffCount>
-		</BeMade>
-	</Building>
-	<StoryBnts>
-	<li Name="造访" Desc="造访四合院，与里面居住的角色互动。" Story="Siheyuan_qian" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
-	</StoryBnts>
+		<ThingName>四合院</ThingName>	
+		<Desc>用于给非本门弟子居住的地方……当然也可以用来关押囚禁……</Desc>
+		<IllustratedHandLabel>Residence</IllustratedHandLabel>
+		<ClassName>siheyuan</ClassName>
+		<TexPath>Spr\Shiqi\siheyuan.png</TexPath>
+		<TexScale>1</TexScale>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="DiaoXiang_FSZW" Level="1"/>
+		</Tags>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>0</CastShadow>
+		<BlockLight>1</BlockLight>
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[1,1,1,1,1,1,1,1,1],
+			[1,1,1,1,1,1,1,1,1],
+			[1,1,1,1,1,1,1,1,1],
+			[1,1,1,1,1,1,1,1,1],
+			[1,1,1,1,3,1,1,1,1],
+			[1,1,1,1,1,1,1,1,1],
+			[1,1,1,1,1,1,1,1,1],
+			[1,1,1,1,1,1,1,1,1],
+			[1,1,1,1,1,1,1,1,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0.4</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<RoomKind>ResidenceRoom</RoomKind>
+			<BePackage>1</BePackage>
+			<BeMade>
+				<WorkToMake>10000</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>120</CostStuffCount>
+			</BeMade>
+			<SnowRenderData>
+				<x>2.8</x>
+				<y>2.8</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+		<Ling>
+			<AddionLing>25</AddionLing>
+			<AddionRadius>5</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.5</Absorption>
+			<Accommodate>35</Accommodate>
+		</Ling>
+		<StoryBnts>
+			<li Name="造访" Desc="造访四合院，与里面居住的角色互动。" Story="Siheyuan_qian" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
 	</ThingDef>	
 	
 	<ThingDef Type="Building" Name="Yutong" Parent="Build_VirtualDoor">
-	<TexPath>Spr\Shiqi\yutong.png</TexPath>
-	<TexScale>1</TexScale>
-	<ThingName>浴桶</ThingName>	
-	<Desc>普普通通的浴桶，可以用来洗澡，也可以……</Desc>
-	<Tags>
-		<Tag Name="DiaoXiang_FSZW" Level="1"/>
-	</Tags>
-	<ShadowSize>
-		<x>1</x>
-		<y>1.2</y>
-	</ShadowSize>
-	<ColliderKind>NoPass</ColliderKind>
-	<Collider>
-		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
-		<Data>
-		[3],
-		</Data>
-		<OffsetGroup>
-			<li><x>0</x><y>0.4</y></li>
-		</OffsetGroup>
-	</Collider>
-	
-	<Flammability>
-		<Flammability>0</Flammability>
-	</Flammability>
-	<Building>
-		<BeMade>
-			<WorkToMake>400</WorkToMake>
-			<Quality>0</Quality>
-			<StuffCategories>
-				<Stuff name = "MetalBlock"/>
-				<Stuff name = "RockBlock"/>
-			</StuffCategories>
-			<CostStuffCount>12</CostStuffCount>
-		</BeMade>
-		<SnowRenderData>
-			<x>2.90</x>
-			<y>3.60</y>
-			<z>1</z>
-		</SnowRenderData>		
-	</Building>
-	<StoryBnts>
-	<li Name="使用" Desc="使用浴桶。" Story="Item_Yutong" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
-	</StoryBnts>
+		<ThingName>浴桶</ThingName>	
+		<Desc>普普通通的浴桶，可以用来洗澡，也可以……</Desc>
+		<IllustratedHandLabel>Utility</IllustratedHandLabel>
+		<ClassName>Yutong</ClassName>
+		<TexPath>Spr\Shiqi\yutong.png</TexPath>
+		<TexScale>1</TexScale>
+		<ElementKind>Shui</ElementKind>
+		<Tags>
+			<Tag Name="DiaoXiang_FSZW" Level="1"/>
+		</Tags>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>0</CastShadow>
+		<BlockLight>1</BlockLight>
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[1,1,1],
+			[1,3,1],
+			[1,5,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0.4</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<RoomKind>BathRoom</RoomKind>
+			<BePackage>1</BePackage>
+			<BeMade>
+				<WorkToMake>10000</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>12</CostStuffCount>
+			</BeMade>
+			<SnowRenderData>
+				<x>2.7</x>
+				<y>2.7</y>
+				<z>1</z>
+			</SnowRenderData>		
+		</Building>
+		<Ling>
+			<AddionLing>12</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.5</Absorption>
+			<Accommodate>18</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>8</Value>         
+			<Radius>3</Radius>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<StoryBnts>
+			<li Name="使用" Desc="使用浴桶。" Story="Item_Yutong" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
 	</ThingDef>	
 	
 	<ThingDef Type="Building" Name="Tiechunv" Parent="Build_VirtualDoor">
-	<TexPath>Spr\Shiqi\tiechunv.png</TexPath>
-	<TexScale>1</TexScale>
-	<ThingName>铁处女</ThingName>	
-	<Desc>上古妖修-十年风狒狒狒狒所创的秘宝，通过榨取失去反抗之力者的精血，用以炼化成各种精血邪丹……</Desc>
-	<Tags>
-		<Tag Name="DiaoXiang_FSZW" Level="1"/>
-	</Tags>
-	<ShadowSize>
-		<x>1</x>
-		<y>1.2</y>
-	</ShadowSize>
-	<ColliderKind>NoPass</ColliderKind>
-	<Collider>
-		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
-		<Data>
-		[3],
-		</Data>
-		<OffsetGroup>
-			<li><x>0</x><y>1</y></li>
-		</OffsetGroup>
-	</Collider>
-	
-	<Flammability>
-		<Flammability>0</Flammability>
-	</Flammability>
-	<Building>
-		<BeMade>
-			<WorkToMake>400</WorkToMake>
-			<Quality>0</Quality>
-			<StuffCategories>
-				<Stuff name = "MetalBlock"/>
-				<Stuff name = "RockBlock"/>
-			</StuffCategories>
-			<CostStuffCount>12</CostStuffCount>
-		</BeMade>
-		<SnowRenderData>
-			<x>2.90</x>
-			<y>3.60</y>
-			<z>1</z>
-		</SnowRenderData>		
-	</Building>
-	<StoryBnts>
-	<li Name="炼化" Desc="以他人血肉之躯，炼化各种精血邪丹。" Story="Item_Tiechunv" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
-	</StoryBnts>
-	</ThingDef>	
-</List>
-</ThingDefs>
+		<ThingName>铁处女</ThingName>	
+		<Desc>上古妖修-十年风狒狒狒狒所创的秘宝，通过榨取失去反抗之力者的精血，用以炼化成各种精血邪丹……</Desc>
+		<IllustratedHandLabel>Alchemy</IllustratedHandLabel>
+		<ClassName>Tiechunv</ClassName>
+		<TexPath>Spr\Shiqi\tiechunv.png</TexPath>
+		<TexScale>1</TexScale>
+		<ElementKind>Jin</ElementKind>
+		<Tags>
+			<Tag Name="DiaoXiang_FSZW" Level="1"/>
+		</Tags>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>0</CastShadow>
+		<BlockLight>1</BlockLight>
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[1,1,1],
+			[1,3,1],
+			[1,5,1],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>0</y></li>
+				<li><x>0</x><y>1</y></li>
+				<li><x>0</x><y>0</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Building>
+			<RoomKind>DanRoom</RoomKind>
+			<BePackage>1</BePackage>
+			<BeMade>
+				<WorkToMake>10000</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>12</CostStuffCount>
+			</BeMade>
+			<SnowRenderData>
+				<x>2.7</x>
+				<y>2.7</y>
+				<z>1</z>
+			</SnowRenderData>		
+		</Building>
+		<Ling>
+			<AddionLing>18</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.5</Absorption>
+			<Accommodate>22</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>10</Value>         
+			<Radius>4</Radius>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<StoryBnts>
+			<li Name="炼化" Desc="以他人血肉之躯，炼化各种精血邪丹。" Story="Item_Tiechunv" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Build_VirtualDoor" Parent="BuildingBase">
+		<TexPath></TexPath>
+		<ThingName></ThingName>
+		<Tags>
+			<Tag Name="RefiningDan" Level="10"/>
+		</Tags>
+		<Desc>EnvBase</Desc>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>1</CastShadow>
+		<BlockLight>0</BlockLight>
+		<Rate>12</Rate>
+		<Beauty>15</Beauty>
+		<UseHitPoints>1</UseHitPoints>
+		<MaxHitPoints>300</MaxHitPoints>
+		<GrowAble>0</GrowAble>
+		<VisionRadius>10</VisionRadius>
+		<ElementKind>None</ElementKind>
+		<NotDoTongLing>1</NotDoTongLing>
+		<Flammability>
+			<Flammability>-0.5</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+
+		<!--
+		<Collider>
+			(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace
+			<Data>
+			[3]
+			</Data>
+		</Collider>
+		-->
+		<Building>
+			<ProduceKind>RefiningDan</ProduceKind>
+			<Drive>
+				<StuffCategories>
+					<Stuff name = "Wood"/>
+					<Stuff name = "WoodBlock"/>
+				</StuffCategories>
+				<CostStuffCount>3</CostStuffCount>
+				<Duration>0.5</Duration>
+				<DriveJustProdece>1</DriveJustProdece>
+				<RateMin>0</RateMin>
+				<RateMax>3</RateMax>
+			</Drive>
+			<SnowRenderData>
+				<x>2.9</x>
+				<y>3.95</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>	
+	<!--	<Element>
+				<Kind>None</Kind>
+				<Value>3</Value>         
+				<Radius>2</Radius>
+				<Failing>1</Failing>
+				<FailRadius>0</FailRadius>
+		</Element>-->
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+	</ThingDef>
+
+</List></ThingDefs>
