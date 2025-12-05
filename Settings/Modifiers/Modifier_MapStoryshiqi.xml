@@ -1,13 +1,13 @@
 <ModifierDefs><List>
 	<Modifier Name="Story_Zhenxianlingye1" Type="Normal">
 		<DisplayName>真仙灵液。</DisplayName>
-		<Desc>饮下修炼六欲心经大成的女修真仙下体蜜液后，从根本上的易经洗髓，使自己的气海容量翻倍。</Desc>
+		<Desc>饮下修炼六欲心经大成的女修真仙下体蜜液后，从根本上的易经洗髓，使自己的气海容量增加10％。</Desc>
 		<MaxStack>1</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
 		<Sync>1</Sync>
 		<Properties>
-			<li Name="NpcLingMaxValue" BAddP="1"/>
+			<li Name="NpcLingMaxValue" BAddP="0.1"/>
 		</Properties>
 	</Modifier>
 	<Modifier Name="Story_Caibuzhidao1" Type="Normal">

@@ -16,7 +16,7 @@
 			<Stage Name="Stage1" Level="3">
 				<DisplayName>取精</DisplayName>
 				<Desc></Desc>
-				<Value>8000</Value>
+				<Value>50000</Value>
 				<Necks>
 					<Neck Location="0.3" Kind="Chance">
 						<DisplayName>修性</DisplayName>
@@ -56,7 +56,7 @@
 			<Stage Name="Stage2" Level="6">
 				<DisplayName>还精</DisplayName>
 				<Desc></Desc>
-				<Value>36000</Value>
+				<Value>360000</Value>
 				<Necks>
 					<Neck Location="0.3" Kind="Chance">
 						<DisplayName>修性</DisplayName>

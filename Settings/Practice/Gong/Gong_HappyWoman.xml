@@ -15,7 +15,7 @@
 			<Stage Name="Stage1" Level="3">
 				<DisplayName>凝气期</DisplayName>
 				<Desc>修行入门之境界，需下苦功宁神静坐，因此越是聪慧之人，脑海里念头越多，越难过这关。</Desc>
-				<Value>1800</Value>
+				<Value>51800</Value>
 				<Necks>
 					<Neck Location="0.3" Kind="Chance">
 						<DisplayName>摄思</DisplayName>
@@ -49,7 +49,7 @@
 			<Stage Name="Stage2" Level="6">
 				<DisplayName>结丹期</DisplayName>
 				<Desc>此乃修行第二重境界，需性命交修，水火相济，只为结成金丹一粒。</Desc>
-				<Value>4000</Value>
+				<Value>400000</Value>
 				<Necks>
 					<Neck Location="0.1" Kind="Chance">
 						<DisplayName>玄关</DisplayName>
@@ -83,7 +83,7 @@
 			<Stage Name="Stage3" Level="9">
 				<DisplayName>真丹期</DisplayName>
 				<Desc>修行的第三重境界，抟气致柔，能如婴儿乎？此境界了悟真我，方得逍遥。</Desc>
-				<Value>300000</Value>
+				<Value>3000000</Value>
 				<Necks>
 					
 					<Neck Location="0.2" Kind="Thunder">
@@ -120,7 +120,7 @@
 			<Stage Name="Stage4" Level="12">
 				<DisplayName>大乘期</DisplayName>
 				<Desc>修行的第四重境界，元婴于此境界历经雷劫洗礼化为纯阳，可以解脱肉身，飞升成仙。</Desc>
-				<Value>6560000</Value>
+				<Value>65600000</Value>
 				<Necks>
 					<Neck Location="0.15" Kind="Chance">
 						<DisplayName>炼神</DisplayName>

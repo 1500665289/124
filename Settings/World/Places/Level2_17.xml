@@ -16,17 +16,17 @@
 			<li>
 				<ThingDef>Item_Nvxiuluohong</ThingDef>
 				<Count>1</Count>
-				<Rate>1</Rate>
+				<Rate>0.1</Rate>
 			</li>
 			<li>
 				<ThingDef>Item_DogMeat</ThingDef>
 				<Count>30</Count>
-				<Rate>1</Rate>
+				<Rate>0.1</Rate>
 			</li>
 			<li>
 				<ThingDef>Item_Human_Milk</ThingDef>
 				<Count>30</Count>
-				<Rate>1</Rate>
+				<Rate>0.1</Rate>
 			</li>
 		</Produce>
 	</Place>

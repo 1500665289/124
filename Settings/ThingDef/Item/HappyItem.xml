@@ -29,7 +29,7 @@
 			</StuffCategories>
 			<CostStuffCount>4</CostStuffCount><!--需要数量-->
 			<CostItems>
-				<Item name = "Item_Water" count = "10"/>
+				<Item name = "Item_Water" count = "100"/>
 			</CostItems>
 		</BeMade> 
 	</Item>
@@ -68,7 +68,7 @@
 		</BeMade> 
 		<Fabao>
 		    <ActiveCondition>
-			    <Condition eventid = "KillCount" des = "携带宝物胚胎击杀99男性生灵" needcount = "99" sex = "1"/>
+			    <Condition eventid = "KillCount" des = "携带宝物胚胎击杀99男性生灵" needcount = "999" sex = "1"/>
 			</ActiveCondition>
 			<SpecialAbility>
 			     <Ability Kind="FlyDamageAddP" fParam1="0.01" Desc="帝女偶每飞行1秒，基础威力就提高1%，返回后清空。"/>
@@ -105,9 +105,9 @@
 		</Equip>
 		<BeMade>
 			<CostItems>
-				<Item name = "Item_Zhencaonan" count = "1"/>
-				<Item name = "Item_Human_Milk" count = "1"/>
-				<Item name = "Item_MonsterBlood" count = "3"/>
+				<Item name = "Item_Zhencaonan" count = "2"/>
+				<Item name = "Item_Human_Milk" count = "2"/>
+				<Item name = "Item_MonsterBlood" count = "5"/>
 			</CostItems>
 		</BeMade> 
 		<Fabao>
