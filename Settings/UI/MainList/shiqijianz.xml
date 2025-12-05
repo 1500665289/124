@@ -1,10 +1,10 @@
 <MainList>
   <List>
-    <Data Kind="Builds" Type="合欢" Unlock="1" CMDType="Build" Name="SEXzhuo"/>
-    <Data Kind="Builds" Type="合欢" Unlock="1" CMDType="Build" Name="Nvoubaoxiang"/>
-    <Data Kind="Builds" Type="合欢" Unlock="1" CMDType="Build" Name="fengyuebaojian"/>
-    <Data Kind="Builds" Type="合欢" Unlock="1" CMDType="Build" Name="siheyuan"/>
-    <Data Kind="Builds" Type="合欢" Unlock="1" CMDType="Build" Name="Yutong"/>
-    <Data Kind="Builds" Type="合欢" Unlock="1" CMDType="Build" Name="Tiechunv"/>
+    <Data Kind="Builds" Type="奇观" Unlock="1" CMDType="Build" Name="SEXzhuo"/>
+    <Data Kind="Builds" Type="奇观" Unlock="1" CMDType="Build" Name="Nvoubaoxiang"/>
+    <Data Kind="Builds" Type="奇观" Unlock="1" CMDType="Build" Name="fengyuebaojian"/>
+    <Data Kind="Builds" Type="奇观" Unlock="1" CMDType="Build" Name="siheyuan"/>
+    <Data Kind="Builds" Type="奇观" Unlock="1" CMDType="Build" Name="Yutong"/>
+    <Data Kind="Builds" Type="奇观" Unlock="1" CMDType="Build" Name="Tiechunv"/>
   </List>
 </MainList>
