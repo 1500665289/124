@@ -1,13 +1,14 @@
 <ModifierDefs><List>
+
 	<Modifier Name="Story_Zhenxianlingye1" Type="Normal">
 		<DisplayName>真仙灵液。</DisplayName>
-		<Desc>饮下修炼六欲心经大成的女修真仙下体蜜液后，从根本上的易经洗髓，使自己的气海容量增加10％。</Desc>
+		<Desc>饮下修炼六欲心经大成的女修真仙下体蜜液后，从根本上的易经洗髓，使自己的气海容量翻倍。</Desc>
 		<MaxStack>1</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
 		<Sync>1</Sync>
 		<Properties>
-			<li Name="NpcLingMaxValue" BAddP="0.1"/>
+			<li Name="NpcLingMaxValue" BAddP="1"/>
 		</Properties>
 	</Modifier>
 	<Modifier Name="Story_Caibuzhidao1" Type="Normal">
@@ -93,12 +94,12 @@
 		<li Name="MindStateBaseValue" AddV="1"/>
 		</Properties>
 	</Modifier>
-	<Modifier Name="YYHHGFL" Type="Normal">
-		<DisplayName>淫药</DisplayName>
-		<Desc>阴阳合欢蛊的屎，拥有极强的催情迷情效果。</Desc>
+	<Modifier Name="Yihun" Type="Normal">
+		<DisplayName>已婚</DisplayName>
+		<Desc>用于已婚判定，暂时作用于女性角色，因为一妻多夫跟轮奸似的不女拳，故本女拳正能量mod只支持一夫多妻。</Desc>
 		<MaxStack>1</MaxStack>
 		<Duration>-1</Duration>
-		<Display>1</Display>
+		<Display>0</Display>
 		<Sync>1</Sync>
 	</Modifier>
 	<Modifier Name="Zhenchaosuo" Type="Normal">
@@ -112,6 +113,14 @@
 	<Modifier Name="Zhenchaozhou" Type="Normal">
 		<DisplayName>贞操咒印</DisplayName>
 		<Desc>你的那里，现在被一道神秘的符咒封印了。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="Pochu" Type="Normal">
+		<DisplayName>破瓜</DisplayName>
+		<Desc>失去了处子之身。</Desc>
 		<MaxStack>1</MaxStack>
 		<Duration>-1</Duration>
 		<Display>1</Display>
@@ -233,7 +242,6 @@
 		<Duration>-1</Duration>
 		<Sync>1</Sync>
 		<Display>1</Display>
-		<LuaClassName>Tiaodan</LuaClassName>
 		<Moods>
 			<li>TiaodanGood</li>
 		</Moods>
@@ -268,242 +276,5 @@
 		<Moods>
 			<li>NvrenouGood</li>
 		</Moods>
-	</Modifier>
-	<Modifier Name="Shiqidezhufu" Type="Normal">
-		<DisplayName>测试特效</DisplayName>
-		<Desc>测试特效。</Desc>
-		<MaxStack>1</MaxStack>
-		<Duration>-1</Duration>
-		<Display>0</Display>
-		<Sync>1</Sync>
-		<EffectBind>			
-			<li Path="Effect/gsq/Zhen/skill/fx_QiXingPoWang01_biaoji" Bip="Dummy001"/>
-			<li Path="Effect/gsq/Prefab/ZhenFa02" Bip="Dummy001"/>
-		</EffectBind>
-	</Modifier>
-	<Modifier Name="Naocanfendexianshen" Type="Normal">
-		<DisplayName>瑙璨纷的献身</DisplayName>
-		<Desc>瑙璨纷为了蒸煮奉了自己的一切，就连死后的灵魂也不愿离开蒸煮，化为护盾为蒸煮抵挡一切伤害。</Desc>
-		<MaxStack>9999</MaxStack>
-		<Duration>-1</Duration>
-		<Display>0</Display>
-		<Sync>1</Sync>
-		<Properties>
-			<li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
-		</Properties>
-	</Modifier>
-	<Modifier Name="Qufudu" Type="Normal">
-		<DisplayName>屈服度</DisplayName>
-		<Desc>囚犯对本门的屈服度。</Desc>
-		<MaxStack>10</MaxStack>
-		<Duration>-1</Duration>
-		<Display>0</Display>
-		<Sync>1</Sync>
-	</Modifier>
-	<Modifier Name="Prison_Modifier" Type="Normal">
-		<DisplayName>囚犯</DisplayName>
-		<Desc>这是刚被俘虏的囚犯。</Desc>
-		<Display>1</Display>
-		<MaxStack>1</MaxStack>
-		<Duration>-1</Duration>
-		<BaseFive>0,0,0,0,0</BaseFive>
-		<Properties>
-			<li Name="MindStateBaseValue" AddV="-20"/>						<!--心境-15-->
-			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-50"/>		<!--人物修炼速度减少50%-->
-			<li Name="MoveSpeed" AddP="-0.5"/>								<!--人物移动速度减少50%-->
-			<li Name="LingAbsorbSpeed" AddP="-50"/>							<!--人物灵气减少50%-->
-		</Properties>
-		<SpecialFlags>
-			<li>FLAG_NOMAGIC</li>
-			<li>FLAG_MAGICING</li>
-			<li>FLAG_NOFIGHT</li>
-		</SpecialFlags>
-		<LuaClassName>Qiufan</LuaClassName>
-	</Modifier>
-	<Modifier Name="Prison_Modifier2" Type="Normal">
-		<DisplayName>劳改</DisplayName>
-		<Desc>这名囚犯正在受到宗门的劳动改造，本门弟子可以对其作出任何要求。</Desc>
-		<Display>1</Display>
-		<MaxStack>1</MaxStack>
-		<Duration>-1</Duration>
-		<BaseFive>0,0,0,0,0</BaseFive>
-		<Properties>
-			<li Name="MindStateBaseValue" AddV="-20"/>						<!--心境-15-->
-			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="-100"/>		<!--人物修炼速度减少50%-->
-			<li Name="MoveSpeed" AddP="-0.5"/>								<!--人物移动速度减少50%-->
-			<li Name="LingAbsorbSpeed" AddP="-50"/>							<!--人物灵气减少50%-->
-		</Properties>
-	</Modifier>
-	<Modifier Name="Shenlongneidan" Type="Normal">
-		<DisplayName>龙珠</DisplayName>
-		<Desc></Desc>
-		<MaxStack>1</MaxStack>
-		<Duration>-1</Duration>
-		<Sync>1</Sync>
-		<Display>0</Display>
-		<Properties>
-			<li Name="RecoveryPower" AddP="5"/>
-			<li Name="LingAbsorbSpeed" AddP="10"/>
-		</Properties>
-	</Modifier>
-	<Modifier Name="Shenlongneidan2" Type="Normal">
-		<DisplayName>龙珠2</DisplayName>
-		<Desc></Desc>
-		<MaxStack>1</MaxStack>
-		<Duration>-1</Duration>
-		<Sync>1</Sync>
-		<Display>0</Display>
-		<Properties>
-			<li Name="NpcFight_ShieldResistanceToShui" AddV="1"/>
-			<li Name="RecoveryPower" AddP="10"/>
-			<li Name="LingAbsorbSpeed" AddP="20"/>
-		</Properties>
-	</Modifier>
-	<Modifier Name="Fenghuangzhixue" Type="Normal">
-		<DisplayName>凤凰之血</DisplayName>
-		<Desc>可以让人重生的神秘血统。</Desc>
-		<MaxStack>1</MaxStack>
-		<Duration>-1</Duration>
-		<Display>1</Display>
-		<Sync>1</Sync>
-		<LuaClassName>Fuhuo</LuaClassName>
-	</Modifier>
-	<Modifier Name="FuhuoCD" Type="Normal">
-		<DisplayName>凤凰之血CD</DisplayName>
-		<Desc>凤凰之血CD</Desc>
-		<MaxStack>1</MaxStack>
-		<Duration>10</Duration>
-		<Display>1</Display>
-		<Sync>1</Sync>
-		<LuaClassName>FuhuoCD</LuaClassName>
-	</Modifier>
-	<Modifier Name="Wanxue" Type="Normal">
-		<DisplayName>万血邪经</DisplayName>
-		<Desc>万血邪经</Desc>
-		<MaxStack>1</MaxStack>
-		<Duration>-1</Duration>
-		<Display>1</Display>
-		<Sync>1</Sync>
-		<LuaClassName>Wanxue</LuaClassName>
-	</Modifier>
-	<Modifier Name="Chirenrou" Type="Normal">
-		<DisplayName>吃人肉</DisplayName>
-		<Desc>吃人肉</Desc>
-		<MaxStack>1</MaxStack>
-		<Duration>1</Duration>
-		<Display>1</Display>
-		<Sync>1</Sync>
-		<LuaClassName>Chirenrou</LuaClassName>
-	</Modifier>
-	<Modifier Name="Renmulingye" Type="Normal">
-		<DisplayName>树母灵液</DisplayName>
-		<Desc>树母灵液</Desc>
-		<MaxStack>1</MaxStack>
-		<Duration>1</Duration>
-		<Display>1</Display>
-		<Sync>1</Sync>
-		<LuaClassName>Renmulingye</LuaClassName>
-	</Modifier>
-	<Modifier Name="Hejingye" Type="Normal">
-		<DisplayName>饮精</DisplayName>
-		<Desc>饮精</Desc>
-		<MaxStack>1</MaxStack>
-		<Duration>1</Duration>
-		<Display>1</Display>
-		<Sync>1</Sync>
-		<LuaClassName>Hejingye</LuaClassName>
-	</Modifier>
-	
-	<Modifier Name="Shouyun" Type="Normal">
-		<DisplayName>怀孕</DisplayName>
-		<Desc>怀孕</Desc>
-		<MaxStack>1</MaxStack>
-		<Duration>18000</Duration>
-		<Display>1</Display>
-		<Sync>1</Sync>
-		<LuaClassName>Shouyun</LuaClassName>
-	</Modifier>
-	
-	<Modifier Name="Modifier_Item_Renshenguo5" Type="Normal">
-		<DisplayName>六欲妙果（仙）</DisplayName>
-		<Desc>从根本上提高灵气最大值提高寿命</Desc>
-		<MaxStack>0</MaxStack>
-		<Duration>-1</Duration>
-		<Display>0</Display>
-		<Properties>
-			<li Name="NpcLingMaxValue" BAddV="10000"/>
-			<li Name="MaxAge" AddV="1000"/>
-		</Properties>
-	</Modifier> 
-	
-	<Modifier Name="Modifier_Item_Renshenguo4" Type="Normal">
-		<DisplayName>六欲妙果（邪）</DisplayName>
-		<Desc>从根本上提高灵气最大值提高寿命，但是会提升愤怒并容易做噩梦</Desc>
-		<MaxStack>0</MaxStack>
-		<Duration>-1</Duration>
-		<Display>0</Display>
-		<Properties>
-			<li Name="NpcLingMaxValue" BAddV="5000"/>
-			<li Name="MaxAge" AddV="500"/>
-			<li Name="FightingProbabilityAddValue" AddV="10"/>
-			<li Name="NightmareHappenPercent" AddP="3"/>
-		</Properties>
-	</Modifier> 
-	
-	<Modifier Name="Modifier_Item_Renshenguo3" Type="Normal">
-		<DisplayName>六欲妙果（上）</DisplayName>
-		<Desc>从根本上提高灵气最大值提高寿命</Desc>
-		<MaxStack>0</MaxStack>
-		<Duration>-1</Duration>
-		<Display>0</Display>
-		<Properties>
-			<li Name="NpcLingMaxValue" BAddV="5000"/>
-			<li Name="MaxAge" AddV="500"/>
-		</Properties>
-	</Modifier> 
-	
-	<Modifier Name="Modifier_Item_Renshenguo2" Type="Normal">
-		<DisplayName>六欲妙果（中）</DisplayName>
-		<Desc>从根本上提高灵气最大值提高寿命</Desc>
-		<MaxStack>0</MaxStack>
-		<Duration>-1</Duration>
-		<Display>0</Display>
-		<Properties>
-			<li Name="NpcLingMaxValue" BAddV="2500"/>
-			<li Name="MaxAge" AddV="250"/>
-		</Properties>
-	</Modifier> 
-	
-	<Modifier Name="Modifier_Item_Renshenguo1" Type="Normal">
-		<DisplayName>六欲妙果（下）</DisplayName>
-		<Desc>从根本上提高灵气最大值提高寿命</Desc>
-		<MaxStack>0</MaxStack>
-		<Duration>-1</Duration>
-		<Display>0</Display>
-		<Properties>
-			<li Name="NpcLingMaxValue" BAddV="1250"/>
-			<li Name="MaxAge" AddV="125"/>
-		</Properties>
-	</Modifier> 
-	
-	<Modifier Name="Kuileiwawa" Type="Normal">
-		<DisplayName>尼尔模型</DisplayName>
-		<Desc>由仙剑三轮回者作者制作的模型，如果喜欢请订阅该作者在WG和steam上的mod。\n给想要替换模型的npc挂载本Modifier，就会替换。</Desc>
-		<NpcModPath>Mod/Npc/Human/naked.FBX</NpcModPath>
-		<ModScale>1</ModScale>
-		<MaxStack>1</MaxStack>
-		<Duration>-1</Duration>
-		<Display>1</Display>
-		<Sync>1</Sync>
-	</Modifier>
-	
-	<Modifier Name="Daiyun" Type="Normal">
-		<DisplayName>代孕怀孕中</DisplayName>
-		<Desc>替仙界大能爽子代孕中……</Desc>
-		<MaxStack>1</MaxStack>
-		<Duration>117600</Duration>
-		<Display>1</Display>
-		<Sync>1</Sync>
-		<LuaClassName>Daiyun</LuaClassName>
 	</Modifier>
 </List></ModifierDefs>

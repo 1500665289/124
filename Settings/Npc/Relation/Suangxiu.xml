@@ -1,8 +1,8 @@
 <RelationDefs><List>
-	<Relation Name="Luding2"  Opposite="Luding1">  <!--奴隶-->
+	<Relation Name="Luding1">  <!--男主女从-->
 		<AutoGentrate>1</AutoGentrate>
 		<DisplayNameF>女奴</DisplayNameF>
-		<DisplayNameM>公狗</DisplayNameM>
+		<DisplayNameM>主人</DisplayNameM>
 		<Links>
 			<li From="SELF"		To="Luding1"/>
 		</Links>
@@ -13,6 +13,7 @@
 			
 		<BanRelation>	
 			<li>Lover</li>
+			<li>Luding2</li>
 		</BanRelation>
 		
 		<Favour>Luding</Favour>
@@ -20,10 +21,10 @@
 		<AgeMin>12</AgeMin>
 	</Relation>
 	
-	<Relation Name="Luding1"  Opposite="Luding2"> <!--主人-->
+	<Relation Name="Luding2"> <!--女主男从-->
 		<AutoGentrate>1</AutoGentrate>
-		<DisplayNameF>主人</DisplayNameF>
-		<DisplayNameM>主人</DisplayNameM>
+		<DisplayNameF>女主人</DisplayNameF>
+		<DisplayNameM>公狗</DisplayNameM>
 		<Links>
 			<li From="SELF"		To="Luding2"/>
 		</Links>
@@ -34,6 +35,7 @@
 			
 		<BanRelation>
 			<li>Lover</li>
+			<li>Luding1</li>
 		</BanRelation>
 		
 		<Favour>Luding</Favour>
@@ -43,7 +45,7 @@
 	
 	<Relation Name="Chunv"> <!--女性的第一滴血-->
 		<AutoGentrate>1</AutoGentrate>
-		<DisplayNameF>炮架</DisplayNameF>
+		<DisplayNameF>被我取一血</DisplayNameF>
 		<DisplayNameM>第一个男人</DisplayNameM>
 		<Links>
 			<li From="SELF"		To="Chunv"/>
@@ -55,25 +57,5 @@
 		<Favour>Chunv</Favour>
 		<OppositeSex>1</OppositeSex>
 		<AgeMin>12</AgeMin>
-	</Relation>
-	
-	<Relation Name="Kuzhu" Opposite="KuzhuFlag">
-		<AutoGentrate>1</AutoGentrate>
-		<DisplayNameF>苦主</DisplayNameF>
-		<DisplayNameM>苦主</DisplayNameM>	
-		<Links>
-			<li From="SELF"		To="KuzhuFlag"/>
-		</Links>
-		<Favour>Lvmao</Favour>
-	</Relation>
-	
-	<Relation Name="KuzhuFlag"  Opposite="Kuzhu">
-		<AutoGentrate>0</AutoGentrate>
-		<DisplayNameF>黄毛</DisplayNameF>
-		<DisplayNameM>黄毛</DisplayNameM>
-		<Links>
-			<li From="SELF"		To="Kuzhu"/>
-		</Links>
-		<Favour>Beilv</Favour>
 	</Relation>
 </List></RelationDefs>

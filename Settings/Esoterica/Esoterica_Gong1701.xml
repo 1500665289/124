@@ -104,12 +104,12 @@
 	</Esoterica>
 	
 	<Esoterica Name="Gong1701_Esoterica_17">
-		<DisplayName>秘宝：未完成</DisplayName>
+		<DisplayName>秘宝：帝女偶</DisplayName>
 		<Hide>2</Hide>
 		<Icon>res/Sprs/ui/icon_yujian</Icon>
 		<StarLevel>2</StarLevel>
 		<Difficulty>0</Difficulty>
-		<Desc>记录秘宝：未完成。</Desc>
+		<Desc>记录秘宝：帝女偶的炼制方法。</Desc>
 		<GLevel>Qi</GLevel>
 		<Element>None</Element>
 		<Type>None</Type>
@@ -117,41 +117,5 @@
 		<Fabaos>
 			<li>MiBaoFormula_Dinvshenou</li>
 		</Fabaos>
-	</Esoterica>
-	
-	<Esoterica Name="Gong1701_Esoterica_997">
-		<DisplayName>榨汁姬</DisplayName>
-		<Icon>Spr\Object\zzj.png</Icon>
-		<StarLevel>0</StarLevel>
-		<Difficulty>0</Difficulty>
-		<GLevel>None</GLevel>
-		<EffectDesc>[size=10][color=#D06508]习得能力：榨汁姬\n  以跳蛋为引，化身女魔将地图上所有失去行动力的敌人，吃干抹净。[/color][/size]</EffectDesc>
-		<Magics>
-			<li>Zhazhiji</li>
-		</Magics>
-	</Esoterica>
-	
-	<Esoterica Name="Gong1701_Esoterica_998">
-		<DisplayName>迷囚术</DisplayName>
-		<Icon>Spr\Object\qiufan.png</Icon>
-		<StarLevel>0</StarLevel>
-		<Difficulty>0</Difficulty>
-		<GLevel>None</GLevel>
-		<EffectDesc>[size=10][color=#D06508]习得能力：迷囚术\n  施展合欢宗的秘术，将一个正在劳改的角色转化成自身的奴隶。[/color][/size]</EffectDesc>
-		<Magics>
-			<li>Tunshifa</li>
-		</Magics>
-	</Esoterica>
-	
-	<Esoterica Name="Gong1701_Esoterica_999">
-		<DisplayName>秘法：瑙璨纷献身法</DisplayName>
-		<Icon>res/Sprs/ui/icon_yujian</Icon>
-		<StarLevel>0</StarLevel>
-		<Difficulty>0</Difficulty>
-		<Desc>来源于《饭圈道》的秘法，习得此功法，可以为了自己所仰慕之人，奉献自己的一切。</Desc>
-		<GLevel>Qi</GLevel>
-		<Element>None</Element>
-		<Type>Gong</Type>
-		<EffectDesc>[size=10][color=#D06508]习得 秘法：\n瑙璨纷献身法[/color][/size]</EffectDesc>	
 	</Esoterica>
 </List></Esotericas>

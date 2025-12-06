@@ -1,8 +1,8 @@
 ﻿<Gongs><List>
 	<Gong Name="Gong_1701_Tu">
-		<DisplayName>采花经</DisplayName>
-		<Desc>历代下九流的散修们靠着博众家所长所研发出的采补修行之法。</Desc>
-		<SelectDesc>此功法极擅采补术，且若无炉鼎加成修炼极慢，且因均需要大量处子帮助修行，是否要选择修习此功法？</SelectDesc>
+		<DisplayName>六欲心经残篇</DisplayName>
+		<Desc>六欲心经原为合欢宗不传之秘，此功法对天赋灵气均无任何要求，此虽只是残篇却也只需采补一途即可直指天道。</Desc>
+		<SelectDesc>此功法极擅采补术，且若无炉鼎加成修炼极慢，且因采补之道有伤天合，故任一阶段突破均有天劫降临，是否要选择修习此功法？</SelectDesc>
 		<FiveBaseNeed>-1,-1,-1,-1,-1</FiveBaseNeed>
 		<SkillSetName></SkillSetName>
 		<ElementKind>Tu</ElementKind>
@@ -16,7 +16,7 @@
 			<Stage Name="Stage1" Level="3">
 				<DisplayName>取精</DisplayName>
 				<Desc></Desc>
-				<Value>50000</Value>
+				<Value>8000</Value>
 				<Necks>
 					<Neck Location="0.3" Kind="Chance">
 						<DisplayName>修性</DisplayName>
@@ -56,7 +56,7 @@
 			<Stage Name="Stage2" Level="6">
 				<DisplayName>还精</DisplayName>
 				<Desc></Desc>
-				<Value>360000</Value>
+				<Value>36000</Value>
 				<Necks>
 					<Neck Location="0.3" Kind="Chance">
 						<DisplayName>修性</DisplayName>

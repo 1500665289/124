@@ -6,70 +6,8 @@
 		<Selections>
 			<li>
 				<Display>继续</Display> 
-				<DisplayCondition>
-				GameMain:GetMod("Lua_hudong"):ShuijiaonoPD()
-				</DisplayCondition>
 				<OKResult>
 				GameMain:GetMod("Lua_hudong"):LiaoTian()
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>卖身</Display> 
-				<DisplayCondition>
-				GameMain:GetMod("Lua_hudong"):MaiyinPD()
-				</DisplayCondition>
-				<OKResult>
-				GameMain:GetMod("Lua_hudong"):Maiyin()
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>夜袭</Display> 
-				<DisplayCondition>
-				GameMain:GetMod("Lua_hudong"):ShuijiaoPD()
-				</DisplayCondition>
-				<OKResult>
-				GameMain:GetMod("Lua_hudong"):Yexi()
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>求教</Display> 
-				<DisplayCondition>
-				GameMain:GetMod("Lua_hudong"):ShituPD()
-				</DisplayCondition>
-				<OKResult>
-				GameMain:GetMod("Lua_hudong"):Shitu()
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>榨干</Display> 
-				<DisplayCondition>
-				GameMain:GetMod("Lua_hudong"):ZaganPD()
-				</DisplayCondition>
-				<OKResult>
-				GameMain:GetMod("Lua_hudong"):Zagan()
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>观察</Display> 
-				<OKResult>
-				GameMain:GetMod("Lua_hudong"):Guancha()
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>关系赋予（测试用）</Display>
-				<DisplayCondition>
-				CS.XiaWorld.GlobleDataMgr.Instance:GetUserKey() == "76561197980368013" or CS.XiaWorld.GlobleDataMgr.Instance:GetUserKey() == "76561198279882461"
-				</DisplayCondition>
-				<OKResult>
-				npc1 = ThingMgr:FindThingByID(me.npcObj.ID)
-				npc2 = ThingMgr:FindThingByID(story:GetBindThing().ID)
-				npc1.PropertyMgr.Practice.BodyPracticeData:UnLockSuperPart("SuperPart_Nvquan_4")
 				</OKResult>
 			</li>
 		</Selections>
@@ -111,7 +49,7 @@
 			</li>
 			
 			<li>
-				<Display>SEX</Display> 
+				<Display>色诱</Display> 
 				<DisplayCondition>
 				GameMain:GetMod("Lua_hudong"):NTRPD()
 				</DisplayCondition>
@@ -176,43 +114,13 @@
 					elseif Panding == 2 then
 					me:TriggerStory("Item_Nvnbiaoyan2");
 					elseif Panding >= 25 and me:CheckItemEquptCount("Item_HuoEssence") == 1 then
-					me:TriggerStory("Item_Nvnbiaoyan3");
+					me:TriggerStory("Item_Nvnbiaoyan2");
 					else
 					me:TriggerStory("Item_Nanbiaoyan5");
 					end
 				else
 				me:AddMsg("[NAME]身上的银钱不够使用合欢宝鉴。");
 				end
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>离开</Display> 
-				<OKResult>
-				me:AddMsg("[NAME]取消了互动。");
-				</OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="Item_YYHHGguzhong">
-		<DisplayName>蛊种</DisplayName>
-		<Desc>[NAME]这是阴阳合欢蛊的蛊种</Desc>
-		<Kind>None</Kind>
-		<Selections>
-			<li>
-				<Display>喂养</Display> 
-				<OKResult>
-				me:AddMsg("[NAME]挤了一滴精血喂养蛊虫，蛊贪婪的喝下了[NAME]的精血，显得很高兴，并将排泄出来的废物向[NAME]的手中拱去。");
-				me:ModifierProperty("MaxAge",-1);
-				me:AddModifier("YYHHGFL");
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>育蛊</Display> 
-				<OKResult>
-				GameMain:GetMod("Lua_shijian"):shiqi30()
 				</OKResult>
 			</li>
 			
@@ -233,7 +141,18 @@
 			<li>
 				<Display>开锁</Display> 
 				<OKResult>
-				GameMain:GetMod("Lua_shijian"):shiqi31()
+				if me:CheckItemEquptCount("Item_Lazhu") == 1 then
+				Fulu = me:GetModifierStack("Qian");
+				me:AddMsg(string.format(XT("作为宗门弟子的[NAME]当然知道眼前这是女偶箱的防盗系统，所谓张开的嘴只是用来骗那些蠢货的假锁孔。\n[NAME]从自己股间抽出那还带着直肠余温的灵动能肛珠，塞入了女偶身后的孔穴搅动了百于下后，女偶返身打开了箱子，并调取了属于[NAME]个人的空间。\n空间内存放白银：%s两"), tostring(Fulu)));
+				else
+					if me.npcObj.PropertyMgr.BodyData:PartIsBroken("Genitals") or me:GetSex() == 2 then
+					me:AddMsg("[NAME]身为宗门弟子，自然知道女偶那张开的小嘴是防盗的伪锁孔，[NAME]身上并没有携带用于开启女偶锁孔的秘匙，只能转身离开了。");
+					else
+					me:AddMsg("[NAME]身为宗门弟子，自然知道女偶那张开的小嘴是防盗的伪锁孔，[NAME]身上并没有携带用于开启女偶锁孔的秘匙，但是闲着也是闲着，不知怎么想的[NAME]就掏出肉棒往女偶嘴中插了进去，而后自顾自的开始了活塞移动……快意正浓时……只觉下体一疼……\n该死！这女偶的设定被改了，明明以前不会……");
+					me:DropAwardItem("Item_Baobeier",1);
+					me:AddDamage("Fabao_CutOff","Genitals", 1, XT("被合欢女偶咬断"));
+					end
+				end
 				</OKResult>
 			</li>
 			
@@ -252,22 +171,56 @@
 		<Kind>None</Kind>
 		<Selections>
 			<li>
-				<Display>作弊</Display>
-				<DisplayCondition>
-				(CS.XiaWorld.GlobleDataMgr.Instance:GetUserKey() == "76561197980368013" or CS.XiaWorld.GlobleDataMgr.Instance:GetUserKey() == "76561198279882461") and me.npcObj.GongKind == g_emGongKind.God
-				</DisplayCondition>
-				<OKResult>
-				me.npcObj.LuaHelper:AddFaith(10000000);
-				me.npcObj.LuaHelper:AddGodPopulation(100000);
-				me.npcObj.PropertyMgr.Practice.GodPracticeData.MindStateMaxLevel = 5
-				me.npcObj.PropertyMgr.Practice.GodPracticeData:MindStateLevelLevelUp()
-				me.npcObj.Needs:AddNeedValue(CS.XiaWorld.g_emNeedType.MindState,700)
-				</OKResult>
-			</li>
-			<li>
 				<Display>继续</Display> 
 				<OKResult>
-				GameMain:GetMod("Lua_shijian"):shiqi32()
+				if me:GetModifierStack("Nvrenou") == 0 then
+					if me:GetGongName() == "Gong_1701_Tu" then
+						if me:GetSex() > 1 then
+						me:AddMsg("[NAME]虽然修炼了合欢残篇，但[NAME]是个女子，于是只能抱着女偶把玩了一会后便离开了。");
+						else
+							if me.npcObj.PropertyMgr.BodyData:PartIsBroken("Genitals") then
+							me:AddMsg("[NAME]虽然修炼了合欢残篇，但[NAME]是个太监，于是只能抱着女偶把玩了一会后便离开了。");
+							else
+							me:AddMsg("[NAME]修炼了合欢残篇，按照功法所述的方式插入女偶下体，并且运功调息抽插百余下后元阳依旧紧锁不泻，虽女偶为死物，[NAME]确依旧从中练功中获得了不少修为。");
+							me:AddPracticeResource("Stage",me:GetGLevel() * 1000);
+							end
+						end
+					else
+						if me:GetSex() > 1 then
+						me:AddMsg("[NAME]并没有主修合欢残篇，又是个女子，抱着女偶把玩了一会后便离开了。");
+						else
+							if me.npcObj.PropertyMgr.BodyData:PartIsBroken("Genitals") then
+							me:AddMsg("[NAME]并没有主修合欢残篇，又是个太监，抱着女偶把玩了一会后便离开了。");
+							else
+							me:AddMsg("[NAME]虽然没有学过采补功法，但是看这人偶着实漂亮，忍不住掏出胯下肉棒便往玩偶的孔穴里抽插了起来，百余次冲刺之后射了一滩精元与玩偶穴中。");
+								if me:GetGLevel() == 12 then
+								me:DropAwardItem("Item_yangjin6",1);
+								else
+									if me:GetGLevel() > 9 then
+									me:DropAwardItem("Item_yangjin5",1);
+									else
+										if me:GetGLevel() > 6 then
+										me:DropAwardItem("Item_yangjin4",1);
+										else
+											if me:GetGLevel() > 3 then
+											me:DropAwardItem("Item_yangjin3",1);
+											else
+												if me:GetGLevel() > 0 then
+												me:DropAwardItem("Item_yangjin2",1);
+												else
+												me:DropAwardItem("Item_yangjin1",1);
+												end
+											end
+										end
+									end
+								end
+							end
+						end
+					end
+					me:AddModifier("Nvrenou");
+				else
+				me:AddMsg("[NAME]最近玩过女偶了。");
+				end
 				</OKResult>
 			</li>
 		</Selections>
@@ -281,55 +234,57 @@
 			<li>
 				<Display>继续</Display> 
 				<OKResult>
-				GameMain:GetMod("Lua_shijian"):shiqi33()
-				</OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="Item_Yutong">
-		<DisplayName>浴桶</DisplayName>
-		<Desc>[NAME]来到了浴桶前。</Desc>
-		<Kind>None</Kind>
-		<Selections>
-			<li>
-				<Display>精浴</Display> 
-				<DisplayCondition>
-				GameMain:GetMod("Lua_hudong"):JingyuPD()
-				</DisplayCondition>
-				<OKResult>
-				GameMain:GetMod("Lua_hudong"):Jingyu()
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>屠宰人类尸体</Display> 
-				<DisplayCondition>
-				GameMain:GetMod("Lua_hudong"):TuzaiPD()
-				</DisplayCondition>
-				<OKResult>
-				GameMain:GetMod("Lua_hudong"):Tuzai()
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>沐浴</Display> 
-				<OKResult>
-				me:AddMsg("[NAME]洗了个澡。");
-				</OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="Item_Tiechunv">
-		<DisplayName>铁处女</DisplayName>
-		<Desc>[NAME]来到了铁处女前。</Desc>
-		<Kind>None</Kind>
-		<Selections>
-			<li>
-				<Display>邪恶炼成</Display> 
-				<OKResult>
-				GameMain:GetMod("Lua_hudong"):Xieeliancheng()
+				if me:GetModifierStack("Shuangtoulong") == 0 then
+					if me:GetGongName() == "Gong_1701_Tu" then
+						if me:GetModifierStack("Pochu") == 0 and me:GetSex() == 2 then
+						me:AddMsg("[NAME]手把着双头龙探入下身肉穴，[NAME]那处子的肉穴无比紧致，双头龙堪堪插入便被一层薄膜挡住，那自然就是[NAME]的处女膜。\n[NAME]狠下心来把双头龙猛的向小穴一送，“啊……！”处女膜被双头龙撕裂的痛苦让[NAME]惨叫出声音来。\n歇息片刻，[NAME]感觉不是那么疼了，于是手握双头龙在小穴中来回抽送，百余来回之后突一冷颤，蜜穴尽头泄出了一股搀着处子精血的阴元。");
+						me:AddModifier("Shuangtoulong");me:AddModifier("Pochu");me:DropAwardItem("Item_Nvxiuluohong",1);
+						else
+							if me:GetSex() > 1 then
+							me:AddMsg("[NAME]修炼了合欢残篇，按照功法所述的方式将双头龙插入下体运功调息。手把着双头龙在小穴中来回抽送，百余来回之后[NAME]感觉神志清明仿佛已完成了一个运功的大循环。");
+							me:AddPracticeResource("Stage",me:GetGLevel() * 1000);
+							me:AddModifier("Shuangtoulong");
+							else
+							me:AddMsg("[NAME]虽然学了合欢残篇，但是男人也不用这玩意是吧？。");
+							end
+						end
+					else
+						if me:GetSex() > 1 then
+							if me:GetModifierStack("Pochu") == 0 then
+							me:AddMsg("[NAME]手把着双头龙探入下身肉穴，[NAME]那处子的肉穴无比紧致，双头龙堪堪插入便被一层薄膜挡住，那自然就是[NAME]的处女膜。\n[NAME]狠下心来把双头龙猛的向小穴一送，“啊……！”处女膜被双头龙撕裂的痛苦让[NAME]惨叫出声音来。\n歇息片刻，[NAME]感觉不是那么疼了，于是手握双头龙在小穴中来回抽送，百余来回之后突一冷颤，蜜穴尽头泄出了一股搀着处子精血的阴元。");
+							me:AddModifier("Shuangtoulong");me:AddModifier("Pochu");me:DropAwardItem("Item_Nvxiuluohong",1);
+							else
+							me:AddMsg("[NAME]手把着双头龙在小穴中来回抽送，百余来回之后突一冷颤，蜜穴尽头泄出了一股的阴元。");
+							me:AddModifier("Shuangtoulong");
+							end
+							if me:GetGLevel() == 12 then
+							me:DropAwardItem("Item_yinjin6",1);
+							else
+								if me:GetGLevel() > 9 then
+								me:DropAwardItem("Item_yinjin5",1);
+								else
+									if me:GetGLevel() > 6 then
+									me:DropAwardItem("Item_yinjin4",1);
+									else
+										if me:GetGLevel() > 3 then
+										me:DropAwardItem("Item_yinjin3",1);
+										else
+											if me:GetGLevel() > 0 then
+											me:DropAwardItem("Item_yinjin2",1);
+											else
+											me:DropAwardItem("Item_yinjin1",1);
+											end
+										end
+									end
+								end
+							end
+						else
+						me:AddMsg("[NAME]是个男人，也不用这玩意是吧？。");
+						end
+					end
+				else
+				me:AddMsg("[NAME]最近玩过双头龙了。");
+				end
 				</OKResult>
 			</li>
 		</Selections>

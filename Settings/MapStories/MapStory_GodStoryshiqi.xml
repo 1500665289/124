@@ -6,7 +6,21 @@
 		<Selections>
 			<li>
 				<Display>上前阻止</Display>  
-				<OKResult>GameMain:GetMod("Lua_shijian"):shiqi34()</OKResult>
+				<OKResult><![CDATA[
+				if me:GetGLevel() > 6 then
+				me:AddMsg(XT("[NAME]击退了合欢宗女修，但是那些差点成为炉鼎的死老百姓根本没有觉得[NAME]的是善举，甚至还对[NAME]破口大骂，但此举顺应天道，[NAME]获得了一些功德。"));me:ModifierProperty("GodPenaltyAddV",-me:RandomInt(3,8));story:FinishSecret();
+				else
+					if me:GetSex () > 1 then
+					me:AddMsg(XT("[NAME]修为不继，被合欢女修封住周身大穴，扒光衣服扔在路边任人玩弄，[NAME]被一众凡人轮奸了上百次，浑身上下没有一处不沾染那令人恶心的白浊粘液，若非[NAME]是个修炼者，怕是这次就要交代于此了，多管闲事的确是要付出代价的。"));me:AddModifier("Pochu");me:AddMemery("在一次历练的途中被凡人轮奸了！");me:AddTitle(XT("被凡人轮奸过的女修士"),string.format(XT("在%s年，于一次历练途中，因某些原因失去战力，惨遭凡人轮奸"),1));story:FinishSecret();
+					else
+						if me.npcObj.PropertyMgr.BodyData:PartIsBroken("Genitals") then
+						me:AddMsg(XT("[NAME]修为不继，被合欢女修封住周身大穴，合欢女修正待享受一番神道修士的元阳精华，却发现身为神修的[NAME]竟然是个太监，合欢女修勃然大怒，鼓动那些愚民们将[NAME]鸡奸了。"));me:AddMemery("在一次历练的途中被凡人鸡奸了！");me:AddTitle(XT("菊花残"),string.format(XT("在%s年，于一次历练途中，因某些原因失去战力，惨遭凡人鸡奸！"),1));story:FinishSecret();
+						else
+						me:AddMsg(XT("[NAME]修为不继，中了合欢女修的七情咒。\n只见合欢女修褪下衣衫向[NAME]勾了勾手指，[NAME]便如同发情的公狗一般穿着粗气想要上前做上一番活塞运动，奈何身中魔咒未得对方应允周身皆无法行动，只见妖女伸出手指掰开蜜穴花瓣后吩咐的一句“来舔”，[NAME]终感周身禁制被解，方能匍匐向前伸出舌头开始舔着那早已开始淌水的蜜穴……十个时辰之后，妖女将完全榨干的[NAME]随手丢弃在路边，独自离开了。"));me:AddModifier("Story_Caibuzhidao2");me:AddMemery("在一次历练的途中被合欢女修采补了！");me:AddTitle(XT("废弃炉鼎"),string.format(XT("在%s年，于一次历练途中，被合欢女修吸了个一干二净后弃置！"),1));story:FinishSecret();
+						end
+					end
+				end
+				]]></OKResult>
 			</li>
 			
 			<li>
@@ -44,142 +58,6 @@
 		</Selections>
 	</Story>
 	
-	<Story Name="GodStoryshiqi_3">
-		<DisplayName>传道</DisplayName>
-		<Kind>GodStory</Kind>
-		<Desc>[NAME]在游历之时得闻一事：\n两子争产，幼子蒙骗于父得其产，后携产与妓子同行放浪形骸，长子未得产，却就恭顺孝亲十余载，并倚仁孝之名被举孝廉入仕。\n幼子于散尽祖产之时得知其兄已为一地牧守，上门欲求一吏职，未果。\n遂含愤而出并扬言“三十年河东，三十年河西……”，然至今任是河东之时，潦倒于破庙之中乞食度日。</Desc>
-		<Selections>
-			<li>
-				<Display>助幼子夺产</Display>  
-				<OKResult>GameMain:GetMod("Lua_shijian"):shiqi36()</OKResult>
-			</li>
-			
-			<li>
-				<Display>离开</Display>  
-				<OKResult><![CDATA[
-				me:AddMsg(XT("[NAME]决定还是不管这场闲事，转身离开。"));
-				]]></OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="GodStoryshiqi_4">
-		<DisplayName>传道</DisplayName>
-		<Kind>GodStory</Kind>
-		<Desc>[NAME]在游历之时途经一人族村落，遇一群顽童于村旁荒冢嬉闹，一顽童许是尿急，竟对着一坟冢撒尿……</Desc>
-		<Selections>
-			<li>
-				<Display>劝阻孩童</Display>  
-				<OKResult><![CDATA[
-				npc = ThingMgr:FindThingByID(me.npcObj.ID)
-				Godming = nil
-				zhenming = nil
-				buzhuoGod = 0
-				shuzi = 1
-					while(npc.PropertyMgr.Practice.GodPracticeData:GetGuardData(shuzi)~= nil)do
-					zhenming = npc.PropertyMgr.Practice.GodPracticeData:GetGuardData(shuzi)
-					Godming = CS.XiaWorld.PracticeMgr.Instance:GetGodGuardDef(zhenming.cname)
-					shuzi = shuzi+1
-						if Godming.DisplayName == "雷主" or Godming.DisplayName == "女帝" or Godming.DisplayName == "玉姬" then
-						buzhuoGod = buzhuoGod + 1
-						end
-					end
-				if buzhuoGod == 0 then
-					me:AddMsg(XT("[NAME]正待劝阻这些孩童，却不曾想荒坟中竟冒出了一个无比强大的怨灵，怨灵或是因为孩童的不敬，竟欲打杀这些孩童之时，[NAME]挺身而出与坟中怨灵大战了一番，终于击败了这个怨灵。"));
-				me:TriggerStory("Leixiugang");
-				else
-				me:AddMsg(XT("[NAME]劝阻了这些孩童，并将他们送回了家中，[NAME]的善举使得信[NAME]的人变多了。"));
-				npc.LuaHelper:AddGodPopulation(world:RandomInt(1,200));
-				end
-				]]></OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="GodStoryshiqi_5">
-		<DisplayName>传道</DisplayName>
-		<Kind>GodStory</Kind>
-		<Desc>[NAME]在游历之时得见一群愚民正在祭祀邪神。</Desc>
-		<Selections>
-			<li>
-				<Display>阻止邪祀</Display>  
-				<OKResult>
-				npc = ThingMgr:FindThingByID(me.npcObj.ID)
-				if npc.LuaHelper:IsLearnedMagic("Shenyou") == false then
-				me:AddMsg("[NAME]阻止了这一场邪祀，后竟被邪神追杀了一路，击败邪神后，[NAME]抽取邪神的记忆，学会的一门属于邪神的神通。\n[NAME]学会了神通：【神游】");
-				print(npc.Name.."学会了神游")
-				npc.PropertyMgr.Practice:AddMagic("Shenyou")
-				else
-				me:AddMsg("[NAME]阻止了这一场邪祀，[NAME]的善举使得信[NAME]的人变多了。");
-				npc.LuaHelper:AddGodPopulation(world:RandomInt(1,200));
-				end
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>离开</Display>  
-				<OKResult><![CDATA[
-				me:AddMsg(XT("[NAME]决定还是不管这场闲事，转身离开。"));
-				]]></OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="Leixiugang">
-		<DisplayName>雷修-罡</DisplayName>
-		<Desc>怨灵被[NAME]击败后唉声讨饶，并向[NAME]诉说着他不幸的一身……\n眼前的怨灵竟是上古时期瀛岛王子，在瀛岛上也算的上家世显赫才高八斗，且还是文武全才，天生雷灵根的他修炼雷法无往不利，是岛中万千少女的梦中情人。\n原本他认为他这一身就是顺风顺水的，却不曾想一次巧合使他发现了自己最钟爱的王妃玉姬，竟然是瀛岛一修士的女犬，盛怒之下王子罡独自杀向对方老巢，一路血战终到达了对方老巢，却不曾想非但自己的王妃正在给对方舔舐着下体，就连自己从小到大最崇拜的母亲，居然也在对方胯下承欢！\n暴怒之下的王子罡向对方杀去却被轻易击败，而后一个更加让王子罡绝望的事实，血淋淋的呈现在王子罡的面前。\n这个真在接受自己妻子母亲侍奉的家伙，竟然是自己的生生父亲！非但自己王妃和自己的婚姻是“主人的命令”，就连母皇与父王……也……\n说到这里，对方仿佛完全失去了理智，怨力仿佛无穷无尽的从他的身上涌现。\n眼看即将成形的绝世凶灵，[NAME]决定？</Desc>
-		<Selections>
-			<li>
-				<Display>为其度化心魔</Display>  
-				<OKResult><![CDATA[
-				me:AddMsg(XT("[NAME]决定帮助眼前的凶灵，[NAME]运起神道秘法进入了凶灵的意识……"));
-				if me:GetSex () == 1 then
-				me:AddMsg(XT("[NAME]进入了凶灵的意识后，为了帮助其破处心魔，便引导着对方的记忆进入了其最不想回忆的那一段……\n[NAME]化身王子罡一路杀入雷皇殿，见到了王子罡的妻子和母亲，正如同发情的母狗一般雷主建御的胯下舔舐着对方的肉棒，随着雷主建御胯下巨物的几下抽出，大量白浊腥浑的阳精从马眼中喷出，只见母亲卑弥呼与妻子玉姬像那沙漠中干渴无比的旅人般，大口吞咽着对方的阳精……"));
-					if me:CheckFeature("Tiancilonggen") then
-					me:AddMsg(XT("[NAME]以绝世雷法击败了雷主建御后，猛的一把撕掉裤子，露出了他胯下的那天赐之物，二话不说的走上前去一把抓过玉姬，便在她的蜜穴中抽插了起来，[NAME]的天赐之宝无论长度还是持久，均远远胜过那雷主建御的肉棒，玉姬被这枪枪直抵花心的猛烈突击折腾的两眼泛白连声告饶，[NAME]却不管不顾的继续突刺了数百下，[NAME]天赐之物的长度每次深入均足以顶开玉姬的宫口，终在一阵抽搐中，将滚热的阳精注入那玉姬的子宫。\n将玉姬干到半昏死状态后，[NAME]又大量起了这王子罡的母亲，或许是常年饮用大能修士的阳精，岁月仿佛没有在对方身上留下半分痕迹……\n[NAME]扑向了卑弥呼，在对方“我们是母子……乱伦必遭神谴……”的呼喊中，将其如法炮制了一番，以肉棒将两女完全征服后[NAME]甩着下身那天赐之物，傲然的望向那雷主建御，对方的身形逐渐模糊……\n随着幻境的逐渐消退，怨气渐渐的弱了下来凶灵渐渐变回了王子罡的样貌……\n回复意识后的王子罡，仿佛想起了所有记忆，最终得到“胜利”的是他，他亲手杀死了他的父亲雷主建御！\n可令他没有想到的是，母亲和妻子竟然为其殉情自绝于自己面前，这一份不甘使他失去理智陷入疯狂，他禁锢了妻子母亲与父亲的灵魂，要让他们永世不得超生……\n而后的千年之中，王子罡夺过了雷主之位自称雷修，直到一次心魔劫，被心魔入侵迷失了神志……\n因为[NAME]的帮助，雷修-罡的残魂化去了怨气，在消散之际，对方将自己父母以及妻子的灵魂，交给了[NAME]，请求[NAME]将他们纳入自己的神国……"));
-					me.npcObj.PropertyMgr.Practice.GodPracticeData:UnLockGodGuard("Guard_shenming_1001")
-					me.npcObj.PropertyMgr.Practice.GodPracticeData:UnLockGodGuard("Guard_shenming_1002")
-					me.npcObj.PropertyMgr.Practice.GodPracticeData:UnLockGodGuard("Guard_shenming_1003")
-					else
-					me:AddMsg(XT("[NAME]以绝世雷法击败了雷主建御后杀死了对方，随后卑弥呼与玉姬的殉情仿佛使得凶灵的怨气暴增了万倍，[NAME]被困在了对方的意识中整整两甲子后才得以逃脱……"));
-					me:ModifierProperty("MaxAge",-120);
-					end
-				else
-				me:AddMsg(XT("[NAME]身为女子，无法进入对方的意识，只能无奈的离开了。。"));
-				end
-				]]></OKResult>
-			</li>
-			
-			<li>
-				<Display>斩杀对方</Display>  
-				<OKResult><![CDATA[
-				me:AddMsg(XT("[NAME]决定诛杀这个凶灵，一番战斗之后对方找了个机会，解体逃离了……。\n[NAME]将孩童们送回了家中，经过凡人们的口口相传，[NAME]收获了不少信徒"));
-				me.npcObj.LuaHelper:AddGodPopulation(world:RandomInt(2,400));
-				]]></OKResult>
-			</li>
-			
-			<li>
-				<Display>逃跑</Display>  
-				<OKResult><![CDATA[
-				me:AddMsg(XT("[NAME]见到此等情形，二话不说就溜溜球了，至于凶魂成形要死多少死老百姓，和未来要成佛称祖的[NAME]自是没太大关系的。"));
-				]]></OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="Shenyou">
-		<DisplayName>神游</DisplayName>
-		<Desc>[NAME]以化身进入自己的神国。</Desc>
-		<Kind>None</Kind>
-		<Selections Extension="true" Functions="Input">
-			<li>
-				<Display>要做什么？</Display>
-				<Tip>可输入行动：“离开”……</Tip> 
-				<OKResult>GameMain:GetMod("Lua_shijian"):shiqi75()</OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
 	<Story Name="Zhuyao_1">
 		<DisplayName>猪妖肆虐</DisplayName>
 		<Desc>独身一人来到妖兽巢穴的[NAME]，腥臭无比的气味向迎面扑来，只见那猪妖跨于一只巨熊的身后奋力抽插数十下，浑身一阵颤触之后猪妖精元猛灌入巨熊下身，其量之大即使是巨熊的身体都无法承载，还有大量余液从巨熊下身流淌而出。\n猪妖淫欲得以满足之后，摄起一名身边由村民上供而来估摸着七八岁大小的女童，括弧此处申明一下炼铜biss而且不科学，毕竟体长四米有余的猪妖在括弧并加三百个感叹号。\n言归正传猪妖摄起女童后，一把将女童塞入口中，只轻嚼了几口便见血浆四下飞溅，见此情此景[NAME]决定？</Desc>
@@ -206,11 +84,44 @@
 	
 	<Story Name="Zhuyao_2">
 		<DisplayName>猪妖肆虐</DisplayName>
-		<Desc>获得新神通的[NAME]意欲降妖除魔，直接冲向那正在咀嚼女童的猪妖，之见几个回合之间，便因猪妖强横的实力败下阵来，瘫软在地。</Desc>
+		<Desc>获得新神通的[NAME]意欲降妖除魔，直接冲向那正在咀嚼女童的猪妖，之见几个回合之间，便因猪妖强横的实力败下阵来，瘫软在地。\n猪妖见眼入侵之人为自己所击败，且刚好体型与自己也大致相同，顿时淫念生，身下那宝贝分泌着大量透明粘液如同电钻般的螺旋而出（猪的生殖器的确是螺旋且会旋转的熬），[NAME]只感身下炙热的异物入体，自己的蜜穴被异物撑的无比饱满，正待适应却不想这异物顺时针的旋转了起来，那一层层接连不断的螺旋刮弄着蜜穴的肉壁，这粗暴的侵略之物让[NAME]整个人都快疯了，一波一波持续不断的冲击让渐渐沉沦其中。</Desc>
 		<Selections>
 			<li>
 				<Display>继续</Display>  
-				<OKResult>GameMain:GetMod("Lua_shijian"):shiqi35()</OKResult>
+				<OKResult><![CDATA[
+				local nN = me:RandomInt(math.floor(me:GetGLevel()^4 * 1),math.floor(me:GetGLevel()^4* 1.5))
+				me:AddMsg(XT("接连不断的高潮本早应当让[NAME]失去神志化为这欲海沉船，可神道传承中的那缕信仰之光一直守护着[NAME]神志的最后一道防线，直到猪妖体力不支瘫到在地，[NAME]还是获得了最终的成功为一方百姓驱退了妖群。"));me:AddFaith(me:RandomInt(100,200)*nN);me:AddGodPopulation(nN);me:ModifierProperty("GodPenaltyAddV",-me:RandomInt(3,8));me:AddModifier("Pochu");me:AddMemery("在一次历练途中，为了保护百姓舍身于猪妖贴身肉搏三百回合，睡服了猪妖！");me:AddTitle(XT("被猪妖日过的女修士"),string.format(XT("在%s年，于一次历练途中，为了保护百姓舍身于猪妖贴身肉搏三百回合，睡服了猪妖"),1));story:FinishSecret();
+				]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="GodStoryshiqi_3">
+		<DisplayName>传道</DisplayName>
+		<Kind>GodStory</Kind>
+		<Desc>[NAME]在游历之时得闻一事：\n两子争产，幼子蒙骗于父得其产，后携产与妓子同行放浪形骸，长子未得产，却就恭顺孝亲十余载，并倚仁孝之名被举孝廉入仕。\n幼子于散尽祖产之时得知其兄已为一地牧守，上门欲求一吏职，未果。\n遂含愤而出并扬言“三十年河东，三十年河西……”，然至今任是河东之时，潦倒于破庙之中乞食度日。</Desc>
+		<Selections>
+			<li>
+				<Display>助幼子夺产</Display>  
+				<OKResult><![CDATA[
+				me:AddModifier("Qian");
+				local buff = me.npcObj.PropertyMgr:FindModifier("Qian");
+				if me:GetSex () > 1 then
+				local nN = me:RandomInt(math.floor(me:GetGLevel()^4 * 0.5),math.floor(me:GetGLevel()^4* 1))
+				me:AddMsg(XT("[NAME]听到这幼子曾经扬言“三十年河东，三十年河西，莫欺少年穷！”之时，不经拍腿叫绝，这可是天命之子的专属台词啊，身为神修若能窃得一丝天命气运，修为必能精进不少，！\n故[NAME]化为凡女倒贴上门助其夺得长兄家业，并以美色诱之与[NAME]日夜欢好，终将炼其之天命之气化为自身修为，并得了遗产百两纹银。"));me:AddModifier("Pochu");me:AddPracticeResource("Stage",10000);
+				else
+				me:AddMsg(XT("[NAME]听到这幼子曾经扬言“三十年河东，三十年河西，莫欺少年穷！”之时，不经拍腿叫绝，这可是天命之子的专属台词啊，若取而代之，岂不是能得其大因果纳百万信众！\n遂[NAME]于荒庙夺其皮囊承其因果，以其之身杀上长兄家中，大喊“那日长兄对我爱答不理，今日愚弟便是来告诉兄长什么是莫欺少年穷的！”，言毕便将其身之兄长毙与掌下，并占之妻女家业，诸般淫辱甚至于牧下之民共享之，此举为我教获得了不少信徒，[NAME]也获得了纹银百两。"));
+				me:AddFaith(me:RandomInt(50,200)*nN);me:AddGodPopulation(nN);me:ModifierProperty("GodPenaltyAddV",-me:RandomInt(3,8));
+				end
+				buff:UpdateStack(99);
+				]]></OKResult>
+			</li>
+			
+			<li>
+				<Display>离开</Display>  
+				<OKResult><![CDATA[
+				me:AddMsg(XT("[NAME]决定还是不管这场闲事，转身离开。"));
+				]]></OKResult>
 			</li>
 		</Selections>
 	</Story>

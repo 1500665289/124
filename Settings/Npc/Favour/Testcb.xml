@@ -1,5 +1,5 @@
 <FavourDefs><List>
-	<Favour Name="Luding" Type="Normal">
+	<Favour Name="Luding" Type="Normal"><!--亲戚关系-->
 		<DisplayName>[TXT]</DisplayName>
 		<Desc>[HENAME]是我的[TXT]</Desc>
 		<HideInUI>0</HideInUI>
@@ -9,31 +9,11 @@
 		<Opinions>2</Opinions>
 	</Favour> 
 	
-	<Favour Name="Chunv" Type="Normal">
+	<Favour Name="Chunv" Type="Normal"><!--亲戚关系-->
 		<DisplayName>[TXT]</DisplayName>
 		<Desc>[HENAME]是我的[TXT]</Desc>
 		<HideInUI>0</HideInUI>
 		<Value>80</Value>
-		<MaxStack>1</MaxStack>
-		<Duration>0</Duration>
-		<Opinions>2</Opinions>
-	</Favour> 
-	
-	<Favour Name="Beilv" Type="Normal">
-		<DisplayName>[TXT]</DisplayName>
-		<Desc>[HENAME]给我带了绿帽子！！！</Desc>
-		<HideInUI>0</HideInUI>
-		<Value>-100</Value>
-		<MaxStack>1</MaxStack>
-		<Duration>0</Duration>
-		<Opinions>2</Opinions>
-	</Favour> 
-	
-	<Favour Name="Lvmao" Type="Normal">
-		<DisplayName>[TXT]</DisplayName>
-		<Desc>[HENAME]对象玩起来真不错……</Desc>
-		<HideInUI>0</HideInUI>
-		<Value>5</Value>
 		<MaxStack>1</MaxStack>
 		<Duration>0</Duration>
 		<Opinions>2</Opinions>

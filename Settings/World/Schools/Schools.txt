@@ -1,3 +1,0 @@
-ID	Name	Desc	Level	Rank	Gong	Miji	GLevel	GrandMaster	BasePower	UnLockBuilding	ZhenInfo	ZhenName	BodyPractice	Race
-499后不可用	门派名字	介绍	门派等级1寨 2派 3洞天	正邪 0正邪未明 1,-1 亦正亦邪  2到4:正 -2到-4邪	门派功法 随便填 没实体	门派秘籍	平均境界	祖师	基础实力	征服后解锁的建筑	阵法信息	阵法名字		种族，默认RANDOM随机种族 RANDOMYAOGUAI为随机妖怪
-170	天元女拳宗	坐落于天元山的门派，擅长使拳法	3	0	天元女拳法		3	郭紫黎	30000				1	Human

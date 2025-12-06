@@ -82,7 +82,7 @@
 	<MaxStack>1</MaxStack>
 	<TexPath>Spr\Object\shiqidaoju13.png</TexPath>
 	<TexScale>1</TexScale>
-	<Desc>跳蛋，原为合欢女修所创的助眠物品，以灵石为核心灌注灵气催动其震动达到助眠效果，而后有一不世出的旷世奇才-白帝以大神通《言出法随》，将灵晶作为核心大大扩容了其可容纳的灵气，使其可与其他同波段跳蛋连通，赋予其灵气储存与互传的功能。</Desc>
+	<Desc>跳蛋，炼化宁珀特殊道具，合欢修士常用的物品，由于宁珀炼化时给其带去的伤害，使此物可以自行震动（按照对宁珀的摧残程度改变跳动等级），插入体内会对工作修炼效率产生一些阻碍。</Desc>
 	<Flammability><!--可燃性-->
 		<Flammability>0</Flammability>
 	</Flammability>
@@ -107,46 +107,14 @@
 			</StuffCategories>
 			<CostStuffCount>4</CostStuffCount><!--需要数量-->
 			<CostItems>
-				<Item name = "Item_LingCrystal" count = "10"/>
-			</CostItems>
-		</BeMade> 
-		<UseLua>GameMain:GetMod('_FabaoHelper2'):Tiaodan()</UseLua>
-	</Item>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_Hongzhu" Parent="ToolBase">
-	<ThingName>红烛</ThingName>
-	<MaxStack>1</MaxStack>
-	<TexPath>Spr\Object\shiqidaoju18.png</TexPath>
-	<TexScale>1</TexScale>
-	<Desc>普通的红色蜡烛，据说合欢宗的崇礼长老挺喜欢这玩意的。</Desc>
-	<Flammability><!--可燃性-->
-		<Flammability>0</Flammability>
-	</Flammability>
-	
-	<Item Kind="Equipment">
-		<FabaoSuffix>烛</FabaoSuffix><!--法宝后缀-->
-		<PhysicalLables>
-			<li>SmallThing</li>
-		</PhysicalLables>
-		
-		<FuelMultiplier>1</FuelMultiplier>
-		<BeMade>
-			<WorkToMake>50</WorkToMake>
-			<Quality>0</Quality>
-			<ArtDesc></ArtDesc>
-			<StuffCategories><!--制造材料-->
-				<Stuff name = "WoodBlock"/>
-			</StuffCategories>
-			<CostStuffCount>4</CostStuffCount><!--需要数量-->
-			<CostItems>
 				<Item name = "Item_Water" count = "10"/>
 			</CostItems>
 		</BeMade> 
+		<Equip>
+			<ToolModifier>Tiaodan</ToolModifier>
+		</Equip>
 	</Item>
 	</ThingDef>
-	
-	
 	
 	<ThingDef Type="Item" Name="Item_Zhencaonan" Parent="ToolBase">
 	<ThingName>阳锁</ThingName>
@@ -229,10 +197,11 @@
 	
 	<ThingDef Type="Item" Name="Item_Nvxiuluohong" Parent="DanBase">
 	<ThingName>纯阴落红</ThingName>
-	<MaxStack>999</MaxStack>
+	<MaxStack>1</MaxStack>
 	<TexPath>Spr\Object\shiqidaoju3.png</TexPath>
 	<TexScale>1</TexScale>
 	<Desc>处子于体内先天精血与元阴之气，必须自行使用物品破瓜之时没有沾染男性的阳气才能获得，服用可以获得大量参悟，携于身则可以加速自身灵气回复。</Desc>
+	<MaxStack>500</MaxStack>
 	<ElementKind>None</ElementKind>
 	<Rate>6</Rate>
 	<Flammability><!--可燃性-->
@@ -254,9 +223,6 @@
 		<Equip>
 			<ToolModifier>NvxiuluohongGood</ToolModifier>
 		</Equip>
-		<DevourDatas>
-		<li Name="Item_Nvxiuluohong" Count="1" Rate="1"/>
-		</DevourDatas>
 	</Item>
 	</ThingDef>
 	
@@ -304,7 +270,7 @@
 	
 	<ThingDef Type="Item" Name="Item_Dadiaojiao" Parent="DanBase">
 	<ThingName>大怪蕉</ThingName>
-	<MaxStack>999</MaxStack>
+	<MaxStack>1</MaxStack>
 	<TexPath>Spr\Object\shiqidaoju12.png</TexPath>
 	<TexScale>1</TexScale>
 	<Desc>来自合欢岛欢喜洞最深处的一株灵植所孕育的果子，浑身上下没有一丝一毫的灵气，据说吃了这个玩意，你会变成正太或者萝莉。</Desc>
@@ -328,72 +294,13 @@
 	</Item>
 	</ThingDef>
 	
-	<ThingDef Type="Item" Name="Item_YYHHGguzhong" Parent="ToolBase">
-	<ThingName>阴阳合欢蛊（蛊种）</ThingName>
-	<MaxStack>1</MaxStack>
-	<TexPath>Spr\Object\shiqidaoju14.png</TexPath>
-	<TexScale>1</TexScale>
-	<Desc>以大量修士的阴精阳精培育出来的神秘蛊虫，据说成长之后，可以使得最贞洁的烈女成为荡妇。</Desc>
-	<MaxStack>500</MaxStack>
-	<ElementKind>None</ElementKind>
-	<Flammability><!--可燃性-->
-		<Flammability>0</Flammability>
-	</Flammability>
-	
-	<Item Kind="Equipment">
-		<FabaoSuffix>蛊种</FabaoSuffix><!--法宝后缀-->
-		<PhysicalLables>
-			<li>LowDensity1</li>
-		</PhysicalLables>
-		
-		<FuelMultiplier>1</FuelMultiplier>
-		<BeMade>
-			<WorkToMake>50</WorkToMake>
-			<Quality>0</Quality>
-			<ArtDesc></ArtDesc>
-			<StuffCategories><!--制造材料-->
-				<Stuff name = "MetalBlock"/>
-				<Stuff name = "RockBlock"/>
-				<Stuff name = "WoodBlock"/>
-			</StuffCategories>
-			<CostStuffCount>4</CostStuffCount><!--需要数量-->
-			<CostItems>
-				<Item name = "Item_Water" count = "10"/>
-			</CostItems>
-		</BeMade> 
-	</Item>
-	<StoryBnts>
-	<li Name="培育" Desc="培育蛊种" Story="Item_YYHHGguzhong" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
-	</StoryBnts>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_yangjin" Parent="Item_BodyPracticeBase">
-	<ThingName>阳精</ThingName>
-	<Desc>阳精男子是先天而成的，是能量，是孕育，生长后代的先天种子，是整个身体最高的统帅，是操控推动身体内部各脏腑器官运转的能量，是保卫身体抵御外邪，不被外界病毒风寒，寒邪所攻击的能力。</Desc>	
-	<TexPath>Spr\Object\shiqidaoju5.png</TexPath>
-	<Rate>1</Rate>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_yinjin" Parent="Item_BodyPracticeBase">
-	<ThingName>阴精</ThingName>
-	<Desc>阴精女子是先天而成的，是能量，是孕育，生长后代的先天种子，是整个身体最高的统帅，是操控推动身体内部各脏腑器官运转的能量，是保卫身体抵御外邪，不被外界病毒风寒，寒邪所攻击的能力。</Desc>	
-	<TexPath>Spr\Object\shiqidaoju8.png</TexPath>
-	<Rate>1</Rate>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_Naocanfen" Parent="Item_BodyPracticeBase">
-	<ThingName>虾形愿力结晶</ThingName>
-	<Desc>无比恐怖且具有破坏力的愿，由修炼者的脑残粉们愿力所凝结，通常成虾形，如果在修炼者体内堆积过多，也许会给修炼者带来致命的威胁，需要时长引导以及炼化，否则将造成及其严重的不良后果……</Desc>	
-	<TexPath>Spr\Object\ncf.png</TexPath>
-	<Rate>1</Rate>
-	</ThingDef>
-	
 	<ThingDef Type="Item" Name="Item_yangjin1" Parent="DanBase">
-	<ThingName>阳精</ThingName>
-	<MaxStack>999</MaxStack>
+	<ThingName>阳精（凡人）</ThingName>
+	<MaxStack>1</MaxStack>
 	<TexPath>Spr\Object\shiqidaoju5.png</TexPath>
 	<TexScale>1</TexScale>
 	<Desc>凡人的阳精。</Desc>
+	<MaxStack>500</MaxStack>
 	<ElementKind>None</ElementKind>
 	<Rate>1</Rate>
 	<Flammability><!--可燃性-->
@@ -408,21 +315,18 @@
 		</PhysicalLables>
 			<Elixir>
 				<ZhuJi>100</ZhuJi>
-				<Modifier>Hejingye</Modifier>
 			</Elixir>
 		<FuelMultiplier>1</FuelMultiplier>
-		<DevourDatas>
-		<li Name="Item_yangjin" Count="1" Rate="1"/>
-		</DevourDatas>
 	</Item>
 	</ThingDef>
 	
 	<ThingDef Type="Item" Name="Item_yangjin2" Parent="DanBase">
-	<ThingName>阳精</ThingName>
-	<MaxStack>999</MaxStack>
+	<ThingName>阳精（练气期）</ThingName>
+	<MaxStack>1</MaxStack>
 	<TexPath>Spr\Object\shiqidaoju5.png</TexPath>
 	<TexScale>1</TexScale>
 	<Desc>练气期男修的阳精。</Desc>
+	<MaxStack>500</MaxStack>
 	<ElementKind>None</ElementKind>
 	<Rate>3</Rate>
 	<Flammability><!--可燃性-->
@@ -439,21 +343,18 @@
 				<ZhuJi>2000</ZhuJi>
 				<TreeExp>100</TreeExp>
 				<Ling>200</Ling>
-				<Modifier>Hejingye</Modifier>
 			</Elixir>
 		<FuelMultiplier>1</FuelMultiplier>
-		<DevourDatas>
-		<li Name="Item_yangjin" Count="2" Rate="1"/>
-		</DevourDatas>
 	</Item>
 	</ThingDef>
 	
 	<ThingDef Type="Item" Name="Item_yangjin3" Parent="DanBase">
-	<ThingName>阳精</ThingName>
-	<MaxStack>999</MaxStack>
+	<ThingName>阳精（结丹期）</ThingName>
+	<MaxStack>1</MaxStack>
 	<TexPath>Spr\Object\shiqidaoju5.png</TexPath>
 	<TexScale>1</TexScale>
 	<Desc>结丹期男修的阳精。</Desc>
+	<MaxStack>500</MaxStack>
 	<ElementKind>None</ElementKind>
 	<Rate>5</Rate>
 	<Flammability><!--可燃性-->
@@ -470,21 +371,18 @@
 				<ZhuJi>5000</ZhuJi>
 				<TreeExp>500</TreeExp>
 				<Ling>500</Ling>
-				<Modifier>Hejingye</Modifier>
 			</Elixir>
 		<FuelMultiplier>1</FuelMultiplier>
-		<DevourDatas>
-		<li Name="Item_yangjin" Count="4" Rate="1"/>
-		</DevourDatas>
 	</Item>
 	</ThingDef>
 	
 	<ThingDef Type="Item" Name="Item_yangjin4" Parent="DanBase">
-	<ThingName>阳精</ThingName>
-	<MaxStack>999</MaxStack>
+	<ThingName>阳精（金丹期）</ThingName>
+	<MaxStack>1</MaxStack>
 	<TexPath>Spr\Object\shiqidaoju5.png</TexPath>
 	<TexScale>1</TexScale>
 	<Desc>金丹期男修的阳精。</Desc>
+	<MaxStack>500</MaxStack>
 	<ElementKind>None</ElementKind>
 	<Rate>7</Rate>
 	<Flammability><!--可燃性-->
@@ -501,17 +399,13 @@
 				<ZhuJi>10000</ZhuJi>
 				<TreeExp>2000</TreeExp>
 				<Ling>5000</Ling>
-				<Modifier>Hejingye</Modifier>
 			</Elixir>
 		<FuelMultiplier>1</FuelMultiplier>
-		<DevourDatas>
-		<li Name="Item_yangjin" Count="8" Rate="1"/>
-		</DevourDatas>
 	</Item>
 	</ThingDef>
 	
 	<ThingDef Type="Item" Name="Item_yangjin5" Parent="DanBase">
-	<ThingName>阳精</ThingName>
+	<ThingName>阳精（元神期）</ThingName>
 	<MaxStack>1</MaxStack>
 	<TexPath>Spr\Object\shiqidaoju5.png</TexPath>
 	<TexScale>1</TexScale>
@@ -532,12 +426,8 @@
 				<ZhuJi>25000</ZhuJi>
 				<TreeExp>5000</TreeExp>
 				<Ling>50000</Ling>
-				<Modifier>Hejingye</Modifier>
 			</Elixir>
 		<FuelMultiplier>1</FuelMultiplier>
-		<DevourDatas>
-		<li Name="Item_yangjin" Count="16" Rate="1"/>
-		</DevourDatas>
 	</Item>
 	<Ling>
 			<AddionLing>50</AddionLing>
@@ -552,7 +442,7 @@
 	</ThingDef>
 	
 	<ThingDef Type="Item" Name="Item_yangjin6" Parent="DanBase">
-	<ThingName>阳精</ThingName>
+	<ThingName>阳精（真仙）</ThingName>
 	<MaxStack>1</MaxStack>
 	<TexPath>Spr\Object\shiqidaoju9.png</TexPath>
 	<TexScale>1</TexScale>
@@ -573,12 +463,8 @@
 				<ZhuJi>25000</ZhuJi>
 				<TreeExp>20000</TreeExp>
 				<Ling>500000</Ling>
-				<Modifier>Hejingye</Modifier>
 			</Elixir>
 		<FuelMultiplier>1</FuelMultiplier>
-		<DevourDatas>
-		<li Name="Item_yangjin" Count="32" Rate="1"/>
-		</DevourDatas>
 	</Item>
 	<Ling>
 			<AddionLing>150</AddionLing>
@@ -593,11 +479,12 @@
 	</ThingDef>
 	
 	<ThingDef Type="Item" Name="Item_yinjin1" Parent="DanBase">
-	<ThingName>阴精</ThingName>
-	<MaxStack>999</MaxStack>
+	<ThingName>阴精（凡人）</ThingName>
+	<MaxStack>1</MaxStack>
 	<TexPath>Spr\Object\shiqidaoju6.png</TexPath>
 	<TexScale>1</TexScale>
 	<Desc>凡人的阴精。</Desc>
+	<MaxStack>500</MaxStack>
 	<ElementKind>None</ElementKind>
 	<Rate>1</Rate>
 	<Flammability><!--可燃性-->
@@ -612,21 +499,18 @@
 		</PhysicalLables>
 			<Elixir>
 				<ZhuJi>100</ZhuJi>
-				<Modifier>Hejingye</Modifier>
 			</Elixir>
 		<FuelMultiplier>1</FuelMultiplier>
-		<DevourDatas>
-		<li Name="Item_yinjin" Count="1" Rate="1"/>
-		</DevourDatas>
 	</Item>
 	</ThingDef>
 	
 	<ThingDef Type="Item" Name="Item_yinjin2" Parent="DanBase">
-	<ThingName>阴精</ThingName>
-	<MaxStack>999</MaxStack>
+	<ThingName>阴精（练气期）</ThingName>
+	<MaxStack>1</MaxStack>
 	<TexPath>Spr\Object\shiqidaoju6.png</TexPath>
 	<TexScale>1</TexScale>
 	<Desc>练气期女修的阴精。</Desc>
+	<MaxStack>500</MaxStack>
 	<ElementKind>None</ElementKind>
 	<Rate>3</Rate>
 	<Flammability><!--可燃性-->
@@ -643,21 +527,18 @@
 				<ZhuJi>2000</ZhuJi>
 				<TreeExp>100</TreeExp>
 				<Ling>200</Ling>
-				<Modifier>Hejingye</Modifier>
 			</Elixir>
 		<FuelMultiplier>1</FuelMultiplier>
-		<DevourDatas>
-		<li Name="Item_yinjin" Count="2" Rate="1"/>
-		</DevourDatas>
 	</Item>
 	</ThingDef>
 	
 	<ThingDef Type="Item" Name="Item_yinjin3" Parent="DanBase">
-	<ThingName>阴精</ThingName>
-	<MaxStack>999</MaxStack>
+	<ThingName>阴精（结丹期）</ThingName>
+	<MaxStack>1</MaxStack>
 	<TexPath>Spr\Object\shiqidaoju6.png</TexPath>
 	<TexScale>1</TexScale>
 	<Desc>结丹期女修的阴精。</Desc>
+	<MaxStack>500</MaxStack>
 	<ElementKind>None</ElementKind>
 	<Rate>5</Rate>
 	<Flammability><!--可燃性-->
@@ -674,21 +555,18 @@
 				<ZhuJi>5000</ZhuJi>
 				<TreeExp>500</TreeExp>
 				<Ling>500</Ling>
-				<Modifier>Hejingye</Modifier>
 			</Elixir>
 		<FuelMultiplier>1</FuelMultiplier>
-		<DevourDatas>
-		<li Name="Item_yinjin" Count="4" Rate="1"/>
-		</DevourDatas>
 	</Item>
 	</ThingDef>
 	
 	<ThingDef Type="Item" Name="Item_yinjin4" Parent="DanBase">
-	<ThingName>阴精</ThingName>
-	<MaxStack>999</MaxStack>
+	<ThingName>阴精（金丹期）</ThingName>
+	<MaxStack>1</MaxStack>
 	<TexPath>Spr\Object\shiqidaoju6.png</TexPath>
 	<TexScale>1</TexScale>
 	<Desc>金丹期女修的阴精。</Desc>
+	<MaxStack>500</MaxStack>
 	<ElementKind>None</ElementKind>
 	<Rate>7</Rate>
 	<Flammability><!--可燃性-->
@@ -705,17 +583,13 @@
 				<ZhuJi>10000</ZhuJi>
 				<TreeExp>2000</TreeExp>
 				<Ling>5000</Ling>
-				<Modifier>Hejingye</Modifier>
 			</Elixir>
 		<FuelMultiplier>1</FuelMultiplier>
-		<DevourDatas>
-		<li Name="Item_yinjin" Count="8" Rate="1"/>
-		</DevourDatas>
 	</Item>
 	</ThingDef>
 	
 	<ThingDef Type="Item" Name="Item_yinjin5" Parent="DanBase">
-	<ThingName>阴精</ThingName>
+	<ThingName>阴精（元神期）</ThingName>
 	<MaxStack>1</MaxStack>
 	<TexPath>Spr\Object\shiqidaoju6.png</TexPath>
 	<TexScale>1</TexScale>
@@ -736,12 +610,8 @@
 				<ZhuJi>25000</ZhuJi>
 				<TreeExp>5000</TreeExp>
 				<Ling>50000</Ling>
-				<Modifier>Hejingye</Modifier>
 			</Elixir>
 		<FuelMultiplier>1</FuelMultiplier>
-		<DevourDatas>
-		<li Name="Item_yinjin" Count="16" Rate="1"/>
-		</DevourDatas>
 	</Item>
 	<Ling>
 			<AddionLing>50</AddionLing>
@@ -756,7 +626,7 @@
 	</ThingDef>
 	
 	<ThingDef Type="Item" Name="Item_yinjin6" Parent="DanBase">
-	<ThingName>阴精</ThingName>
+	<ThingName>阴精（真仙）</ThingName>
 	<MaxStack>1</MaxStack>
 	<TexPath>Spr\Object\shiqidaoju8.png</TexPath>
 	<TexScale>1</TexScale>
@@ -777,12 +647,8 @@
 				<ZhuJi>25000</ZhuJi>
 				<TreeExp>20000</TreeExp>
 				<Ling>500000</Ling>
-				<Modifier>Hejingye</Modifier>
 			</Elixir>
 		<FuelMultiplier>1</FuelMultiplier>
-		<DevourDatas>
-		<li Name="Item_yinjin" Count="32" Rate="1"/>
-		</DevourDatas>
 	</Item>
 	<Ling>
 			<AddionLing>150</AddionLing>
@@ -841,910 +707,5 @@
 	<StoryBnts>
 	<li Name="玩弄" Desc="玩弄玩偶" Story="Item_Shuangxiu" Cost="5" Appoint="3" Icon="res/Sprs/ui/icon_hand"/>
 	</StoryBnts>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_MiBao_YYHHG" Parent="MiBaoBase">
-	<ThingName>阴阳合欢蛊</ThingName>
-	<TexPath>Spr\Object\shiqidaoju15.png</TexPath>	
-	<FabaoTexPath>Spr\Object\shiqidaoju16.png</FabaoTexPath>	
-	<Desc>合欢宗秘宝，传说中的天成神蛊，由于此蛊只于文献所见，故究竟有何神妙却无人所知。</Desc>
-	<ElementKind>None</ElementKind>
-	<Rate>15</Rate>
-	<Item Kind="Equipment">
-		<PhysicalLables>
-			<li>GreatThing_Attack</li>
-			<li>GreatThing_Ling</li>
-			<li>GreatThing_Knock</li>
-			<li>Light1</li>
-			<li>HighDensity2</li>
-			<li>Smooth2</li>
-		</PhysicalLables>
-		<Fabao>
-			<ActiveCondition>
-				<Condition eventid = "Other" des = "以18新鲜的根宝贝儿喂养" needcount = "18"/>
-			</ActiveCondition>
-			<SpecialAbility>
-				<Ability Kind="HitCountAddDamage" nParam1="1" sParam1="TheWholeBody" sParam2="FivePoison" Desc="每次攻击修行者本体，会穿透护盾造成额外伤害。"/>
-				<Ability Kind="HitSameFabaoAndEffect" nParam1="3" nParam2="1" Desc="每攻击同一个法宝3次，可使其失效，持续时间与其品阶有关。"/>
-				<Ability Kind="HitCountAddMirror" nParam1="3" nParam2="18" fParam1="5" Desc="每攻击3次，产生18道分形，持续5秒。"/>
-			</SpecialAbility>
-		</Fabao>
-		<UseLua>GameMain:GetMod('_FabaoHelper2'):Chidiao()</UseLua>
-	</Item>
-	<Element>
-		<Kind>None</Kind>
-	</Element>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_MiBao_SLND" Parent="MiBaoBase">
-	<ThingName>神龙内丹</ThingName>
-	<TexPath>Spr\Object\shiqidaoju21.png</TexPath>	
-	<FabaoTexPath>Spr\Object\shiqidaoju22.png</FabaoTexPath>	
-	<Desc>传说中拥有远古神龙的内丹……</Desc>
-	<ElementKind>None</ElementKind>
-	<Rate>15</Rate>
-	<Item Kind="Equipment">
-		<PhysicalLables>
-			<li>Wanlingjindan</li>
-		</PhysicalLables>
-		<Fabao>
-			<ActiveCondition>
-				<Condition eventid = "Other" des = "给龙丹注入千万灵气" needcount = "1000"/>
-			</ActiveCondition>
-			<SpecialAbility>
-				<Ability Kind="CantAttack" Desc="环绕周身不会主动进攻，专注防御。"/>
-				<Ability Kind="HitCountCostSkill" nParam1="1"  sParam1="Jiaolong_shuilei_1" Desc="每次防御会对目标敌人发动一次水弹"/>
-				<Ability Kind="Sync_AddEquptDataModifier" sParam1="Shenlongneidan2" Desc="大量提升自愈和灵气吸收效率，并且免疫水属性伤害"/>
-			</SpecialAbility>
-		</Fabao>
-		<UseLua>GameMain:GetMod('_FabaoHelper2'):Longdan()</UseLua>
-		<Equip>
-			<ToolModifier>Shenlongneidan</ToolModifier>
-		</Equip>
-	</Item>
-	<Element>
-		<Kind>None</Kind>
-	</Element>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_HumanMeat" Parent="MeatBase">
-	<ThingName>人肉</ThingName>
-	<TexPath>res\Sprs\object\object_raw003</TexPath>
-	<Desc>人肉。</Desc>
-	<Beauty>-2</Beauty>
-	<Rate>1</Rate>	
-	
-	<Item>
-		 <Food>
-			<EatDirectable>0</EatDirectable>
-			<Nutrition>35</Nutrition>
-			<Modifier>Chirenrou</Modifier>
-		 </Food>
-		 <BeMaterial>
-			<CostMultiplier>1</CostMultiplier>
-			
-			<WorktoMakeRate>1</WorktoMakeRate>
-			<WorktoBuildRate>1</WorktoBuildRate>
-		</BeMaterial>
-	</Item>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_DogMeat" Parent="MeatBase">
-	<ThingName>狗肉</ThingName>
-	<TexPath>res\Sprs\object\object_raw003</TexPath>
-	<Desc>狗肉。</Desc>
-	<Beauty>-2</Beauty>
-	<Rate>1</Rate>	
-	
-	<Item>
-		 <Food>
-			<EatDirectable>0</EatDirectable>
-			<Nutrition>35</Nutrition>
-		 </Food>
-		 <BeMaterial>
-			<CostMultiplier>1</CostMultiplier>
-			
-			<WorktoMakeRate>1</WorktoMakeRate>
-			<WorktoBuildRate>1</WorktoBuildRate>
-		</BeMaterial>
-	</Item>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_Human_Milk" Parent="SimpleFoodBase">
-	<ThingName>母乳</ThingName>
-	<TexPath>Spr\Object\shiqidaoju23.png</TexPath>	
-	<Desc>乳汁是一种最顶尖的食物，它富含营养又能补充水分，且拥有着大量的生命精华……</Desc>
-	<HideInOtherWorld>1</HideInOtherWorld>
-	<Tags>
-		<Tag Name="Water" Level="5"/>
-		<Tag Name="_SysWater" Level="1"/>
-	</Tags>	
-	<MaxStack>9999</MaxStack>
-	<ElementKind>Shui</ElementKind>
-	<Item>
-		<Prices>
-			<TalkType>3</TalkType>
-			<BaseCount>25</BaseCount>
-			<li PriceTag="School">
-				<BuyPrice Value="5"/>
-				<SalePrice Value="0" />
-			</li>
-			<li PriceTag="Trade">
-				<BuyPrice Value="10" />
-				<SalePrice Value="0" />
-			</li>
-			<li PriceTag="Auction">
-				<BuyPrice Value="100" />
-				<SalePrice Value="0" />
-			</li>
-		</Prices>
-		<FabaoSuffix>水</FabaoSuffix>
-		<IsWater>1</IsWater>
-		<PhysicalLables>
-			<li>Liquid</li>
-		</PhysicalLables>
-		<Food>
-			<EatDirectable>1</EatDirectable>
-			<Nutrition>100</Nutrition>
-			<Water>100</Water>
-			<Moods>
-				<li>Human_Milk</li>
-			</Moods>
-		</Food>
-		<DevourDatas>
-		<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
-		</DevourDatas>
-		<Rot>
-			<RotSpeed>0.005</RotSpeed>
-			<DaysToRotStart>0</DaysToRotStart>
-			<TempMin>0</TempMin>
-			<LingMax>0</LingMax>
-		</Rot>
-	</Item>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_xin" Parent="MeatBase">
-	<ThingName>心</ThingName>
-	<TexPath>Spr\Object\xin.png</TexPath>
-	<Desc>心脏。</Desc>
-	<Beauty>-2</Beauty>
-	<Rate>1</Rate>	
-	
-	<Item>
-		 <Food>
-			<EatDirectable>0</EatDirectable>
-			<Nutrition>35</Nutrition>
-		 </Food>
-		 <BeMaterial>
-			<CostMultiplier>1</CostMultiplier>
-			
-			<WorktoMakeRate>1</WorktoMakeRate>
-			<WorktoBuildRate>1</WorktoBuildRate>
-		</BeMaterial>
-	</Item>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_gan" Parent="MeatBase">
-	<ThingName>肝</ThingName>
-	<TexPath>Spr\Object\gan.png</TexPath>
-	<Desc>肝脏。</Desc>
-	<Beauty>-2</Beauty>
-	<Rate>1</Rate>	
-	
-	<Item>
-		 <Food>
-			<EatDirectable>0</EatDirectable>
-			<Nutrition>35</Nutrition>
-		 </Food>
-		 <BeMaterial>
-			<CostMultiplier>1</CostMultiplier>
-			
-			<WorktoMakeRate>1</WorktoMakeRate>
-			<WorktoBuildRate>1</WorktoBuildRate>
-		</BeMaterial>
-	</Item>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_pi" Parent="MeatBase">
-	<ThingName>脾</ThingName>
-	<TexPath>Spr\Object\pi.png</TexPath>
-	<Desc>脾脏。</Desc>
-	<Beauty>-2</Beauty>
-	<Rate>1</Rate>	
-	
-	<Item>
-		 <Food>
-			<EatDirectable>0</EatDirectable>
-			<Nutrition>35</Nutrition>
-		 </Food>
-		 <BeMaterial>
-			<CostMultiplier>1</CostMultiplier>
-			
-			<WorktoMakeRate>1</WorktoMakeRate>
-			<WorktoBuildRate>1</WorktoBuildRate>
-		</BeMaterial>
-	</Item>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_fei" Parent="MeatBase">
-	<ThingName>肺</ThingName>
-	<TexPath>Spr\Object\fei.png</TexPath>
-	<Desc>肺。</Desc>
-	<Beauty>-2</Beauty>
-	<Rate>1</Rate>	
-	
-	<Item>
-		 <Food>
-			<EatDirectable>0</EatDirectable>
-			<Nutrition>35</Nutrition>
-		 </Food>
-		 <BeMaterial>
-			<CostMultiplier>1</CostMultiplier>
-			
-			<WorktoMakeRate>1</WorktoMakeRate>
-			<WorktoBuildRate>1</WorktoBuildRate>
-		</BeMaterial>
-	</Item>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_shen" Parent="MeatBase">
-	<ThingName>肾</ThingName>
-	<TexPath>Spr\Object\shen.png</TexPath>
-	<Desc>肾脏。</Desc>
-	<Beauty>-2</Beauty>
-	<Rate>1</Rate>	
-	
-	<Item>
-		 <Food>
-			<EatDirectable>0</EatDirectable>
-			<Nutrition>35</Nutrition>
-		 </Food>
-		 <BeMaterial>
-			<CostMultiplier>1</CostMultiplier>
-			
-			<WorktoMakeRate>1</WorktoMakeRate>
-			<WorktoBuildRate>1</WorktoBuildRate>
-		</BeMaterial>
-	</Item>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_chang" Parent="MeatBase">
-	<ThingName>肠</ThingName>
-	<TexPath>Spr\Object\chang.png</TexPath>
-	<Desc>肠。</Desc>
-	<Beauty>-2</Beauty>
-	<Rate>1</Rate>	
-	
-	<Item>
-		 <Food>
-			<EatDirectable>0</EatDirectable>
-			<Nutrition>35</Nutrition>
-		 </Food>
-		 <BeMaterial>
-			<CostMultiplier>1</CostMultiplier>
-			
-			<WorktoMakeRate>1</WorktoMakeRate>
-			<WorktoBuildRate>1</WorktoBuildRate>
-		</BeMaterial>
-	</Item>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_wei" Parent="MeatBase">
-	<ThingName>胃</ThingName>
-	<TexPath>Spr\Object\wei.png</TexPath>
-	<Desc>胃部。</Desc>
-	<Beauty>-2</Beauty>
-	<Rate>1</Rate>	
-	
-	<Item>
-		 <Food>
-			<EatDirectable>0</EatDirectable>
-			<Nutrition>35</Nutrition>
-		 </Food>
-		 <BeMaterial>
-			<CostMultiplier>1</CostMultiplier>
-			
-			<WorktoMakeRate>1</WorktoMakeRate>
-			<WorktoBuildRate>1</WorktoBuildRate>
-		</BeMaterial>
-	</Item>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_nao" Parent="MeatBase">
-	<ThingName>脑</ThingName>
-	<TexPath>Spr\Object\nao.png</TexPath>
-	<Desc>脑。</Desc>
-	<Beauty>-2</Beauty>
-	<Rate>1</Rate>	
-	
-	<Item>
-		 <Food>
-			<EatDirectable>0</EatDirectable>
-			<Nutrition>35</Nutrition>
-		 </Food>
-		 <BeMaterial>
-			<CostMultiplier>1</CostMultiplier>
-			
-			<WorktoMakeRate>1</WorktoMakeRate>
-			<WorktoBuildRate>1</WorktoBuildRate>
-		</BeMaterial>
-	</Item>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_Jingxue" Parent="SimpleFoodBase">
-	<ThingName>精血</ThingName>
-	<TexPath>Spr\Object\jingxue.png</TexPath>	
-	<Desc>一桶富含生命力的生灵血水。</Desc>
-	<HideInOtherWorld>1</HideInOtherWorld>
-	<Rate>5</Rate>	
-	<Tags>
-		<Tag Name="Water" Level="5"/>
-		<Tag Name="_SysWater" Level="1"/>
-	</Tags>	
-	<MaxStack>9999</MaxStack>
-	<ElementKind>Shui</ElementKind>
-	<Item>
-		<Prices>
-			<TalkType>3</TalkType>
-			<BaseCount>25</BaseCount>
-			<li PriceTag="School">
-				<BuyPrice Value="5"/>
-				<SalePrice Value="0" />
-			</li>
-			<li PriceTag="Trade">
-				<BuyPrice Value="10" />
-				<SalePrice Value="0" />
-			</li>
-			<li PriceTag="Auction">
-				<BuyPrice Value="100" />
-				<SalePrice Value="0" />
-			</li>
-		</Prices>
-		<FabaoSuffix>血</FabaoSuffix>
-		<IsWater>1</IsWater>
-		<PhysicalLables>
-			<li>Liquid</li>
-		</PhysicalLables>
-		<Food>
-			<EatDirectable>1</EatDirectable>
-			<Nutrition>0</Nutrition>
-			<Water>0</Water>
-			<PracticeNutrition>500</PracticeNutrition>
-		</Food>
-		<DevourDatas>
-		<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
-		</DevourDatas>
-		<Rot>
-			<RotSpeed>0.005</RotSpeed>
-			<DaysToRotStart>0</DaysToRotStart>
-			<TempMin>0</TempMin>
-			<LingMax>0</LingMax>
-		</Rot>
-	</Item>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_Liuyumiaoguo5" Parent="DrugBase">
-	
-	<ThingName>六欲妙果（仙）</ThingName>
-	<TexPath>Spr\Object\Lymg5.png</TexPath>	
-	<TonglingHair>hairmukuteng</TonglingHair>
-	<Desc>天地奇木-六欲树母通过吸收了大量阳精与血肉后所诞之果，据说食者即可得长生，故又被称之为“人参果”。</Desc>
-	<MaxStack>1</MaxStack>
-	<MaxHitPoints>500</MaxHitPoints>
-	<Rate>8</Rate>
-	<Beauty>10</Beauty>
-	<ElementKind>Mu</ElementKind>
-	<Tags>
-		<Tag Name = "ESSENCE" Level="1"/>
-		<Tag Name = "Item_MuEssence" Level="1"/>
-	</Tags>
-	<Item Lable="Drug">
-		<Prices>
-			<TalkType>1</TalkType>
-			<BaseCount>1</BaseCount>
-			<li PriceTag="School">
-				<BuyPrice Value="3000" FriendPoint="2"/>
-				<SalePrice Value="1500" />
-			</li>
-			<li PriceTag="Trade">
-				<BuyPrice Value="5000" />
-				<SalePrice Value="1500" />
-			</li>
-			<li PriceTag="Auction">
-				<BuyPrice Value="500" />
-				<SalePrice Value="0" />
-			</li>
-		</Prices>
-		<NotFengshuiItem>0</NotFengshuiItem>
-		<FabaoSuffix>果</FabaoSuffix>
-		<PhysicalLables>
-			<li>GreatThing_Ling</li>
-			<li>Soft2</li>
-		</PhysicalLables>
-		<Elixir>
-			<Ling>500000</Ling>
-			<Modifier>Modifier_Item_Renshenguo5</Modifier>
-		</Elixir>
-		<Food>
-			<EatDirectable>1</EatDirectable>
-			<Nutrition>50</Nutrition>
-			<Water>50</Water>
-			<PracticeNutrition>500</PracticeNutrition>
-		</Food>
-		<BeMaterial>
-			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
-			<BeautyWhenBeMain>8</BeautyWhenBeMain>
-			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
-			<LingNumberRate>0.45</LingNumberRate>
-		</BeMaterial>
-		<DevourDatas>
-			<li Name="Item_BodyPractice_ShengMingLv1" Count="15" Rate="1"/>
-			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="1"/>
-			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
-			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
-			<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.1"/>
-			<li Name="Item_BodyPractice_EXMu" Count="1" Rate="0.1"/>
-		</DevourDatas> 	
-	</Item>
-	<StoryBnts>
-			<li Name="种植" Desc="种植以生成灵植。" Script="GameUlt.BuildLingPlant(bind, 'LingZhi_Ren')" Icon="res/Sprs/ui/icon_hand"/>
-	</StoryBnts>
-	<Ling>
-		<AddionLing>75</AddionLing>
-		<AddionRadius>2</AddionRadius>
-		<AddionFailing>0.9</AddionFailing>
-		<AddionFailRadius>1</AddionFailRadius>
-		
-		<Attenuation>0.1</Attenuation>
-		<Absorption>0.8</Absorption>
-		<Accommodate>40</Accommodate>
-	</Ling>
-	<Element>
-		<Kind>Mu</Kind>
-		<Value>12</Value>         
-		<Radius>5</Radius>
-		<Failing>0.9</Failing>
-		<FailRadius>1</FailRadius>
-	</Element>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_Liuyumiaoguo4" Parent="DrugBase">
-	
-	<ThingName>六欲妙果（邪）</ThingName>
-	<TexPath>Spr\Object\Lymg4.png</TexPath>	
-	<TonglingHair>hairmukuteng</TonglingHair>
-	<Desc>天地奇木-六欲树母通过吸收了大量阳精与血肉后所诞之果，据说食者即可得长生，故又被称之为“人参果”。</Desc>
-	<MaxStack>1</MaxStack>
-	<MaxHitPoints>500</MaxHitPoints>
-	<Rate>8</Rate>
-	<Beauty>10</Beauty>
-	<ElementKind>Mu</ElementKind>
-	<Tags>
-		<Tag Name = "ESSENCE" Level="1"/>
-		<Tag Name = "Item_MuEssence" Level="1"/>
-	</Tags>
-	<Item Lable="Drug">
-		<Prices>
-			<TalkType>1</TalkType>
-			<BaseCount>1</BaseCount>
-			<li PriceTag="School">
-				<BuyPrice Value="3000" FriendPoint="2"/>
-				<SalePrice Value="1500" />
-			</li>
-			<li PriceTag="Trade">
-				<BuyPrice Value="5000" />
-				<SalePrice Value="1500" />
-			</li>
-			<li PriceTag="Auction">
-				<BuyPrice Value="500" />
-				<SalePrice Value="0" />
-			</li>
-		</Prices>
-		<NotFengshuiItem>0</NotFengshuiItem>
-		<FabaoSuffix>果</FabaoSuffix>
-		<PhysicalLables>
-			<li>GreatThing_Ling</li>
-			<li>Soft2</li>
-		</PhysicalLables>
-		<Elixir>
-			<Ling>250000</Ling>
-			<Modifier>Modifier_Item_Renshenguo4</Modifier>
-		</Elixir>
-		<Food>
-			<EatDirectable>1</EatDirectable>
-			<Nutrition>50</Nutrition>
-			<Water>50</Water>
-			<PracticeNutrition>500</PracticeNutrition>
-		</Food>
-		<BeMaterial>
-			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
-			<BeautyWhenBeMain>8</BeautyWhenBeMain>
-			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
-			<LingNumberRate>0.45</LingNumberRate>
-		</BeMaterial>
-		<DevourDatas>
-			<li Name="Item_BodyPractice_ShengMingLv1" Count="15" Rate="1"/>
-			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="1"/>
-			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
-			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
-			<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.1"/>
-			<li Name="Item_BodyPractice_EXMu" Count="1" Rate="0.1"/>
-		</DevourDatas> 	
-	</Item>
-	<Ling>
-		<AddionLing>75</AddionLing>
-		<AddionRadius>2</AddionRadius>
-		<AddionFailing>0.9</AddionFailing>
-		<AddionFailRadius>1</AddionFailRadius>
-		
-		<Attenuation>0.1</Attenuation>
-		<Absorption>0.8</Absorption>
-		<Accommodate>40</Accommodate>
-	</Ling>
-	<Element>
-		<Kind>Mu</Kind>
-		<Value>12</Value>         
-		<Radius>5</Radius>
-		<Failing>0.9</Failing>
-		<FailRadius>1</FailRadius>
-	</Element>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_Liuyumiaoguo3" Parent="DrugBase">
-	<ThingName>六欲妙果（上）</ThingName>
-	<TexPath>Spr\Object\Lymg3.png</TexPath>	
-	<TonglingHair>hairmukuteng</TonglingHair>
-	<Desc>天地奇木-六欲树母通过吸收了大量阳精与血肉后所诞之果，据说食者即可得长生，故又被称之为“人参果”。</Desc>
-	<MaxStack>1</MaxStack>
-	<MaxHitPoints>500</MaxHitPoints>
-	<Rate>8</Rate>
-	<Beauty>10</Beauty>
-	<ElementKind>Mu</ElementKind>
-	<Tags>
-		<Tag Name = "ESSENCE" Level="1"/>
-		<Tag Name = "Item_MuEssence" Level="1"/>
-	</Tags>
-	<Item Lable="Drug">
-		<Prices>
-			<TalkType>1</TalkType>
-			<BaseCount>1</BaseCount>
-			<li PriceTag="School">
-				<BuyPrice Value="3000" FriendPoint="2"/>
-				<SalePrice Value="1500" />
-			</li>
-			<li PriceTag="Trade">
-				<BuyPrice Value="5000" />
-				<SalePrice Value="1500" />
-			</li>
-			<li PriceTag="Auction">
-				<BuyPrice Value="500" />
-				<SalePrice Value="0" />
-			</li>
-		</Prices>
-		<NotFengshuiItem>0</NotFengshuiItem>
-		<FabaoSuffix>果</FabaoSuffix>
-		<PhysicalLables>
-			<li>GreatThing_Ling</li>
-			<li>Soft2</li>
-		</PhysicalLables>
-		<Elixir>
-			<Ling>250000</Ling>
-			<Modifier>Modifier_Item_Renshenguo3</Modifier>
-		</Elixir>
-		<Food>
-			<EatDirectable>1</EatDirectable>
-			<Nutrition>50</Nutrition>
-			<Water>50</Water>
-			<PracticeNutrition>500</PracticeNutrition>
-		</Food>
-		<BeMaterial>
-			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
-			<BeautyWhenBeMain>8</BeautyWhenBeMain>
-			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
-			<LingNumberRate>0.45</LingNumberRate>
-		</BeMaterial>
-		<DevourDatas>
-			<li Name="Item_BodyPractice_ShengMingLv1" Count="15" Rate="1"/>
-			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="1"/>
-			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
-			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
-			<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.1"/>
-			<li Name="Item_BodyPractice_EXMu" Count="1" Rate="0.1"/>
-		</DevourDatas> 	
-	</Item>
-	<StoryBnts>
-			<li Name="种植" Desc="种植以生成灵植。" Script="GameUlt.BuildLingPlant(bind, 'LingZhi_Ren')" Icon="res/Sprs/ui/icon_hand"/>
-	</StoryBnts>
-	<Ling>
-		<AddionLing>75</AddionLing>
-		<AddionRadius>2</AddionRadius>
-		<AddionFailing>0.9</AddionFailing>
-		<AddionFailRadius>1</AddionFailRadius>
-		
-		<Attenuation>0.1</Attenuation>
-		<Absorption>0.8</Absorption>
-		<Accommodate>40</Accommodate>
-	</Ling>
-	<Element>
-		<Kind>Mu</Kind>
-		<Value>12</Value>         
-		<Radius>5</Radius>
-		<Failing>0.9</Failing>
-		<FailRadius>1</FailRadius>
-	</Element>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_Liuyumiaoguo2" Parent="DrugBase">
-	<ThingName>六欲妙果（中）</ThingName>
-	<TexPath>Spr\Object\Lymg2.png</TexPath>	
-	<TonglingHair>hairmukuteng</TonglingHair>
-	<Desc>天地奇木-六欲树母通过吸收了大量阳精与血肉后所诞之果，据说食者即可得长生，故又被称之为“人参果”。</Desc>
-	<MaxStack>1</MaxStack>
-	<MaxHitPoints>500</MaxHitPoints>
-	<Rate>8</Rate>
-	<Beauty>10</Beauty>
-	<ElementKind>Mu</ElementKind>
-	<Tags>
-		<Tag Name = "ESSENCE" Level="1"/>
-		<Tag Name = "Item_MuEssence" Level="1"/>
-	</Tags>
-	<Item Lable="Drug">
-		<Prices>
-			<TalkType>1</TalkType>
-			<BaseCount>1</BaseCount>
-			<li PriceTag="School">
-				<BuyPrice Value="3000" FriendPoint="2"/>
-				<SalePrice Value="1500" />
-			</li>
-			<li PriceTag="Trade">
-				<BuyPrice Value="5000" />
-				<SalePrice Value="1500" />
-			</li>
-			<li PriceTag="Auction">
-				<BuyPrice Value="500" />
-				<SalePrice Value="0" />
-			</li>
-		</Prices>
-		<NotFengshuiItem>0</NotFengshuiItem>
-		<FabaoSuffix>果</FabaoSuffix>
-		<PhysicalLables>
-			<li>GreatThing_Ling</li>
-			<li>Soft2</li>
-		</PhysicalLables>
-		<Elixir>
-			<Ling>125000</Ling>
-			<Modifier>Modifier_Item_Renshenguo2</Modifier>
-		</Elixir>
-		<Food>
-			<EatDirectable>1</EatDirectable>
-			<Nutrition>50</Nutrition>
-			<Water>50</Water>
-			<PracticeNutrition>250</PracticeNutrition>
-		</Food>
-		<BeMaterial>
-			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
-			<BeautyWhenBeMain>8</BeautyWhenBeMain>
-			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
-			<LingNumberRate>0.45</LingNumberRate>
-		</BeMaterial>
-		<DevourDatas>
-			<li Name="Item_BodyPractice_ShengMingLv1" Count="15" Rate="1"/>
-			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="1"/>
-			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
-			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
-			<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.1"/>
-			<li Name="Item_BodyPractice_EXMu" Count="1" Rate="0.1"/>
-		</DevourDatas> 	
-	</Item>
-	<Ling>
-		<AddionLing>75</AddionLing>
-		<AddionRadius>2</AddionRadius>
-		<AddionFailing>0.9</AddionFailing>
-		<AddionFailRadius>1</AddionFailRadius>
-		
-		<Attenuation>0.1</Attenuation>
-		<Absorption>0.8</Absorption>
-		<Accommodate>40</Accommodate>
-	</Ling>
-	<Element>
-		<Kind>Mu</Kind>
-		<Value>12</Value>         
-		<Radius>5</Radius>
-		<Failing>0.9</Failing>
-		<FailRadius>1</FailRadius>
-	</Element>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_Liuyumiaoguo1" Parent="DrugBase">
-	<ThingName>六欲妙果（下）</ThingName>
-	<TexPath>Spr\Object\Lymg1.png</TexPath>	
-	<TonglingHair>hairmukuteng</TonglingHair>
-	<Desc>天地奇木-六欲树母通过吸收了大量阳精与血肉后所诞之果，据说食者即可得长生，故又被称之为“人参果”。</Desc>
-	<MaxStack>1</MaxStack>
-	<MaxHitPoints>500</MaxHitPoints>
-	<Rate>8</Rate>
-	<Beauty>10</Beauty>
-	<ElementKind>Mu</ElementKind>
-	<Tags>
-		<Tag Name = "ESSENCE" Level="1"/>
-		<Tag Name = "Item_MuEssence" Level="1"/>
-	</Tags>
-	<Item Lable="Drug">
-		<Prices>
-			<TalkType>1</TalkType>
-			<BaseCount>1</BaseCount>
-			<li PriceTag="School">
-				<BuyPrice Value="3000" FriendPoint="2"/>
-				<SalePrice Value="1500" />
-			</li>
-			<li PriceTag="Trade">
-				<BuyPrice Value="5000" />
-				<SalePrice Value="1500" />
-			</li>
-			<li PriceTag="Auction">
-				<BuyPrice Value="500" />
-				<SalePrice Value="0" />
-			</li>
-		</Prices>
-		<NotFengshuiItem>0</NotFengshuiItem>
-		<FabaoSuffix>果</FabaoSuffix>
-		<PhysicalLables>
-			<li>GreatThing_Ling</li>
-			<li>Soft2</li>
-		</PhysicalLables>
-		<Elixir>
-			<Ling>62500</Ling>
-			<Modifier>Modifier_Item_Renshenguo1</Modifier>
-		</Elixir>
-		<Food>
-			<EatDirectable>1</EatDirectable>
-			<Nutrition>50</Nutrition>
-			<Water>50</Water>
-			<PracticeNutrition>50</PracticeNutrition>
-		</Food>
-		<BeMaterial>
-			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
-			<BeautyWhenBeMain>8</BeautyWhenBeMain>
-			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
-			<LingNumberRate>0.45</LingNumberRate>
-		</BeMaterial>
-		<DevourDatas>
-			<li Name="Item_BodyPractice_ShengMingLv1" Count="15" Rate="1"/>
-			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="1"/>
-			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
-			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
-			<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.1"/>
-			<li Name="Item_BodyPractice_EXMu" Count="1" Rate="0.1"/>
-		</DevourDatas> 	
-	</Item>
-	<Ling>
-		<AddionLing>75</AddionLing>
-		<AddionRadius>2</AddionRadius>
-		<AddionFailing>0.9</AddionFailing>
-		<AddionFailRadius>1</AddionFailRadius>
-		
-		<Attenuation>0.1</Attenuation>
-		<Absorption>0.8</Absorption>
-		<Accommodate>40</Accommodate>
-	</Ling>
-	<Element>
-		<Kind>Mu</Kind>
-		<Value>12</Value>         
-		<Radius>5</Radius>
-		<Failing>0.9</Failing>
-		<FailRadius>1</FailRadius>
-	</Element>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Item_EarthEssence_Ren" Parent="DrugBase">
-	<ThingName>树母灵液</ThingName>
-	<Tags>
-		<Tag Name = "ESSENCE" Level="1"/>
-		<Tag Name = "Item_EarthEssence" Level="1"/>
-	</Tags>
-	<MaxStack>1</MaxStack>
-	<TexPath>Spr\Object\renmulingye.png</TexPath>	
-	<Desc>六欲树母树干上肉穴中分泌出的本源精华，呈金黄色液体，是炼制多种神丹的材料，直接服用可以大补精元，并扩充气海，从根本上大幅提高灵气最大值，传说人母灵液还可以修补少女的初生之血膜。</Desc>
-	<Tags>
-		<Tag Name="Tame" Level="100"/>
-		<Tag Name="TameLing" Level="1"/>
-	</Tags>
-	<MaxHitPoints>500</MaxHitPoints>
-	<Rate>8</Rate>
-	<Beauty>10</Beauty>
-	<ElementKind>Tu</ElementKind>
-	<Item Lable="Drug">
-		<Prices>
-			<TalkType>2</TalkType>
-			<BaseCount>1</BaseCount>
-			<li PriceTag="School">
-				<BuyPrice Value="1000"/>
-				<SalePrice Value="200" />
-			</li>
-			<li PriceTag="Trade">
-				<BuyPrice Value="1500" />
-				<SalePrice Value="300" />
-			</li>
-			<li PriceTag="Auction">
-				<BuyPrice Value="500" />
-				<SalePrice Value="0" />
-			</li>
-		</Prices>
-		<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
-		<PhysicalLables>
-			<li>GreatThing_Ling</li>
-			<li>Liquid</li>
-		</PhysicalLables>
-		<Elixir>
-			<Modifier>Modifier_Item_EarthEssence</Modifier>
-			<Fesistance>0.1</Fesistance>
-		</Elixir>
-		<Food>
-			<EatDirectable>1</EatDirectable>
-			<Nutrition>0</Nutrition>
-			<Water>0</Water>
-			<PracticeNutrition>60</PracticeNutrition>		
-			<Modifier>Renmulingye</Modifier>
-		</Food>	
-		<BeMaterial>
-			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
-			<BeautyWhenBeMain>8</BeautyWhenBeMain>
-			<ElementPowerWhenBeMain>15</ElementPowerWhenBeMain>
-			<LingNumberRate>0.8</LingNumberRate>
-		</BeMaterial>
-		<DevourDatas>
-			<li Name="Item_BodyPractice_ShengMingLv1" Count="5" Rate="1"/>
-			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
-			<li Name="Item_BodyPractice_FengShuiLing" Count="1" Rate="0.1"/>
-		</DevourDatas> 	
-	</Item>
-	<Ling>
-		<AddionLing>0</AddionLing>
-		<AddionRadius>1</AddionRadius>
-		<AddionFailing>0.9</AddionFailing>
-		<AddionFailRadius>1</AddionFailRadius>
-		
-		<Attenuation>0.1</Attenuation>
-		<Absorption>0.8</Absorption>
-		<Accommodate>45</Accommodate>
-	</Ling>
-	<Element>
-		<Kind>Tu</Kind>
-		<Value>15</Value>         
-		<Radius>3</Radius>
-		<Failing>0.9</Failing>
-		<FailRadius>1</FailRadius>
-	</Element>
-	</ThingDef>
-	
-	<ThingDef Type="Item" Name="Yanbaoshengong" Parent="WeaponBase">
-	<ThingName>炎神弓</ThingName><!--木弓-->
-	<TexPath>res\Sprs\object\object_weapongong01</TexPath>
-	<MaxStack>1</MaxStack>
-	<Rate>15</Rate>
-	<Desc>一把尚未完成的弓箭。</Desc>
-	<Item Lable="Weapon">
-	<NotRandom>1</NotRandom>
-		<FabaoSuffix>弓</FabaoSuffix>
-		<PhysicalLables>
-			<li>Elastic</li>
-		</PhysicalLables>
-		<Equip>
-			<Damage>50</Damage>
-			<AttackSpeed>1</AttackSpeed>
-			<AttackRange>20</AttackRange>
-			<AtkDamage>
-				<li PartKind="Flesh" Name="Cut2" Rate="0.35"/>
-				<li PartKind="Flesh" Name="Puncture" Rate="0.35"/>
-				<li PartKind="Organ" Name="VisceralCut" Rate="0.5"/>
-			</AtkDamage>
-			<AttackSkill>JYBearAttackMissile</AttackSkill>
-			<AtkAnis>
-				<li Name="GGpgong1" HitPoint="13" Bip="Bip001 L Hand"/>
-			</AtkAnis>
-			<WeaponKind>Bow</WeaponKind>
-			<ModPath>Mod/Prop/Weapon/weapon_gong1</ModPath>
-		</Equip>
-	</Item>
 	</ThingDef>
 </List></ThingDefs>

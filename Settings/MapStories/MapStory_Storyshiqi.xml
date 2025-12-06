@@ -95,7 +95,23 @@
 			<li>
 				<Display>勾引对方</Display>  
 				<Tip>魅力，性别，功法判定，建议非合欢女姓别手贱熬</Tip>
-				<OKResult>GameMain:GetMod("Lua_shijian"):shiqi37()</OKResult>
+				<OKResult><![CDATA[
+				if me:GetSex() > 1 then
+					if me:GetCharisma() > 7 then
+						if me:GetGongName() == "Gong_1701_Tu" then
+						me:AddMsg(XT("[NAME]见对方也算的上唇红齿白的小郎君，试图诱惑对方来上那么一炮，之见[NAME]轻佻香肩，对方变色授魂与，迫不及待的扑了上来，一手褪去[NAME]的亵裤，小兄弟便随后而至，许是刚刚射过一发，这次坚持了一刻有余才将阳精灌入[NAME]下体，可这短短一刻钟又如何能使得[NAME]心满意足，之见[NAME]双腿箍住对方腰间，也不管的对方是否已经软了下来，就是不让对方拔出来，许是泡了一会后因为蜜穴的压力，对方的小兄弟次站了起来，如此循环数次之后，对方发现这从舒畅的双修变成了单方面的采补，奈何此时已经被摄走了大量的精元，无法反抗了。\n[NAME]吸干了青莲剑宗弟子，对方甚至没有机会捏碎求救玉玦。"));
+						me:AddMemery("在一次历练的途中倚靠腿间小口活活将一个青莲宗弟子抽成了人干！");me:AddModifier("Story_Caibuzhidao1");me:AddModifier("Pochu");
+						else
+						me:AddMsg(XT("[NAME]见对方也算的上唇红齿白的小郎君，试图诱惑对方来上那么一炮，之见[NAME]轻佻香肩，对方变色授魂与，迫不及待的扑了上来，一手褪去[NAME]的亵裤，小兄弟便随后而至，许是刚刚射过一发，这次坚持了一刻有余才缴械投降，对方在[NAME]身上驰骋了个爽后便睡去，由于[NAME]也不会什么采补秘法，这一炮也就算是白挨了。"));
+						me:AddModifier("Pochu");
+						end
+					else
+					me:AddMsg(XT("[NAME]见对方也算的上唇红齿白的小郎君，试图诱惑对方来上那么一炮，可显然对方显然看不上[NAME]腆着脸说什么“我们青莲剑宗是名门正派，不是那些邪道宵小，不能乱搞男女关系的”，完全不顾他刚才还当着[NAME]面强奸了他口中的前未婚妻。"));me:AddSchoolRelation(6,-30);
+					end
+				else
+				me:AddMsg(XT("[NAME]见对方也算的上唇红齿白的小郎君，试图诱惑对方来上那么一炮，可显然对方不是玻璃，恼怒的拒绝了[NAME]。"));me:AddSchoolRelation(6,-10);
+				end
+				]]></OKResult>
 			</li>
 		</Selections>
 	</Story>
@@ -107,7 +123,28 @@
 			<li>
 				<Display>继续</Display>  
 				<Tip>需要合欢功法</Tip>
-				<OKResult>GameMain:GetMod("Lua_shijian"):shiqi38()</OKResult>
+				<OKResult><![CDATA[
+				if me:GetGongName() == "Gong_1701_Tu" then
+					if me:GetSex() > 1 then
+					me:AddMsg(XT("[NAME]虽是女子，却也不碍得自己对女子的喜欢，凡间所谓武学自然无法对身为修士的[NAME]造成阻扰，[NAME]轻而易举的制住了少女后，贝齿轻咬着对方的耳垂，双手也游走在少女下身，不时的触碰着少女的敏感地带，随着[NAME]指尖的入侵，少女面带飞霞轻声娇喘了起来……\n事毕，[NAME]正待离去，少女却扯着[NAME]的衣角好似上瘾般的不愿[NAME]离去，于是[NAME]将少女带在身边收为炉鼎。"));
+					me:AddModifier("Story_Caibuzhidao1");
+					me:AddModifier("Luding4");
+					me:AddMemery("在一次历练的途中，与诱惑了一位少女与自己百合，并将对方调教成炉鼎带在身边！");
+					else
+						if me.npcObj.PropertyMgr.BodyData:PartIsBroken("Genitals") then
+						me:AddMsg(XT("[NAME]也想要试图对少女做些什么，可奈何自己是个太监，心有余而力不足，只能将少女淫辱一番转身离去，被个太监一番折辱，使得少女心性大变，投身合欢一脉以图报复。"));me:AddSchoolRelation(11,-50);
+						else
+						me:AddMsg(XT("[NAME]蛮横的扯烂少女衣衫，将少女按到在地，胯下神器贯体而入，少女惊叫连连呼喊不止，奈何凡人武者之力反抗修士自是绝无可能，无力的反抗只能让[NAME]淫欲更盛，在一次又一次的脱力之后，少女的神志甚至都有些涣散了，却依旧不见[NAME]泄出阳元……\n数日调教之后，少女成为了[NAME]采补的炉鼎，被[NAME]带在了身边。"));
+						me:AddModifier("Story_Caibuzhidao1");
+						me:AddModifier("Luding4");
+						me:AddModifier("Pochu");
+						me:AddMemery("在一次历练的途中，奸污了一名美貌少女，并将对方调教成母狗当做炉鼎带在身边！");
+						end
+					end
+				else
+				me:AddMsg(XT("[NAME]将少女淫辱把玩了一段时间，玩腻后便将少女弃置与凡间的青楼楚馆之中。"));
+				end
+				]]></OKResult>
 			</li>
 		</Selections>
 	</Story>
@@ -126,7 +163,39 @@
 			
 			<li>
 				<Display>同流合污</Display>  
-				<OKResult>GameMain:GetMod("Lua_shijian"):shiqi39()</OKResult>
+				<OKResult><![CDATA[
+				if me:GetGongName() == "Gong_1701_Tu" then
+					if me:GetSex() > 1 then
+					local Panding = me:RandomInt(1,10);
+					me:AddModifier("Luding")
+					local buff = me.npcObj.PropertyMgr:FindModifier("Luding");
+					buff:UpdateStack(Panding-1);
+					me:AddMsg(XT("[NAME]来到少女府邸，褪尽衫裙魅术挥洒，府中男子均化为[NAME]裙下之臣，[NAME]淫乐一番后便卷走了几个她相中的男子作为炉鼎回山采补。"));
+					me:AddPracticeResource("Stage",me:GetGLevel() * 1000);me:AddModifier("Pochu");
+					else
+						if me.npcObj.PropertyMgr.BodyData:PartIsBroken("Genitals") then
+						me:AddMsg(XT("[NAME]决定助那淫贼一臂之力，举手之间便将少女府上的家丁放翻，淫贼大喜之余将少女操弄了三四个时辰有余，作为一个凡人的淫贼有等持久度着实不太合理，但是[NAME]是个太监也不知道正常人能一次干多久，所以并未生疑，饱览了一番美景后便转身离去了。"));
+						else
+						me:AddMsg(XT("[NAME]如同谪仙一般从天而降，举手间便制住了淫贼，少女正待道谢却见[NAME]挥手击飞了一众府上家丁，将少女虏至卧房后一番折辱，经过数个时辰的奸淫调教，少女被驯为[NAME]胯下母犬，甘愿俯首跪于[NAME]脚下作一肉炉鼎玉蒲团。\n[NAME]将少女带回了门派，作为炉鼎饲养"));
+						me:AddPracticeResource("Stage",me:GetGLevel() * 1000);me:AddModifier("Luding4");
+						end
+					end
+				else
+					if me:GetSex() > 1 then
+					me:AddMsg(XT("[NAME]决定助那淫贼一臂之力，举手之间便将少女府上的家丁放翻，淫贼大喜之余将少女操弄了三四个时辰，少女几近崩溃其胯下巨物却坚挺依旧，作为一个凡人的淫贼此等持久度着实不太合理，故[NAME]亲自上前与之大战三百回合，战至酣时[NAME]惊异的发现此人居然身怀异术，随即[NAME]一把掐住对方喉咙逼问对方！\n原来对方少年时期有所奇遇，居然有幸习得过合欢宗无上秘法，而此法也在[NAME]逼问之下被[NAME]取得。"));
+					me:UnLockGong("Gong_1701_Tu");
+					me:AddModifier("Pochu");
+					else
+						if me.npcObj.PropertyMgr.BodyData:PartIsBroken("Genitals") then
+						me:AddMsg(XT("[NAME]决定助那淫贼一臂之力，举手之间便将少女府上的家丁放翻，淫贼大喜之余将少女操弄了三四个时辰有余，作为一个凡人的淫贼有等持久度着实不太合理，但是[NAME]是个太监也不知道正常人能一次干多久，所以并未生疑，饱览了一番美景后便转身离去了。"));
+						else
+						me:AddMsg(XT("[NAME]得见官家小姐绰约风姿心下邪念大起，暗自下手将少女府上家丁放翻后，与淫贼一前一后干了四五个时辰，怀中少女都被干到两眼翻白不省人事，下体也烂糊一片惨不忍睹，而[NAME]却未和淫贼分出胜负，这着实有些不合常理，[NAME]作为修士能做到锁阳元不泻也就算了，这个作为凡人的采花淫贼凭什么有此等本事，随即[NAME]一把掐住对方喉咙逼问对方！\n原来对方少年时期有所奇遇，居然有幸习得过合欢宗无上秘法，而此法也在[NAME]逼问之下被[NAME]取得。"));
+						me:UnLockGong("Gong_1701_Tu");
+						end
+					end
+				end
+				
+				]]></OKResult>
 			</li>
 			
 			<li>
@@ -145,12 +214,54 @@
 		<Selections>
 			<li>
 				<Display>帮助灾民</Display>  
-				<OKResult>GameMain:GetMod("Lua_shijian"):shiqi40()</OKResult>
+				<OKResult><![CDATA[
+				local Suiji = me:RandomInt(1,100);
+				local nR = world:RandomSchool(2,4);
+				local sR = world:GetSchoolName(nR);
+				local bR = world:RandomSchool(-4,-2);
+				local vR = world:GetSchoolName(bR);
+				if Suiji > 80 then
+					if me:GetSex() > 1 then
+					me:AddMsg(XT("[NAME]取出了自己的干粮施于了灾民，可[NAME]却并不知晓{0}弟子早已混入这批灾民之中，伺机想要害人性命修炼邪功，[NAME]的插手让{0}弟子心底滋生了一条邪念。\n只见{0}弟子乘着[NAME]不备暗自祭出法宝，一击命中后[NAME]昏死了过去，{0}弟子一脸邪笑的掏出了胯下之器便是在[NAME]身上杀了个七进七出好不痛快。\n事毕，{0}弟子将[NAME]弃置与荒野后便转身离开了。"), vR);
+					me:AddSchoolScore(1,-100);
+					me:AddModifier("Pochu");
+					else
+					me:AddMsg(XT("[NAME]取出了自己的干粮施于了灾民，可[NAME]却并不知晓{0}弟子早已混入这批灾民之中，伺机想要害人性命修炼邪功，[NAME]的插手让{0}弟子大为恼怒。\n只见{0}弟子乘着[NAME]不备暗自祭出法宝，一击命中后[NAME]昏死了过去后便转身离开了。"), vR);
+					me:AddSchoolScore(1,-100);
+					end
+				else
+					if Suiji > 45 then
+					me:AddMsg(XT("[NAME]决定帮助灾民。\n[NAME]取出了自己的干粮施于了灾民，此举被刚好经过的{0}弟子看到，{0}弟子与[NAME]一起携手援助灾民之时，结下了一段情谊，此举使得{0}对本门的感观上升，亦提升了本门在凡间的声望。"), sR);
+					me:AddSchoolRelation(nR,10);me:AddSchoolScore(2,50);
+					else
+					me:AddMsg(XT("[NAME]决定帮助灾民。\n[NAME]取出了自己的干粮施于了灾民\n灾民获得食物后连连感谢[NAME]慷慨仗义，本门在凡间的声望有所提高。"));
+					me:AddSchoolScore(2,50);
+					end
+				end
+				]]></OKResult>
 			</li>
 			
 			<li>
 				<Display>残害灾民</Display>  
-				<OKResult>GameMain:GetMod("Lua_shijian"):shiqi41()</OKResult>
+				<OKResult><![CDATA[
+				if me:GetGongName() == "Gong_1701_Tu" then
+					if me:GetSex() > 1 then
+					me:AddMsg(XT("[NAME]对一众男性灾民施展迷情之术，一众男性灾民均丧失了理智，近靠上前的或擒或抱于[NAME]身上的三大孔穴抽插个不停，没挤进第一次梯队的也尝试着努力向前推进，仿佛即使挤上前去舔上一口[NAME]的肌肤也是极美的事情，而那些连第二梯队都排不上号的灾民，则将目光瞄准了周遭同为灾民的女子们，虽然她们没有[NAME]那冰肌玉骨，亦不如[NAME]那样有着惊世之貌，可至少还是个女人不是……\n一阵狂欢之后，只留下了一地被抽成人干的男子，以及一群瘫软在地衣衫尽碎身上伤的妇孺。"));
+					me:AddSchoolScore(3,100);me:AddPracticeResource("Stage",5000);me:AddModifier("Story_Caibuzhidao1");me:AddModifier("Pochu");
+					else
+						if me.npcObj.PropertyMgr.BodyData:PartIsBroken("Genitals") then
+						me:AddMsg(XT("[NAME]施展迷情之术，一众灾民均丧失了理智欲火焚身，直接原地乱交了起来。\n然而[NAME]虽然学了采补功法，但自己却是个太监，没有这个功能无法加入战局，无奈之下只好转换术法将对方抽魂炼珀以壮自身修为，\n因灾民均中了迷情之法，所以没人知道这事情是[NAME]干的。"));
+						me:AddPracticeResource("Stage",2500);
+						else
+						me:AddMsg(XT("[NAME]看了一眼一众灾民，深感眼前一堆臭鱼烂虾，毕竟日晒雨淋的劳苦大众，怎么可能生的出绝色佳人呢，这着实是闭着眼睛都下不去吊，[NAME]随手便打出几个法印将一众灾民摧魂练珀，用以提升自己修为。\n因灾民均中了迷情之法，所以没人知道这事情是[NAME]干的。"));
+						me:AddPracticeResource("Stage",2500);
+						end
+					end
+				else
+				me:AddMsg(XT("[NAME]心道一声“天地不仁以万物为刍狗。”思前想后觉得如此灾荒年景想来这些灾民也是无法好好生活的，与其苟延残喘痛苦的活着，不如把他们抽魂炼珀助自己修为更近一步来着呢。\n说干就干[NAME]连忙操起秘法将一众灾民囚魂锁珀祭炼成凶魂历煞以助自身修炼。\n此事虽办得隐秘，可还是有若干幸存者逃出生天，本派的恶名更加远播了。"));
+				me:AddSchoolScore(3,100);me:AddPracticeResource("Stage",2500);
+				end
+				]]></OKResult>
 			</li>
 			
 			<li>
@@ -210,7 +321,25 @@
 			
 			<li>
 				<Display>欺辱</Display>  
-				<OKResult>GameMain:GetMod("Lua_shijian"):shiqi42()</OKResult>
+				<OKResult><![CDATA[
+				if me:GetSex() == 1 then
+					if me.npcObj.PropertyMgr.BodyData:PartIsBroken("Genitals") then
+					me:AddMsg(XT("[NAME]见少女姿色尚可便将少女敲晕后绑走了。"));
+					me:AddModifier("Luding4");
+					else
+						if me:GetGongName() == "Gong_1701_Tu" then
+						me:AddMsg(XT("[NAME]见少女姿色颇为诱人，击倒了少女将其拖至无人处，驾起少女双腿便是一顿冲刺，待少女泄身脱力之时，运起六欲心经中的采补之术将少女阴元采补一空。\n事毕，[NAME]便将少女打包带走了。"));
+						me:AddModifier("Story_Caibuzhidao1");me:AddModifier("Luding4");
+						else
+						me:AddMsg(XT("[NAME]见少女姿色颇为诱人，击倒了少女将其拖至无人处，驾起少女双腿便是一顿冲刺。\n事毕，[NAME]便将少女打包带走了。"));
+						me:AddModifier("Luding4");
+						end
+					end
+				else
+				me:AddMsg(XT("[NAME]见少女姿色颇为诱人，击倒了少女将其拖至无人处，拿出了自己的双头龙与之酣战了起来。\n事毕，[NAME]便将少女打包带走了。"));
+				me:AddModifier("Luding4");me:AddModifier("Pochu");
+				end
+				]]></OKResult>
 			</li>
 			
 			<li>
@@ -395,423 +524,6 @@
 				<Display>离去</Display>  
 				<OKResult>
 				me:AddMsg("[NAME]离开了村庄继续赶路了。");
-				</OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="Yetanchengweifu">
-		<DisplayName>夜探城尉府</DisplayName>
-		<Desc>夜半，[NAME]闲逛至城尉府附近，过人的耳力使其闻得一对男女正在偷情……</Desc>
-		<Selections>
-			<li>
-				<Display>奸夫淫妇该死</Display>  
-				<OKResult>
-				此等奸夫淫妇自然是人人得而诛之的，[NAME]祭出法宝将两人轰杀至渣后，不留功与名的转身离去了……");
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>胁迫对方</Display>  
-				<OKResult>
-				GameMain:GetMod("Lua_shijian"):shiqi43()
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>离去</Display>  
-				<OKResult>
-				me:AddMsg("[NAME]觉得此事于自己毫无关系，便离开了。");
-				</OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="Storyshiqi_7">
-		<DisplayName>游历</DisplayName>
-		<Kind>Story</Kind>
-		<Desc>[NAME]游历发现前方神光四溢，必有宝物存在，但直觉感到此处极为恐怖，接下来怎么办。</Desc>
-		<Selections>
-			<li>
-				<Display>进入查探</Display>  
-				<OKResult>
-				GameMain:GetMod("Lua_shijian"):shiqi62()
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>急速撤退</Display>  
-				<OKResult>
-				me:AddMsg("[NAME]没有稍作停留直接继续赶路了。");
-				</OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="Storyshiqi_8">
-		<DisplayName>游历</DisplayName>
-		<Kind>Story</Kind>
-		<Desc>[NAME]游历发现前方小镇上空邪气冲天，妖云弥漫，断定前方必然有大妖行祸。</Desc>
-		<Selections>
-			<li>
-				<Display>前去观察</Display>  
-				<OKResult>
-				GameMain:GetMod("Lua_shijian"):shiqi70()
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>离去</Display>  
-				<OKResult>
-				me:AddMsg("[NAME]觉得没事找事不可取，于是就离开了此地。");
-				</OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="Storyshiqi_9">
-		<DisplayName>游历</DisplayName>
-		<Kind>Story</Kind>
-		<Desc>[NAME]游历途中，遇一群天元女拳宗的外门弟子正在寻一柯姓世家晦气，[NAME]闲来无事之余驻足围观，原来柯姓世家有一子唤做三吉，不久之前出门与人对弈回家后，发现妻子竟与隔壁王家坝的昆仑奴苟且，盛怒之下欲将那昆仑奴当场打杀之时，却被一群路过的天元女拳宗弟子所阻……\n对方领头之人非但阻止了柯三吉打杀那对奸夫淫妇，还对柯三吉痛斥道：“你家夫人确实与昆仑奴行了欢好之事，可那有如何，于你除了颜面上之外又有何损？尔只是损伤了若干颜面，而若你妻子嫁你却是失去了她天命的姻缘啊！”\n见闻此事，[NAME]决定？</Desc>
-		<Selections>
-			<li>
-				<Display>声援柯三吉</Display>  
-				<OKResult>
-				GameMain:GetMod("Lua_shijian"):shiqi71()
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>声援女拳宗弟子</Display>  
-				<OKResult>
-				GameMain:GetMod("Lua_shijian"):shiqi72()
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>离去</Display>  
-				<OKResult><![CDATA[
-				me:AddMsg(XT("[NAME]决定还是不管这场闲事，转身离开。"));
-				]]></OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="Storyshiqi_10">
-		<DisplayName>游历</DisplayName>
-		<Kind>Story</Kind>
-		<Desc>[NAME]游历途中，得遇一身着紫色劲装的女子，正折磨一名男性凡人，而旁则有一身怀六甲之孕妇正抱着这女子的大腿苦苦哀求其放过自己的夫君，却不见紫衣女子有些许怜悯，一脚将其踹倒并怒斥：“婚驴”、“胎器”……</Desc>
-		<Selections>
-			<li>
-				<Display>路见不平</Display>
-				<DisplayCondition>
-				<![CDATA[
-				me.npcObj.PropertyMgr:CheckFeature("Tianyuannvquan") == false
-				]]>
-				</DisplayCondition>
-				<OKResult>
-				<![CDATA[
-				me:AddMsg(XT("[NAME]路见不平一声吼：“天元邪教尼玛死了！”，便攻上前去，却不曾想对方二话不说就开哭，[NAME]只听一声惊雷，这通天修为天塌地陷紫金……呸，串台了。\n只听惊雷随着紫衣女子的哭泣划破长空，原本朗朗晴空顿时暴雨骤降，[NAME]惊恐的发现暴雨之中凭空具现出无数紫衣女子……。"));
-				ThingMgr:RemoveThing(me.npcObj,false,true)
-				]]>
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>为紫衣女子叫好</Display>
-				<DisplayCondition>
-				<![CDATA[
-				(me:GetSex() == 2 and me.npcObj.PropertyMgr:CheckFeature("Tianyuannvquan") == false and me:GetSkillLevel("SocialContact") < 15 ) or me.npcObj.PropertyMgr:CheckFeature("Tianyuannvquan")
-				]]>
-				</DisplayCondition>
-				<OKResult>
-				<![CDATA[
-				if me.npcObj.PropertyMgr:CheckFeature("Tianyuannvquan") then
-				me:AddMsg(XT("[NAME]觉得这个紫衣女子说的极好，连声叫好，对方也给与了[NAME]正面回应。"));
-				else
-				me:AddMsg(XT("[NAME]觉得这个紫衣女子说的极好，连声叫好，对方也给与了[NAME]正面回应，[NAME]成为了一个光荣的拳师……。"));
-				me.npcObj.PropertyMgr:AddFeature("Tianyuannvquan");
-				end
-				]]>
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>离去</Display>  
-				<OKResult><![CDATA[
-				me:AddMsg(XT("[NAME]决定还是不管这场闲事，转身离开。"));
-				]]></OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="Storyshiqi_11">
-		<DisplayName>游历</DisplayName>
-		<Kind>Story</Kind>
-		<Desc>[NAME]游历之时得遇天元村人的运狗车，正被一群爱狗修士拦阻，要求其释放车上的群狗，然而养狗玩狗食狗贩狗是天元村人的谋生手段自是万万不肯放走的，此时大战一触即发……</Desc>
-		<Selections>
-			<li>
-				<Display>声援天元宗</Display>  
-				<OKResult>
-				me:AddMsg("有一说一，天元村出脑瘫，但就这次的事情来说，爱狗修士确实不占理，[NAME]决定走上前去声援天元宗村人。");
-					if me:GetSex() == 1 and me.npcObj.RaceDefName == "Human" then
-					me:AddMsg("还未等[NAME]开口，天元村人一见来人是个人族男子，便大喊一句“天元女拳好，爱狗修士和男修都biss！”后，便碎了自己的金丹自爆……。");
-						if me.npcObj.LuaHelper:GetGLevel() > 9 then
-						me:AddMsg("身为元婴大能的[NAME]自然不会因为一个金丹修士的自爆而受到伤害，看着眼前因为天元村人自爆造成的坑洞，[NAME]不禁叹了一句：“天元女修确实不愧疯狗之名”，便转身离开了。");
-						elseif me.npcObj.LuaHelper:GetGLevel() > 6 then
-						me:AddMsg("身为金丹修士的[NAME]被这突如其来的自爆吓了一跳，幸好那来自本能对危机的反应，使得[NAME]作出了些许补救，不过这依旧使得[NAME]损伤了一甲子的命元，[NAME]不由的悲从心来，自己到底是犯了什么贱的要帮这种疯狗一声叹息之后，[NAME]呢喃着：“天元女修确实不愧疯狗之名”，便抚着伤口离开了。");
-						me:ModifierProperty("MaxAge",-10);
-						else
-						me:AddMsg("[NAME]、爱狗修士、天元村人和狗……都因为金丹爆炸之威，消散于这天地之间了……");
-						ThingMgr:RemoveThing(me.npcObj,false,true)
-						end
-					else
-					me:AddMsg("还未等[NAME]上前声援天元村人，爱狗修士见势不妙，骂骂咧咧的走人了……");
-						if me:GetSex() == 1 then
-						me:AddMsg("见事已毕[NAME]打算转身离去，却见这些天元村人上前拉住[NAME]的袖子连声唤道：“妖大人此等恩情，小女子们无以为报，只能以身相许自荐枕席……”，[NAME]见状不由得大喜过望，与天元村人们在这野地只见酣战一宿……\n次日清晨，对方杀狗款待了[NAME]一番后，[NAME]便待离去，对方带头的女修士还有些不舍，连连邀请[NAME]去那天元村做客，然而想到门中还未完成的任务[NAME]只能拒绝了对方，离别之时对方将一块天外陨铁赠与了[NAME]作为信物……");
-						me:DropAwardItem("Item_StarEssence",1);
-						me:AddSchoolRelation(170,200);
-						elseif me:GetSex() == 2 and me.npcObj.PropertyMgr:CheckFeature("BeautifulFace2")then
-						me:AddMsg("见事已毕[NAME]正打算离去，却被这些天元村人拉住，连连感谢邀约，[NAME]数次拒绝对方依旧热情，见状[NAME]便留下与其同餐共饮，酒至酣时一股莫名的睡意袭来……\n[NAME]只觉迷离只见听的什么“长得这么好看的不是胎器就是婚驴”什么的话语……\n次日，[NAME]醒来之时便觉脸上疼痛无比，伸手触之……那原本完美无瑕的脸庞……\n[NAME]因被天元村人毁容，与之结下了不共戴天之仇。");
-						me.npcObj.PropertyMgr:RemoveFeature("BeautifulFace2");
-						me.npcObj.PropertyMgr:AddFeature("UglyFace2")
-						me:AddSchoolRelation(170,-500);
-						else
-						me:AddMsg("见事已毕[NAME]在对方的连声道谢中转身离开了此地……");
-						me:AddSchoolRelation(170,100);
-						end
-					end
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>声援爱狗修士</Display>  
-				<OKResult>
-				me:AddMsg("[NAME]也觉得狗狗是人类的朋友，前去声援爱狗修士。");
-					if me:GetSex() == 1 and me.npcObj.RaceDefName ~= "Human" then
-					me:AddMsg("听闻天元村人素来与疯狗无异，[NAME]自觉对方怕是要不死不休了，却不曾想听得对方头人一句“洋大人，呸，妖大人说的对，狗狗那么可爱，就应该放它们自由！”，便将大车中的肉狗全部交于了[NAME]，[NAME]将群狗放归田野后，爱狗修士们也四散离去了，正待[NAME]也打算离去之时，却听天元村人的带头之人道：“妖大人如此亚撒西，我们实在情难自已……”后，便和[NAME]酣战了一夜……\n次日清晨，[NAME]便待离去，对方带头的女修士还有些不舍，连连邀请[NAME]去那天元村做客，然而想到门中还未完成的任务[NAME]只能拒绝了对方，离别之时对方将一块天外陨铁赠与了[NAME]作为信物……。");
-					me:DropAwardItem("Item_StarEssence",1);
-					me:AddSchoolRelation(170,200);
-					else
-					me:AddMsg("[NAME]刚站到爱狗修士一边，还未来得起开口，便听对面天元女修大喊一句“天元女拳好，爱狗修士biss！”后，便碎了自己的金丹自爆……。");
-						if me.npcObj.LuaHelper:GetGLevel() > 9 then
-						me:AddMsg("身为元婴大能的[NAME]自然不会因为一个金丹修士的自爆而受到伤害，看着眼前因为天元村人自爆造成的坑洞，[NAME]不禁叹了一句：“天元女修确实不愧疯狗之名”，便转身离开了。");
-						elseif me.npcObj.LuaHelper:GetGLevel() > 6 then
-						me:AddMsg("身为金丹修士的[NAME]被这突如其来的自爆吓了一跳，幸好那来自本能对危机的反应，使得[NAME]作出了些许补救，不过这依旧使得[NAME]损伤了一甲子的命元，[NAME]不由的悲从心来，自己到底是犯了什么贱的要帮这种疯狗一声叹息之后，[NAME]呢喃着：“天元女修确实不愧疯狗之名”，便抚着伤口离开了。");
-						me:ModifierProperty("MaxAge",-10);
-						else
-						me:AddMsg("[NAME]、爱狗修士、天元村人和狗……都因为金丹爆炸之威，消散于这天地之间了……");
-						ThingMgr:RemoveThing(me.npcObj,false,true)
-						end
-					end
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>吃瓜看戏</Display>  
-				<OKResult>
-				me:AddMsg("众所周知，爱狗修士和天元村人是修真界两大疯狗群体，但凡被其中一方咬上都是不死不休的结局，但凡有点逻辑的人都不会加入双方的狗咬狗，[NAME]在远处看着双方厮杀做了一团，最终两败俱伤……\n看完了戏[NAME]摇着头离开了此地。");
-				</OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="Storyshiqi_12">
-		<DisplayName>游历</DisplayName>
-		<Kind>Story</Kind>
-		<Desc>[NAME]游历途中，得遇一群游侠儿正于老熊岭中狩猎，老猎人多番叮嘱年轻的年轻人们要小心，此处有着一窝熊妖，却不曾想其中一个年轻人却满脸不屑，张口就来“就这？就这？，天哪，不会真有人连头熊都打不过吧？\n要知道熊一般不会吃死物，它一过来我直接闭气装死。它一回头我直接一个锁喉，两只腿固定住它的腰，直接让它窒息。或者来个十字固，成型了直接无解，把它手臂掰折了,失去战斗力任我鱼肉”。\n老猎人却摇摇头无比无奈却又语重心长的对那个年轻游侠儿劝道：“熊不吃死物这东西那是骗城里人的，何况传闻老熊岭中还居住着一头千年熊妖，莫说是习武之人游侠儿，就是那各大门派的修仙者们，都不敢轻言辱之”。\n年轻人仿佛觉得自己被老猎人冒犯，在自己的女性同伴面前丢人了，略有些气急的喊到：“就这就这？莫说是熊妖，就是那些修仙者，或者炼体者，我一套锁喉十字固剪刀脚上去，不直接把修仙者的天灵盖宁下来？就这就这？”，言罢年轻人就擅自离队一个人向山中走去，仿佛要证明些什么似得……\n[NAME]决定？</Desc>
-		<Selections>
-			<li>
-				<Display>给年轻人一些教训</Display>  
-				<OKResult>
-				me:AddMsg("[NAME]决定去给年轻人一些教训，当年轻人独自来到山中，[NAME]使用变化之术变成一头巨熊，像年轻人扑去，却不曾想对方竟然轻易的招架住了自己的攻势，身上一股来自洪荒的气息猛然爆发，之后便是如他所说的那样锁喉十字固剪刀脚……直接把[NAME]干死了，弥留之际[NAME]化为原型，对方一边呢喃着什么：“呀，坏起来了，居然是个脑瘫修真者在这里扮熊玩，我还以为真是一个熊妖，刚想说杀掉它去给我女神巫小花当午饭的，结果居然是个脑瘫修真者，这些后天修士就是离谱，没事喜欢扮熊玩，还莫名其妙袭击一个巫族，这不脑子有问题嘛？”一边自顾自的继续向熊妖的聚落前去……");
-				ThingMgr:RemoveThing(me.npcObj,false,true)
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>跟上对方看对方去熊巢送命</Display>  
-				<OKResult>
-				me:AddMsg("[NAME]看着这年轻人，着实想笑，闲来无事便一路跟随对方前往了熊妖的巢穴，只听年轻人爆喝一声，林间凡兽便被这声爆呵镇杀，熊巢之中修炼千年的大妖连连哀嚎，仿佛遇到了天敌一般的唉声告饶，年轻人却没有丝毫怜悯，只身进入熊窟，片刻之余便提着熊妖那肥美的前爪离开了此地……\n此时此刻[NAME]冷汗大冒，不由的想起了上古巫族的传说……暗叹一句“万幸只是看个热闹，要是真去找茬，说不定天灵盖都被人拧下来了……”，转念又一想，上古巫族后人，想来是看不上熊妖妖丹这样的后天宝物的……");
-				me:AddMsg("[NAME]进入熊窟探查，发现一头巨大无比的熊尸横陈于窟中，只有两只前爪被割断带走，[NAME]赶紧上前刨出熊妖内丹，一口吞服下去……");
-					if me.npcObj.GongKind == g_emGongKind.Body then
-					me.npcObj.PropertyMgr.Practice.BodyPracticeData:AddQuenchingItem("Item_BodyPractice_DaYaoYuanJing",100);
-					me:AddMsg("[NAME]获得大妖精华*100");
-					else
-					me.npcObj.LuaHelper:AddTreeExp(200000);
-					end
-				me.npcObj.PropertyMgr:AddMaxAge(60);
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>离去</Display>  
-				<OKResult><![CDATA[
-				me:AddMsg(XT("[NAME]决定还是不管这场闲事，转身离开。"));
-				]]></OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="Storyshiqi_13">
-		<DisplayName>游历</DisplayName>
-		<Kind>Story</Kind>
-		<Desc>[NAME]游历途中，见到两伙武林中人正在争执，闲来无事[NAME]决定看看热闹，然而越看[NAME]越觉得自己三观被崩塌后重塑的循环了。\n其中那对自称来自逍遥阁的男女，有一说一就特么不是正常人，强行道德绑架阻止逆风帮的快递业务，[NAME]确实是无法理解这俩来自侠隐阁弟子的逻辑，人家逆风帮给你送个人肉快递，送乡民孩子去终南山学艺，也就收个快递费，这俩脑瘫就不依不饶哔哔赖赖，不光断人财路，还要哔哔赖赖什么侠义之道。</Desc>
-		<Selections>
-			<li>
-				<Display>断人财路如同杀人父母，畜生！</Display>  
-				<OKResult>
-				me:AddMsg("俗话说的好，断人财路如同杀人父母，[NAME]从小便将孝道视为人生的全部，看到这逍遥阁弟子行如此恶毒之事，直接上前击倒了那两名逍遥阁弟子。");
-				me:AddMsg("正待[NAME]欲击杀这俩脑子不太正常的逍遥阁弟子，却被那些逆风帮的帮众打断，[NAME]面色略有不悦示意对方有屁快放，逆风帮帮众表示经常遭受这所谓逍遥阁弟子们的迫害，他们仗着武功高强，喜欢借着所谓侠义，破坏着整个江湖的物流体系，着实欺人太甚。\n[NAME]虽然是修行之人御剑游历神州，却也不是那“何不食何肉糜之人”，对此等圣母婊自是深恶痛绝，于是将这对男女交于了逆风帮处置……");
-				if me:GetSex() == 1 and me.npcObj.PropertyMgr.BodyData:PartIsBroken("Genitals") == false then
-				me:AddMsg("正待离去，却见那群逆风帮帮众正在猥亵那个逍遥阁女弟子，发现这名逍遥阁女弟子着实相貌不俗，于是排开那些对其上下其手的逆风帮帮众，将这少女掳回宗门作为炉鼎圈养把玩……");
-				me:AddModifier("Luding4");
-				else
-				me:AddMsg("正待离去，却见那群逆风帮帮众正在猥亵那个逍遥阁女弟子，[NAME]暗自“呸”了一口，便在那女弟子哭喊中离去了。");
-				me:AddSchoolScore(2,100);me:AddPenalty(-1);
-				end
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>离开</Display>  
-				<OKResult>
-				me:AddMsg("[NAME]觉得没啥意思，于是离开了……");
-				</OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="Storyshiqi_14">
-		<DisplayName>游历</DisplayName>
-		<Kind>Story</Kind>
-		<Desc>[NAME]在游历途中经过一处森林时，隐隐听闻几声娇喘，屏息感受，发现不过是两个练气小修，轻步靠近，推开树叶，看见玉体横陈的男女正在交欢，但精通双修之道的[NAME]一眼就看出女方虽不在状态，但却是上好的鼎炉。</Desc>
-		<Selections>
-			<li>
-				<Display>以势压人</Display>
-				<DisplayCondition>
-				world:IsSchoolSubmissionToPlayer(6) == true and me:GetSex() == 1 and me.npcObj.PropertyMgr.BodyData:PartIsBroken("Genitals") == false
-				</DisplayCondition>
-				<OKResult>
-				sjname = NpcMgr:GetRandomFullName("Human",CS.XiaWorld.g_emNpcSex.Female)
-				me:AddMsg("观其身着青莲剑宗装束，心中暗喜。随之大喝一声，吓的那男修立刻泄了精气，软了下来，刚要发怒，却看见[NAME]手中的宗主门派的"..SchoolMgr.Name.."令符，立刻双膝着地，呵斥已经呆滞的女修跪下。\n[NAME]抬眼看了一眼男修厉声喝道：“一点骨气都没有，滚！”，走向了女修，用唇压住了女修的双峰。\n仅仅是这样的刺激，就让已经意乱情迷的女修身体火热了起来，开始不自然的扭腰，[NAME]心中冷笑：“你和此等窝囊废交欢，又怎能体验无上快感，还待我予你双修之法。”说罢，用手在修长白皙的腿上来回抚摸。\n蜀山女修"..sjname.."：“好哥哥，快一点，我要”。\n看着自己的道侣在别人手下蹂躏的样子，一旁的男修又可耻的硬了起来。[NAME]轻轻挑了挑眉，似笑非笑的将双手置于双膝之下。将她两腿M字打开，又迅速将蜜穴对于龙根之上，飞速按下。\n"..sjname.."哪受过这种刺激，仰头欲呼，却迎上了[NAME]热烈的双唇。看着道侣与人缠绵，一旁的男修却呼吸加重，开始套弄自己短小的肉棒。\n在飞速的抽插中，"..sjname.."淫水四溅，不禁连呼数声好大。\n[NAME]：“比那只贱狗怎么样。”\n“当然是啊~好哥哥的舒服，那只狗的啊~短小早泄鸡巴，一点感觉都没有，哪里能和哥哥的比。”\n"..sjname.."用迷乱的眼眸看了眼昔日伴侣如今像一只摇尾乞怜的哈巴犬，在一旁无奈的套弄自己的肉棒，想到自己竟然曾和这样的男子交合，不禁一阵心寒，吐了口唾沫在男修脸上。\n想要制止他的套弄，没想到在这样的羞辱下，竟然将阳精泄在[NAME]的鞋子上。\n"..sjname.."更是一顿无名火起：“不要脸的狗东西，还不快舔。”\n[NAME]威压一放，男修只得匍匐着爬到[NAME]的脚边开始舔了起来，淫水和自己的阳精混合的气味瞬间刺激了胯间的短小之物，刚要套弄，却被[NAME]看的一清二楚，一脚踩在男修脸上：“谁叫你动了？”结了个咒法，将男修双手固定在背后，失去了前端的支撑，鞋子上留下的淫水使得他的胯间之物迅速充血可也只能在地上磨蹭。\n可此刻"..sjname.."已经无暇去关注这样的细节了，她已经沉溺在合欢之法带来的快感之中，不断地去迎合[NAME]的节奏。\n在一次次刺激花心下，即将抵达巅峰，可[NAME]却停下了手中的动作。\n"..sjname.."不解的扭头，却看到[NAME]灵力充盈在手上，隐隐雷声作响，打在了"..sjname.."的小腹上，使得"..sjname.."一阵痉挛，在抵达巅峰中，将自己的尿液，洒在了男修身上，可那男修像是得到了天赐之物一般，胯部一阵扭动，腰腹与地面的刺激再次使得他喷射了出来。[NAME]随手折了下路边的树枝，将其置于男修菊花之中，扛起了"..sjname.."扬长而去。");
-				me:AddModifier("Luding6");me:DropAwardItem("Item_yangjin2",2);me:DropAwardItem("Item_yinjin2",1);
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>偷袭</Display>  
-				<OKResult>
-				me:AddMsg("[NAME]从背后偷袭了两人，将两人俘虏后，经由黑市卖给了合欢宗修士……");
-				me:AddSchoolRelation(11,50);me:DropAwardItem("Item_LingStone",5);
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>离开</Display>  
-				<OKResult>
-				me:AddMsg("[NAME]觉得没啥意思，于是离开了……");
-				</OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="Storyshiqi_15">
-		<DisplayName>游历</DisplayName>
-		<Kind>Story</Kind>
-		<Desc>[NAME]外出历练时，听见有争执之声，出于好奇，便去一探究竟，原来是一个绿袍道人和一个魔装体修在争论御剑飞行原理。\n绿袍道人执灵气驱动论，魔装体修谈画符吟咒说，一时间也未有个定论。\n[NAME]觉得这番讨论颇近道法之源，便在一旁聆听,哪知开始还气势汹汹的魔装体修反被怼到哑口无言，霎时间恼羞成怒，拔出宝剑便往地上一掷，指着[NAME]问道：你听本座与那厮理论了半天，现在本座问你，是那信道人还是。。。嗯~ （伸出拳头，大拇指往自己一指）</Desc>
-		<Selections>
-			<li>
-				<Display>支持符咒御剑</Display>
-				<OKResult>
-				me:AddMsg("[NAME]指向魔装体修，那体修哈哈大笑，果然有眼光，那就请道友配合一下，本座念完咒，道友跳一跳便可，保管让那道人闭嘴。\n说罢便抓起宝剑念叨起来，良久发出一声爆喝，[NAME]以喝声为号，弹地而起，谁知那剑来的太快，[NAME]双脚刚刚离地，飞剑已贯胸而过。\n[NAME]临死前听到绿袍道人说了句：你搁那玩标枪投射呢。");
-				ThingMgr:RemoveThing(me.npcObj,false,true)
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>支持灵气御剑</Display>  
-				<OKResult>
-				me:AddMsg("道友果然不像这体修武夫那般少智，道友且听吾一言：俗话说“只要动力强，土砖也能飞上天”，这御剑之术在于，将灵气聚于剑尾之上，再这般这般，如此如此，即可。\n[NAME]听完绿袍道人之言，大有感悟，跳上宝剑化作一道遁光，参透御剑之术后，[NAME]的御剑飞行速度，得到了些许提升。");
-				me.npcObj.PropertyMgr:ModifierProperty("WorldMapFlySpeedAddP",1,0,0,0)
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>离开</Display>  
-				<OKResult>
-				me:AddMsg("[NAME]觉得没啥意思，于是离开了……");
-				</OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="Storyshiqi_16">
-		<DisplayName>游历</DisplayName>
-		<Kind>Story</Kind>
-		<Desc>[NAME]外出历练时，路过一家茶馆，[NAME]决定在这稍息片刻。</Desc>
-		<Selections>
-			<li>
-				<Display>歇息</Display>
-				<OKResult>
-				NanName = NpcMgr:GetRandomFullName("Human",CS.XiaWorld.g_emNpcSex.Male)
-				me:AddMsg("[NAME]在喝茶之时，从散修"..NanName.."口中获悉了一个秘闻。");
-				me:AddSecret(me:RandomInt(17003,17006))
-				</OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="Storyshiqi_17">
-		<DisplayName>游历</DisplayName>
-		<Kind>Story</Kind>
-		<Desc>[NAME]外出历练时，得遇一纨绔后生正在调戏良家妇女。</Desc>
-		<Selections>
-			<li>
-				<Display>执行正义</Display>
-				<OKResult>
-				me:AddMsg("[NAME]赶到跟前把那后生肩胛只一扳过来，喝道：“调戏良人妻子当得何罪！”后一拳打下去，就把这浪荡子打死了，然而受害女子非但没有道谢反而面色惊恐的逃跑了。");
-				me:AddSchoolScore(2,100);
-				world:SetWorldFlag(1716,world:GetWorldFlag(1716)+1);
-				</OKResult>
-			</li>
-			<li>
-				<Display>离开</Display>  
-				<OKResult>
-				me:AddMsg("[NAME]觉得凡人之间的事情，自己没必要插手，于是离开了……");
-				</OKResult>
-			</li>
-		</Selections>
-	</Story>
-	
-	<Story Name="Storyshiqi_18">
-		<DisplayName>身骑白马的蛮族汉子</DisplayName>
-		<Desc>近来十数日，总有一名身骑白马的蛮族汉子来到本门，大声拍门表示他是一个眼神纯真的汉子，又或是告诉我们他昨天新买的镇元山人参果牌传讯符-人参果12加大版很好用，要不就是来说昨日看的戏很有趣，或是买了一根新的洗衣棒槌，诸如此类不胜烦扰……\n\n门中弟子不堪其扰，故决定把这脑瘫扬了，却不曾想刚要出手之时，对方居然先开口说了些什么：“尔等修炼家”……“酸”……“纯真眼神”……之类的奇怪话语。</Desc>
-		<Kind>None</Kind>
-		<Selections>
-			<li>
-				<Display>当场跪下</Display> 
-				<OKResult>
-				me:AddMsg("见我们跪的痛快，天色瞬间放晴，那个蛮族汉子只留了一句：“明天我还会来敲你们门派的大门，告诉你我吃了三碗饭，希望你耗子尾汁！”后离开了……");
-				</OKResult>
-			</li>
-			
-			<li>
-				<Display>逆天而行</Display> 
-				<OKResult>
-				me:AddMsg("一介凡人居然如此嚣张，着实让人好生厌恶，我等苦修多年却被此等小丑一般的人儿侮辱，着实忍不得，三两下的把这凡人斩杀当场……却不曾想他身死之时……数十道金光闪过……。");
-				renshu = me:RandomInt(20,40);
-				while renshu > 0 do
-					local npc = CS.XiaWorld.NpcRandomMechine.RandomNpc(me.npcObj.RaceDefName);
-					CS.XiaWorld.NpcMgr.Instance:AddNpc(npc,npc.LuaHelper:RandomInt(240,280),Map,CS.XiaWorld.Fight.g_emFightCamp.Enemy);
-					CS.XiaWorld.ThingMgr.Instance:EquptNpc(npc,npc.LuaHelper:RandomInt(7,13),CS.XiaWorld.g_emNpcRichLable.Richest);
-					npc:AddTitle("天兵天将");
-					npc.FightBody.AttackWait = 1;
-					npc.FightBody.AttackTime = 10000;
-					npc.FightBody.AutoNext = true;
-					npc.FightBody.IsAttacker = true;
-					renshu = renshu - 1
-				end
 				</OKResult>
 			</li>
 		</Selections>

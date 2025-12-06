@@ -234,20 +234,6 @@
 		<Index>8</Index>
 	</Node>
 	
-	<Node Name="Gong1701_a9" Gong="Gong_1701_Tu">
-		<Esoterica>Gong1701_Esoterica_998</Esoterica>
-		<DisplayName>迷囚术</DisplayName>
-		<Level>Qi</Level>
-		<Index>9</Index>
-	</Node>
-	
-	<Node Name="Gong1701_a10" Gong="Gong_1701_Tu">
-		<Esoterica>Gong1701_Esoterica_997</Esoterica>
-		<DisplayName>技能：榨汁姬</DisplayName>
-		<Level>Qi</Level>
-		<Index>10</Index>
-	</Node>
-	
 		<Node Name="Gong1701_e4" Gong="Gong_1701_Tu">
 		<Esoterica>God2_Dan</Esoterica>
 		<DisplayName>天道神丹</DisplayName>
