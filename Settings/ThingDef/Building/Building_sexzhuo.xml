@@ -1,5 +1,5 @@
 <ThingDefs><List>
-	<ThingDef Type="Building" Name="SEXzhuo" Parent="Build_VirtualDoor">	
+	<ThingDef Type="Building" Name="SEXzhuo" Parent="BuildingBase">	
 		<ThingName>性爱道具手工桌</ThingName>	
 		<Desc>进行性爱道具手工用品制造的工作台。</Desc>
 		<IllustratedHandLabel>Crafting</IllustratedHandLabel>
